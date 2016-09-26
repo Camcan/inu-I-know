@@ -1,2 +1,2 @@
-# inu-I-know
-Playing with ahdinosaur's inu library
+# React Spike
+Playing with React - please don't judge. 
