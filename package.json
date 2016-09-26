@@ -1,0 +1,30 @@
+{
+  "name": "react-spike",
+  "version": "1.0.0",
+  "description": "Simple react spike session",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "browserify": "^13.1.0",
+    "express": "^4.14.0",
+    "react": "^15.3.2"
+  },
+  "devDependencies": {
+    "red-tape": "0.0.2",
+    "tape": "^4.6.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Camcan/inu-I-know.git"
+  },
+  "author": "Campbell Hawkes",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Camcan/inu-I-know/issues"
+  },
+  "homepage": "https://github.com/Camcan/inu-I-know#readme"
+}
