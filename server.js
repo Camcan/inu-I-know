@@ -3,10 +3,13 @@ var express = require('express')
 var app = express()
 
 app.set('port', (process.env.PORT || 3000))
+app.set('view engine', 'html')
 app.use('/', express.static(path.join(__dirname, 'public')))
+app.locals.settings['x-powered-by'] = false
+
 
 app.get('/', function(req, res) {
-  res.sendfile(__dirname + '/index.html');
+   res.sendFile(path.join(__dirname, 'client/views/base.html'))
 })
 
 app.listen(app.get('port'), function() {
