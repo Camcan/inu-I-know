@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router'
+import Social from './social-links.jsx'
 
 export default React.createClass({
 	render: function(){
@@ -15,9 +16,8 @@ export default React.createClass({
 				<div className="right-rotate">
 				    <Link to="/about">About</Link>
 			    </div>
-			    <div id="social-links">
-			    </div>
-		   </div>
+			    <Social/>
+			</div>
 		)
 	}
 })
