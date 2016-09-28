@@ -1,24 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, hashHistory } from 'react-router'
+import { Router, Route, browserHistory, IndexRedirect, Link} from 'react-router'
 import Code from './components/code.jsx'
 import About from './components/human.jsx'
+import Home from './components/landing.jsx'
 
 var App = React.createClass({
     render: function() {
         return ( 
-        	<div>
-            <h1>{this.props.greeting || 'SUUPER REACTIVE'}</h1> 
-            </div>
+        	this.props.children
         )
     }
 })
 
 ReactDOM.render( 
-	<Router history={hashHistory}>
-	    <Route path="/" component={App}/>
-	    <Route path="/code" component={Code || App}/>
-	    <Route path="/about" component={About}/>
+	<Router history={browserHistory}>
+	    <Route path="/" component={App}>
+		    <IndexRedirect to="home"/>
+		    <Route path="/home" component={Home}/>
+		    <Route path="/code" component={Code}/>
+		    <Route path="/about" component={About}/>
+	    </Route>
  	</Router>,
     document.getElementById('app')
 )

@@ -8,7 +8,7 @@ app.use('/', express.static(path.join(__dirname, 'public')))
 app.locals.settings['x-powered-by'] = false
 
 
-app.get('/', function(req, res) {
+app.get(['/', '/home'], function(req, res) {
    res.sendFile(path.join(__dirname, 'client/views/base.html'))
 })
 
