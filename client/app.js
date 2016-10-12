@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, browserHistory, IndexRedirect, Link} from 'react-router'
+import CSSModules from 'react-css-modules'
 import Code from './components/code.jsx'
 import About from './components/human.jsx'
 import Home from './components/landing.jsx'
