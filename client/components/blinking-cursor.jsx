@@ -1,45 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import CursorBlink from './cursor-blink.css'
+import CursorBlink from './css/prompt.css'
 
-var blink = CursorBlink.blink
-var hide = CursorBlink.hideInput
-
+function del(str){
+	return str.substring(0, str.length-1)
+}
 export default React.createClass({
 	propTypes: {
-		typeCommand: React.PropTypes.func,
-		command: React.PropTypes.func
+		focus: React.PropTypes.bool
 	},
-	getInitialState: function() {
-		return {input: ""} 
-	},
-	typeText: function(e){
-		e = e || window.event
-		var key = String.fromCharCode(e.keyCode || e.which)
-		console.log(key)
-		var input = this.state.input
-		if (key == 8) {
-			input.pop()
-		} else {
-			input += key
-		}
-		this.setState({input: input})
-
-	},
-	focusInput: function(){
-		ReactDOM.findDOMNode(this.refs.commandInput).focus()
-	},
-	componentDidMount: function() {
-       this.focusInput()
-    },
 	render: function(){
+		var appear
+		if (this.props.focus == true) {
+			appear = CursorBlink.blink
+		} else {
+			appear = CursorBlink.hide
+		}
 		return (
-			<span onClick={this.focusInput}>
-				<input onKeyDown={this.typeText} ref="commandInput" className={hide} />
-				{this.state.input}
-				<span className={blink}>
-					{ '\u2588'}
-				</span>
+			<span className={appear}>
+				{ '\u2588'}
 			</span>
 		)
 	}

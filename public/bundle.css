@@ -1,19 +1,25 @@
-._client_components_cursor_blink__blink {
- animation: _client_components_cursor_blink__blink-animation 1s steps(2, start) infinite;
-  -webkit-animation: _client_components_cursor_blink__blink-animation 1s steps(2, start) infinite;
+._client_components_css_prompt__blink {
+ animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
 }
-@keyframes _client_components_cursor_blink__blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes _client_components_cursor_blink__blink-animation {
+
+@keyframes _client_components_css_prompt__blink-animation {
   to {
     visibility: hidden;
   }
 }
 
-._client_components_cursor_blink__hideInput {
+@-webkit-keyframes _client_components_css_prompt__blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+._client_components_css_prompt__hide {
+	visibility: hidden;
+}
+
+._client_components_css_prompt__hideInput {
 	width: 0px;
 	border: none;
 }
