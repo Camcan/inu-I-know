@@ -5,7 +5,7 @@ import Social from './social-links.jsx'
 export default React.createClass({
     render: function() {
         return ( 
-	            <div id="code">
+	            <div className="output">
 					<h2>
 						{"{"}
 					</h2>

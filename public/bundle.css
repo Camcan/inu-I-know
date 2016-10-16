@@ -1,4 +1,6 @@
-._client_components_css_prompt__blink {
+._client_components_css_human__logo {
+	width: 200px
+}._client_components_css_prompt__blink {
  animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
   -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
 }
