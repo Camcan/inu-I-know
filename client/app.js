@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { Router, Route, browserHistory, IndexRedirect, Link} from 'react-router'
 import CSSModules from 'react-css-modules'
 import Code from './components/code.jsx'
-import About from './components/human.jsx'
+import Human from './components/human.jsx'
 import Home from './components/landing.jsx'
 
 var App = React.createClass({
@@ -20,7 +20,7 @@ ReactDOM.render(
 		    <IndexRedirect to="home"/>
 		    <Route path="/home" component={Home}/>
 		    <Route path="/code" component={Code}/>
-		    <Route path="/about" component={About}/>
+		    <Route path="/human" component={Human}/>
 	    </Route>
  	</Router>,
     document.getElementById('app')

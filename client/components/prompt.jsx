@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Binder from 'react-binding';
+
 import Cursor from './blinking-cursor.jsx'
 import Styles from './css/prompt.css'
-import Terminal from './scripts/terminal.jsx'
+
 
 var hide = Styles.hideInput
 
@@ -23,12 +25,13 @@ export default React.createClass({
 	propTypes: {
 		command: React.PropTypes.string,
 		active: React.PropTypes.bool,
+		execute: React.PropTypes.func,
 		output: React.PropTypes.element
 	},
 	getInitialState: function() {
 		return {
 			input: "",
-			focus: this.props.active,
+			focus: this.props.active || true,
 		} 
 	},
 	componentDidMount: function() {
@@ -54,7 +57,9 @@ export default React.createClass({
  			}.bind(this), 80)
 		} else {
   			console.log("END")
-  			this.setState({output: output})
+  			var no = Binder.bindTo(this.props, "number")
+   			this.setState({output: output, focus: false})
+   			this.props.execute(string)
 		}
     },
 	focusInput: function(){
@@ -81,10 +86,11 @@ export default React.createClass({
 				<h1 id="prompt">root@vm ~ $ 
 					<span onClick={this.focusInput}>
 						<input onKeyDown={this.typeText} ref="commandInput" className={hide} />
-						{this.state.input}
+						{"  " + this.state.input}
 						<Cursor focus={this.state.focus}/>
 					</span>
 				</h1>
+		
 				{this.state.output}
 			</div>
 		)

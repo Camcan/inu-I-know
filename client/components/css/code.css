@@ -1,0 +1,11 @@
+.monotype {
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+	background-color: black;
+}
+.indent1 {
+margin-left: 5%;
+}
+.indent2 {
+margin-left: 10%;
+}

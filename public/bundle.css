@@ -1,3 +1,14 @@
+._client_components_css_code__monotype {
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+	background-color: black;
+}
+._client_components_css_code__indent1 {
+margin-left: 5%;
+}
+._client_components_css_code__indent2 {
+margin-left: 10%;
+}
 ._client_components_css_human__logo {
 	width: 200px
 }._client_components_css_prompt__blink {

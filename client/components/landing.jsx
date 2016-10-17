@@ -14,7 +14,7 @@ export default React.createClass({
 					<Link to="/code" >{"<Code/>"}</Link>
 				</div>
 				<div className="right-rotate">
-				    <Link to="/about">About</Link>
+				    <Link to="/human">human</Link>
 			    </div>
 			    <Social/>
 			</div>
