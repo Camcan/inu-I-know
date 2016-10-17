@@ -8,10 +8,12 @@ import Mobile from './icons/mobile'
 import Envelope from './icons/envelope'
 
 export default React.createClass({
+	propTypes: {
+		className: React.PropTypes.string
+	},
 	render: function(){
 		return (
-			<div id="social-links">
-				<h2>
+			<div id="socialButtons" className={this.props.className}>
 					<a href="//github.com/camcan">
 						<GitHub/>
 					</a>
@@ -27,7 +29,6 @@ export default React.createClass({
 					<a href="mailto:mr.campbell.hawkes@gmail.com">
 						<Envelope/>
 					</a>
-				</h2>
 			</div>
 		)
 

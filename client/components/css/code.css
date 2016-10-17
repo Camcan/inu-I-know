@@ -3,9 +3,23 @@
 	color: white;
 	background-color: black;
 }
+.monotype a {
+	color: white;
+	text-decoration: none;
+}
 .indent1 {
 margin-left: 5%;
 }
 .indent2 {
 margin-left: 10%;
+}
+.socialButtons {
+	width: 100%;
+	max-width: ;
+}
+.socialButtons > a {
+	margin: 5%;
+}
+.socialButtons > a > svg {
+	viewBox: 0 0 60 60;
 }

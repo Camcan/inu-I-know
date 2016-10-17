@@ -3,14 +3,50 @@
 	color: white;
 	background-color: black;
 }
+._client_components_css_code__monotype a {
+	color: white;
+	text-decoration: none;
+}
 ._client_components_css_code__indent1 {
 margin-left: 5%;
 }
 ._client_components_css_code__indent2 {
 margin-left: 10%;
 }
-._client_components_css_human__logo {
+._client_components_css_code__socialButtons {
+	width: 100%;
+	max-width: ;
+}
+._client_components_css_code__socialButtons > a {
+	margin: 5%;
+}
+._client_components_css_code__socialButtons > a > svg {
+	viewBox: 0 0 60 60;
+}._client_components_css_human__logo {
 	width: 200px
+}._client_components_css_landing__landing {
+	text-align: center;
+	color: black;
+}
+._client_components_css_landing__leftRotate {
+	min-width: 200px;
+	max-width: 500px;
+	display: inline-block;	
+}
+._client_components_css_landing__rightRotate {
+	min-width: 200px;
+	margin-top: 30px;
+	max-width: 500px;
+	display: inline-block;
+}
+._client_components_css_landing__socialButtons {
+	margin-top: 50px;
+	height: 200px;
+}
+._client_components_css_landing__socialButtons a {
+	height: 100px;
+	color: black;
+	margin: 5px 5%;
 }._client_components_css_prompt__blink {
  animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
   -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
