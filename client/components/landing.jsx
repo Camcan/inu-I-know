@@ -5,21 +5,24 @@ import Social from './social-links.jsx'
 
 export default React.createClass({
 	componentDidMount: function() {
-		var bg = document.getElementById('bg')
+		var right = document.getElementById('bgright')
+		var left = document.getElementById('bgleft')
 		var view = window.innerWidth
-		console.log(bg)
   		document.onmousemove = function(e){
   			var x = e.clientX,
         		y = e.clientY
+        	
         		console.log("X:", x, "Y: ", y)
-        	bg.style.width =  (x + view/2 ) + "px"
-        	bg.style.transform = "rotate(" + y/20 + " deg)"
+        	right.style.opacity =  x/view/2 
+        	right.style.left = (0.5 + 2*x/view) + "%"
+        	left.style.opacity = (view-x)/view + 0.2
   		}
     },
-	render: function(){
+	render: function(){ 
 		return(
 			<div className={Styles.landing}>
-				<div id="bg" className={Styles.bg}></div>
+				<div id="bgleft" className={Styles.bgLeft}></div>
+				<div id="bgright" className={Styles.bgRight}></div>
 				<div id="title">            
 					<h1>{"I'm Cam"}</h1>
 					<h2>a web developer</h2>

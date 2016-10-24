@@ -1,3 +1,9 @@
+.logo {
+	width: 200px
+}
+.logoCenter{
+	width: 200px;
+}
 .landing {
 	text-align: center;
 	color: black;
@@ -6,12 +12,22 @@
 	text-decoration: none;
 	cursor: pointer;
 }
-.bg{
+.bgLeft{
 	width: 100%;
-	left: -50%;
-	height: 100%;
-	background: grey;
+	top: 20%;
+	height: 80%;
+	background: white;
 	position: absolute;
+	opacity: 0.1;
+	z-index: -1;
+}
+.bgRight{
+	width: 100%;
+	top: 20%;
+	height: 80%;
+	left: 50%;
+	position: absolute;
+	 background: #e0ffc7 url(./img/skate.jpg) no-repeat 10%;  
 	opacity: 0.1;
 	z-index: -1;
 }

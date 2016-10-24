@@ -4,9 +4,8 @@ import {Link} from 'react-router'
 import Prompt from './prompt.jsx'
 import CamObj from './cam-object.jsx'
 import Styles from './css/code.css'
-import Terminal from './scripts/terminal.jsx'
 import Binder from 'react-binding';
-
+import Output from './output.jsx'
 
 		// model={Binder.bindToState(this,"data","Employee.Contact.Email")}
 export default React.createClass({
@@ -19,11 +18,10 @@ export default React.createClass({
 		this.getInitialState()
 	},
 	terminal: function(){
-		this.appendPrompt()
 	},
-	appendPrompt: function(){
+	execute: function(command){
 		// ReactDOM.findDOMNode(this).innerHTML += Prompt
-		this.setState({terminal: <Prompt active={true} execute={this.appendPrompt}/>})
+		this.setState({terminal: <Prompt active={true} execute={this.execute}/>})
 		// ReactDOM.render(ReactDOM.findDOMNode(this).innerHTML + , ReactDOM.findDOMNode('#code'))
 	},
     render: function() {

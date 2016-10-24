@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Terminal from './scripts/terminal.jsx'
 import Binder from 'react-binding';
-
+import Projects from './projects.jsx'
 import Cursor from './blinking-cursor.jsx'
 import Styles from './css/prompt.css'
 

@@ -1,3 +1,111 @@
-.logo {
-	width: 200px
+.head {
+	text-align: left;
+	margin-left: 40%;
+}
+.headHuman {
+	text-align: left;
+}
+
+.logo{
+	transform: translate(-100%,0);
+	transition: 1s ease-in-out;
+	width: 15%;
+	max-width: 200px;
+	position: absolute;
+	opacity: 0.1;
+	z-index: -1;
+	margin-bottom: 0px;
+}
+.head {
+	width: 50%;
+	padding-right: 100px;
+	-webkit-animation-delay: 0s;
+    animation-delay: 0s;
+	-webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 3s;
+ 	animation-name: fadeIn;
+  	animation-duration: 3s;
+  	opacity: 1 !important;
+}
+
+.nav.fadeIn {
+}
+
+.nav a {
+	min-width: 100px;
+	margin: 20px;
+	padding: 10px;
+}
+.hide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nav {
+	text-align: center;
+	padding: none;
+	-webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+ 	animation-name: fadeIn;
+  	animation-duration: 1s;
+  	visibility: visible;
+  	opacity: 1;
+}
+
+@-webkit-keyframes fadeIn { 
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+.who {
+	text-align: box;
+	margin-top: 50px;
+	margin-left: 50%;
+	width: 50%;
+	padding: none;
+	-webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+ 	animation-name: fadeIn;
+  	animation-duration: 1s;
+  	visibility: visible;
+  	opacity: 1;
+}
+.who p {
+	width: 40%;
+	min-width: 200px;
+}
+.profileImg {
+	height: 200px;
+	width: 200px;
+	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
+	background-size: cover;
+}
+.socialButtons {
+	text-align: left;
+	margin-top: 250px;
+	height: 200px;
+	text-align: center;
+}
+.socialButtons a {
+	opacity: 0.1;
+	height: 100px;
+	color: black;
+	margin: 5px 5%;
+}
+.socialButtons a:hover {
+	opacity: 1;
+	transition: opacity 0.4s
 }
