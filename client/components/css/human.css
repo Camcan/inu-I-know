@@ -74,7 +74,7 @@
 	margin-top: 50px;
 	position: absolute;
 	left: 30%;
-	width: 60%;
+	width: 50%;
 	padding: none;
 	-webkit-animation-name: fadeIn;
     -webkit-animation-duration: 1s;
@@ -83,20 +83,25 @@
   	visibility: visible;
   	opacity: 1;
 }
+.who h2 {
+	margin: 0px;
+}
 .whoCol{
 	display: inline-block;
 	text-align: box;
-	width: 40%;
+	width: 30%;
+	max-width: 200px;
 	padding: 0 5% 0;
 	min-width: 200px;
 }
-.whoCol h2 {
-	margin-left: -10%;
-}
+
 .profileImg {
-	height: 200px;
-	width: 200px;
+	height: 150px;
+	width: 150px;
+	opacity: 0.5;
+	top: 0%;
 	right: 5%;
+	z-index: -1;
 	position: absolute;
 	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
 	background-size: cover;
