@@ -14,7 +14,7 @@ export default React.createClass({
         	
         		console.log("X:", x, "Y: ", y)
         	right.style.opacity =  x/view/2 
-        	right.style.left = (0.5 + 2*x/view) + "%"
+        	right.style.left = (2*x/view - 1) + "%"
         	left.style.opacity = (view-x)/view + 0.2
   		}
     },
@@ -27,10 +27,8 @@ export default React.createClass({
 					<h1>{"I'm Cam"}</h1>
 					<h2>a web developer</h2>
 				</div>
-				<div className={Styles.leftRotate}>
+				<div className={Styles.nav}>
 					<Link to="/code" >{"<Code/>"}</Link>
-				</div>
-				<div className={Styles.rightRotate}>
 				    <Link to="/human">human</Link>
 			    </div>
 			    <Social className={Styles.socialButtons}/>

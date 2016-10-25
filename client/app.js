@@ -21,9 +21,9 @@ var App = React.createClass({
 			Styles = AppStyles
 		}
         return ( 
-        	<div id="app">
+        	<div id="app" className={AppStyles.app}>
         		<div className={Styles.head}>
-					 <img className={Styles.logo} src={"./img/montagnes.svg"}/>
+					 <img className={Styles.logo} src={"./img/montagnes-white.svg"}/>
 				 </div>
 	        	{this.props.children}
         	</div>
