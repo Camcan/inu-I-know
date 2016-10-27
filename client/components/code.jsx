@@ -4,9 +4,8 @@ import {Link} from 'react-router'
 import Prompt from './prompt.jsx'
 import CamObj from './cam-object.jsx'
 import Styles from './css/code.css'
-import Binder from 'react-binding';
 import Output from './output.jsx'
-
+import Nav from './nav.jsx'
 		// model={Binder.bindToState(this,"data","Employee.Contact.Email")}
 export default React.createClass({
 	getInitialState: function() {
@@ -30,6 +29,7 @@ export default React.createClass({
         		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"/>
             	<Prompt active={false} command={"Campbell_Hawkes"} output={<CamObj/>} execute={this.terminal}/>
 	            {this.state.terminal}
+	                 <Nav home={true}/>
             </div>
 
         )

@@ -24,12 +24,12 @@ export default React.createClass({
 				<div id="bgleft" className={Styles.bgLeft}></div>
 				<div id="bgright" className={Styles.bgRight}></div>
 				<div id="title">            
-					<h1>{"I'm Cam"}</h1>
-					<h2>a web developer</h2>
+					<h1>Campbell Hawkes</h1>
+					<h2>web developer</h2>
 				</div>
 				<div className={Styles.nav}>
 					<Link to="/code" >{"<Code/>"}</Link>
-				    <Link to="/human">human</Link>
+				    <Link to="/human/who">human</Link>
 			    </div>
 			    <Social className={Styles.socialButtons}/>
 			</div>

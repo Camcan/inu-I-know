@@ -5,27 +5,28 @@ import CSSModules from 'react-css-modules'
 import Code from './components/code.jsx'
 import Human from './components/human.jsx'
 import Home from './components/landing.jsx'
-import AppStyles from './components/css/app.css'
-import HumanStyles from './components/css/human.css'
 import Who from './components/human/who.jsx'
 import AboutMe from './components/human/about.jsx'
 import Work from './components/human/work.jsx'
+import AppStyles from './components/css/app.css'
+import HumanStyles from './components/css/human.css'
+import Footer from './components/footer.jsx'
+
 var Styles
 var App = React.createClass({
     render: function() {
 		var route = this.props.routes[this.props.routes.length-1].path
 		console.log(route)
-		if (route == "/human"){
+		if (route.includes("/human")){
 			Styles = HumanStyles
 		} else {
 			Styles = AppStyles
 		}
         return ( 
         	<div id="app" className={AppStyles.app}>
-        		<div className={Styles.head}>
-					 <img className={Styles.logo} src={"./img/montagnes-white.svg"}/>
-				 </div>
+				<img className={Styles.logo} src={"./img/montagnes-white.svg"}/>
 	        	{this.props.children}
+	        	<Footer/>
         	</div>
         )
     }

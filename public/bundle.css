@@ -1,70 +1,78 @@
-._client_components_css_app__app p, h1, h2,h3, a {
-	color: white;
-	text-decoration: none;
-}
-._client_components_css_app__head {
-}
-
 ._client_components_css_app__logo{
 	left: 30%;
 	width: 15%;
-	max-width: 200px;
-	min-width: 100px;
+	top: 5px;
+	width: 150px;
 	position: absolute;
-	opacity: 0.8;
+	opacity: 1;
 	margin-bottom: 0px;
-}._client_components_css_human__head {
-	text-align: left;
-	margin-left: 40%;
+}._client_components_css_human__hide {
+	opacity: 0;
+	visibility: hidden;
 }
+
 ._client_components_css_human__headHuman {
 	text-align: left;
 }
 
 ._client_components_css_human__logo{
-	transform: translate(-100%,0);
-	transition: 1s ease-in-out;
+	left: 30%;
 	width: 15%;
-	max-width: 200px;
+	top: 5px;
+	width: 150px;
 	position: absolute;
-	opacity: 0.1;
+	opacity: 1;
+	margin-bottom: 0px;
 	z-index: -1;
+}
+
+._client_components_css_human__logo{
+	left: 20px;
+	transition: 1s ease-in-out;
 	margin-bottom: 0px;
 }
-._client_components_css_human__head {
-	width: 50%;
-	padding-right: 100px;
+
+._client_components_css_human__head { 
+	position: absolute;
+	margin-left: 170px;
+	top: 20px;
+	max-width: 300px;
+	min-width: 200px;
 	-webkit-animation-delay: 0s;
     animation-delay: 0s;
 	-webkit-animation-name: _client_components_css_human__fadeIn;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 2s;
  	animation-name: _client_components_css_human__fadeIn;
-  	animation-duration: 3s;
+  	animation-duration: 2s;
   	opacity: 1 !important;
 }
 
-._client_components_css_human__nav._client_components_css_human__fadeIn {
-}
 
-._client_components_css_human__nav a {
-	min-width: 100px;
-	margin: 20px;
-	padding: 10px;
-}
-._client_components_css_human__hide {
-	opacity: 0;
-	visibility: hidden;
-}
+
 
 ._client_components_css_human__nav {
+	position: absolute;
+	max-width: 300px;
+	right: 20px;
+	top: 20px;
 	text-align: center;
-	padding: none;
 	-webkit-animation-name: _client_components_css_human__fadeIn;
     -webkit-animation-duration: 1s;
  	animation-name: _client_components_css_human__fadeIn;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
+}
+._client_components_css_human__nav a {
+	opacity: 0.5;
+	min-width: 100px;
+	margin: 20px;
+	padding: 10px;
+}
+._client_components_css_human__nav a:hover {
+	opacity: 1;
+	-ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;  
 }
 
 @-webkit-keyframes _client_components_css_human__fadeIn { 
@@ -85,11 +93,11 @@
   100% { opacity: 1; }
 }
 
-._client_components_css_human__who {
-	margin-top: 50px;
-	position: absolute;
-	left: 30%;
+._client_components_css_human__center {
+	margin-top: 20%;
+	margin-left: 30%;
 	width: 50%;
+	height: auto;
 	padding: none;
 	-webkit-animation-name: _client_components_css_human__fadeIn;
     -webkit-animation-duration: 1s;
@@ -100,7 +108,20 @@
 }
 ._client_components_css_human__who h2 {
 	margin: 0px;
+	margin-left: 100px;
+	opacity: 0;
 }
+
+._client_components_css_human__who h2 {
+	margin-left: 0px;
+	opacity: 1;
+	-ms-transition: all 3s ease-out;  /* IE10 */
+    transition: all 3s ease-out;  
+}
+
+
+
+
 ._client_components_css_human__whoCol{
 	display: inline-block;
 	text-align: box;
@@ -114,29 +135,39 @@
 	height: 150px;
 	width: 150px;
 	opacity: 0.5;
-	top: 0%;
-	right: 5%;
+	top: 25%;
+	right: 30%;
 	z-index: -1;
 	position: absolute;
 	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
 	background-size: cover;
 }
+._client_components_css_human__tile {
+	display: block;
+    width: 200px;
+    height: 150px;
+    float: left;
+    background: red;
+}
 ._client_components_css_human__socialButtons {
+	max-width
+	color: white;
 	text-align: left;
-	margin-top: 250px;
-	height: 200px;
+	margin-top: 20px;
+	height: 50px;
 	text-align: center;
 }
 ._client_components_css_human__socialButtons a {
-	opacity: 0.1;
+	opacity: 0.5;
 	height: 100px;
-	color: black;
-	margin: 5px 5%;
+	margin: 5px 10px;
 }
 ._client_components_css_human__socialButtons a:hover {
 	opacity: 1;
-	transition: opacity 0.4s
+	-ms-transition: all 0.2s ease-out; 
+	transition: all 0.2s ease-out;
 }
+
 ._client_components_css_code__monotype {
 	font-family: 'Roboto Mono', monospace;
 	color: white;
@@ -183,7 +214,7 @@ margin-left: 10%;
 	z-index: -1;
 }
 ._client_components_css_landing__bgRight{
-	width: 110%;
+	width: 100%;
 	height: 80%;
 	left: -20%;
 	position: absolute;
@@ -191,6 +222,7 @@ margin-left: 10%;
 	opacity: 0.1;
 	z-index: -1;
 }
+
 ._client_components_css_landing__nav {
 	margin-top: 50px;
 
@@ -206,11 +238,20 @@ margin-left: 10%;
 	display: inline-block;
 	min-width: 400px;
 	max-width: 600px;
+
 }
 ._client_components_css_landing__socialButtons a {
 	height: 100px;
 	margin: 5px 5%;
-}._client_components_css_prompt__blink {
+	opacity: 0.5;
+}
+._client_components_css_landing__socialButtons a:hover {
+	opacity: 1;
+	-ms-transition: all 0.2s ease-out; 
+	transition: all 0.2s ease-out
+}
+
+._client_components_css_prompt__blink {
  animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
   -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
 }
@@ -234,4 +275,44 @@ margin-left: 10%;
 ._client_components_css_prompt__hideInput {
 	width: 0px;
 	border: none;
+}._client_components_css_nav__hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+._client_components_css_nav__nav {
+	position: absolute;
+	max-width: 300px;
+	right: 20px;
+	top: 20px;
+	text-align: center;
+	-webkit-animation-name: _client_components_css_nav__fadeIn;
+    -webkit-animation-duration: 1s;
+ 	animation-name: _client_components_css_nav__fadeIn;
+  	animation-duration: 1s;
+  	visibility: visible;
+  	opacity: 1;
+}
+._client_components_css_nav__nav a {
+	min-width: 100px;
+	margin: 20px;
+	padding: 10px;
+}
+
+@-webkit-keyframes _client_components_css_nav__fadeIn { 
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+@keyframes _client_components_css_nav__fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
 }

@@ -1,16 +1,9 @@
-.app p, h1, h2,h3, a {
-	color: white;
-	text-decoration: none;
-}
-.head {
-}
-
 .logo{
 	left: 30%;
 	width: 15%;
-	max-width: 200px;
-	min-width: 100px;
+	top: 5px;
+	width: 150px;
 	position: absolute;
-	opacity: 0.8;
+	opacity: 1;
 	margin-bottom: 0px;
 }
