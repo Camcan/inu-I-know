@@ -36,9 +36,11 @@ export default React.createClass({
         this.setState({menu: true})
     },
     render: function() {
+        var titleStyle = ""
         if (this.state.projects) {
             // this.setState({projects: this.props.db.projects })
             if (this.state.menu) {
+                    titleStyle = HumanStyles.myWork
                     this.state.pageContents = 
                         <div id="tiles">
                             {this.state.projects.map(project => (
@@ -46,12 +48,13 @@ export default React.createClass({
                             ))}
                         </div>
             } else {
+                titleStyle = HumanStyles.myWorkProject
                 this.state.pageContents =<Project title={this.state.project.title} description={this.state.project.desc} imgs={this.state.project.imgs} back={this.showMenu}/>
             }
         }
         return ( 
     		<div className={HumanStyles.center}>
-                <h2>My Work</h2>
+                <h2 className={titleStyle}>my work</h2>
                {this.state.pageContents}
                <h1 className={HumanStyles.bgTitle}>{this.state.title}</h1>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import HumanStyles from '../css/human.css'
+import Styles from '../css/human.css'
+import Back from '../icons/back.js'
 import {Link} from 'react-router'
 export default React.createClass({
      propTypes: {
@@ -17,10 +18,10 @@ export default React.createClass({
     render: function() {
         var project = this.props
         return ( 
-    		<div className={HumanStyles.center}>
-                <Link to="/human/work" onClick={this.props.back}>Back</Link>
+    		<div className={Styles.project}>
+                <Link className={Styles.backButton}to="/human/work" onClick={this.props.back}><Back/><span>go back</span></Link>
                 <div id="project">
-                    <p>{project.title}</p>
+                    <p className={Styles.projectTitle}>{project.title}</p>
                     <p>{project.description}</p>
                     <img src={"../../"+project.imgs[1]}/>
                 </div>

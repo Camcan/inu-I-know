@@ -27,7 +27,6 @@ var App = React.createClass({
 		} else {
 			Styles = AppStyles
 		}
-
         return ( 
         	<div id="app" className={AppStyles.app}>
 				<img className={Styles.logo} src={"./img/montagnes-white.svg"}/>

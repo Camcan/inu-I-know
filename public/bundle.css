@@ -54,7 +54,7 @@
 	position: absolute;
 	max-width: 300px;
 	right: 20px;
-	top: 20px;
+	top: 50px;
 	text-align: center;
 	-webkit-animation-name: _client_components_css_human__fadeIn;
     -webkit-animation-duration: 1s;
@@ -119,9 +119,6 @@
     transition: all 3s ease-out;  
 }
 
-
-
-
 ._client_components_css_human__whoCol{
 	display: inline-block;
 	text-align: box;
@@ -156,6 +153,50 @@
 	-ms-transition: opacity 0.3s ease-in-out; 
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
+}
+._client_components_css_human__myWork {
+	margin: 0;
+	margin-left:  0px;
+	 -ms-transition: margin-left 0.3s ease-in-out; 
+	transition: margin-left 0.3s ease-in-out;
+}
+._client_components_css_human__myWorkProject {
+	 -ms-transition: margin-left 0.3s ease-in-out; 
+	transition: margin-left 0.3s ease-in-out;
+	margin-left: -15%;
+}
+._client_components_css_human__project {
+	/*margin-top: -100px;*/
+}
+._client_components_css_human__projectTitle {
+	margin-right: 0px;
+	margin-top: -50px;
+	text-align: right;
+	font-size: 50px;
+ -ms-transition: margin-right 0.3s ease-in-out; 
+	transition: margin-right 0.3s ease-in-out;
+}
+._client_components_css_human__projectTitle {
+	margin-right: 50px;
+}
+._client_components_css_human__backButton {
+	margin-left: -15%;
+	padding-left: 50px;
+ -ms-transition: padding-left 0.3s ease-in-out; 
+	transition: padding-left 0.3s ease-in-out;
+}
+._client_components_css_human__backButton span {
+	opacity: 0;
+	-ms-transition: opacity 0.4s ease-in-out; 
+	transition: opacity 0.4s ease-in-out;
+}
+._client_components_css_human__backButton:hover {
+	padding-left: 0px;
+}
+
+._client_components_css_human__backButton:hover > span {
+	opacity: 1;
+	visibility: visible;
 }
 ._client_components_css_human__tile {
 	display: block;
@@ -310,7 +351,7 @@ margin-left: 10%;
 	position: absolute;
 	max-width: 300px;
 	right: 20px;
-	top: 20px;
+	top: 50px;
 	text-align: center;
 	-webkit-animation-name: _client_components_css_nav__fadeIn;
     -webkit-animation-duration: 1s;

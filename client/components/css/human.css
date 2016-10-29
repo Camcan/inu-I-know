@@ -46,7 +46,7 @@
 	position: absolute;
 	max-width: 300px;
 	right: 20px;
-	top: 20px;
+	top: 50px;
 	text-align: center;
 	-webkit-animation-name: fadeIn;
     -webkit-animation-duration: 1s;
@@ -111,9 +111,6 @@
     transition: all 3s ease-out;  
 }
 
-
-
-
 .whoCol{
 	display: inline-block;
 	text-align: box;
@@ -148,6 +145,50 @@
 	-ms-transition: opacity 0.3s ease-in-out; 
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
+}
+.myWork {
+	margin: 0;
+	margin-left:  0px;
+	 -ms-transition: margin-left 0.3s ease-in-out; 
+	transition: margin-left 0.3s ease-in-out;
+}
+.myWorkProject {
+	 -ms-transition: margin-left 0.3s ease-in-out; 
+	transition: margin-left 0.3s ease-in-out;
+	margin-left: -15%;
+}
+.project {
+	/*margin-top: -100px;*/
+}
+.projectTitle {
+	margin-right: 0px;
+	margin-top: -50px;
+	text-align: right;
+	font-size: 50px;
+ -ms-transition: margin-right 0.3s ease-in-out; 
+	transition: margin-right 0.3s ease-in-out;
+}
+.projectTitle {
+	margin-right: 50px;
+}
+.backButton {
+	margin-left: -15%;
+	padding-left: 50px;
+ -ms-transition: padding-left 0.3s ease-in-out; 
+	transition: padding-left 0.3s ease-in-out;
+}
+.backButton span {
+	opacity: 0;
+	-ms-transition: opacity 0.4s ease-in-out; 
+	transition: opacity 0.4s ease-in-out;
+}
+.backButton:hover {
+	padding-left: 0px;
+}
+
+.backButton:hover > span {
+	opacity: 1;
+	visibility: visible;
 }
 .tile {
 	display: block;
