@@ -8,12 +8,17 @@ import Home from './components/landing.jsx'
 import Who from './components/human/who.jsx'
 import AboutMe from './components/human/about.jsx'
 import Work from './components/human/work.jsx'
+import Project from './components/human/project.jsx'
 import AppStyles from './components/css/app.css'
 import HumanStyles from './components/css/human.css'
 import Footer from './components/footer.jsx'
+import DB from './db.json'
 
 var Styles
 var App = React.createClass({
+	loadProjects: function(){
+
+	},
     render: function() {
 		var route = this.props.routes[this.props.routes.length-1].path
 		console.log(route)
@@ -22,6 +27,7 @@ var App = React.createClass({
 		} else {
 			Styles = AppStyles
 		}
+
         return ( 
         	<div id="app" className={AppStyles.app}>
 				<img className={Styles.logo} src={"./img/montagnes-white.svg"}/>
@@ -36,12 +42,14 @@ ReactDOM.render(
 	<Router history={browserHistory}>
 	    <Route path="/" component={App}>
 		    <IndexRedirect to="home"/>
-		    <Route path="/home" component={Home}/>
-		    <Route path="/code" component={Code}/>
-		    <Route path="/human" component={Human}>
-		    	<Route path="/human/who" component={Who}/>
-		     	<Route path="/human/about" component={AboutMe}/>
-		     	<Route path="/human/work" component={Work}/>
+		    <Route name="home" path="/home" component={Home}/>
+		    <Route name="code" path="/code" component={Code}/>
+		    <Route name="human" path="/human" component={Human}>
+		    	<Route name="who" path="/human/who" component={Who}/>
+		     	<Route name="about" path="/human/about" component={AboutMe}/>
+		     	<Route name="work" path="/human/work" component={Work} db={DB}>
+		     		<Route name="project" path="/human/work/:title" handler={Work}/>
+		     	</Route>
 		    </Route>
 	    </Route>
  	</Router>,

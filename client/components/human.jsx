@@ -7,16 +7,24 @@ var navStyle = Styles.nav
 var hide = Styles.hide
 export default React.createClass({
 	componentDidMount: function(){
-		setTimeout(function(){document.getElementById("nav").className = navStyle;},2000);
 	},
     render: function() {
         return ( 
         	<div>
+		<script>
+		document.getElementById("content").addEventListener("click", function(e){
+       
+            console.log(this)
+       
+    	})
+    	</script>
 	        	<div style={{opacity: 0 + "!important"}}className={Styles.head}>
 		            <h1 >Cam; human</h1> 
 	            </div>
 	          <Nav/>
+	          <div id="content">
 	            {this.props.children}
+	            </div>
 	        </div>
         )
     }

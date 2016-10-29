@@ -1,5 +1,6 @@
 .logo {
-	width: 200px
+	width: 200px;
+	transition: 1s ease-in-out;
 }
 .logoCenter{
 	width: 200px;
