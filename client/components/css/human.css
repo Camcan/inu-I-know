@@ -6,7 +6,6 @@
 .headHuman {
 	text-align: left;
 }
-
 .logo{
 	left: 30%;
 	width: 15%;
@@ -17,13 +16,11 @@
 	margin-bottom: 0px;
 	z-index: -1;
 }
-
 .logo{
 	left: 20px;
 	transition: 1s ease-in-out;
 	margin-bottom: 0px;
 }
-
 .head { 
 	position: absolute;
 	margin-left: 170px;
@@ -38,10 +35,6 @@
   	animation-duration: 2s;
   	opacity: 1 !important;
 }
-
-
-
-
 .nav {
 	position: absolute;
 	max-width: 300px;
@@ -171,6 +164,11 @@
 .projectTitle {
 	margin-right: 50px;
 }
+.mainImage {
+	height: 100%;
+	width: 100%;
+}
+
 .backButton {
 	margin-left: -15%;
 	padding-left: 50px;

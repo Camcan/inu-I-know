@@ -4,7 +4,6 @@ import {Link} from 'react-router'
 import Prompt from './prompt.jsx'
 import CamObj from './cam-object.jsx'
 import Styles from './css/code.css'
-import Output from './output.jsx'
 import Nav from './nav.jsx'
 		// model={Binder.bindToState(this,"data","Employee.Contact.Email")}
 export default React.createClass({

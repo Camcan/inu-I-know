@@ -14,7 +14,6 @@
 ._client_components_css_human__headHuman {
 	text-align: left;
 }
-
 ._client_components_css_human__logo{
 	left: 30%;
 	width: 15%;
@@ -25,13 +24,11 @@
 	margin-bottom: 0px;
 	z-index: -1;
 }
-
 ._client_components_css_human__logo{
 	left: 20px;
 	transition: 1s ease-in-out;
 	margin-bottom: 0px;
 }
-
 ._client_components_css_human__head { 
 	position: absolute;
 	margin-left: 170px;
@@ -46,10 +43,6 @@
   	animation-duration: 2s;
   	opacity: 1 !important;
 }
-
-
-
-
 ._client_components_css_human__nav {
 	position: absolute;
 	max-width: 300px;
@@ -179,6 +172,11 @@
 ._client_components_css_human__projectTitle {
 	margin-right: 50px;
 }
+._client_components_css_human__mainImage {
+	height: 100%;
+	width: 100%;
+}
+
 ._client_components_css_human__backButton {
 	margin-left: -15%;
 	padding-left: 50px;
@@ -318,7 +316,55 @@ margin-left: 10%;
 	transition: all 0.2s ease-out
 }
 
-._client_components_css_prompt__blink {
+._client_components_css_nav__hide {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+._client_components_css_nav__nav {
+	position: absolute;
+	max-width: 300px;
+	right: 20px;
+	top: 50px;
+	text-align: center;
+	-webkit-animation-name: _client_components_css_nav__fadeIn;
+    -webkit-animation-duration: 1s;
+ 	animation-name: _client_components_css_nav__fadeIn;
+  	animation-duration: 1s;
+  	visibility: visible;
+  	opacity: 1;
+}
+._client_components_css_nav__nav a {
+	min-width: 100px;
+	margin: 20px;
+	padding: 10px;
+  opacity: 0.5;
+  -ms-transition: all 0.2s ease-out; 
+  transition: all 0.2s ease-out
+}
+
+._client_components_css_nav__nav a:hover {
+  opacity: 1;
+}
+
+@-webkit-keyframes _client_components_css_nav__fadeIn { 
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+@keyframes _client_components_css_nav__fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}._client_components_css_prompt__blink {
  animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
   -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
 }
@@ -342,44 +388,4 @@ margin-left: 10%;
 ._client_components_css_prompt__hideInput {
 	width: 0px;
 	border: none;
-}._client_components_css_nav__hide {
-  opacity: 0;
-  visibility: hidden;
-}
-
-._client_components_css_nav__nav {
-	position: absolute;
-	max-width: 300px;
-	right: 20px;
-	top: 50px;
-	text-align: center;
-	-webkit-animation-name: _client_components_css_nav__fadeIn;
-    -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_nav__fadeIn;
-  	animation-duration: 1s;
-  	visibility: visible;
-  	opacity: 1;
-}
-._client_components_css_nav__nav a {
-	min-width: 100px;
-	margin: 20px;
-	padding: 10px;
-}
-
-@-webkit-keyframes _client_components_css_nav__fadeIn { 
-  0% { opacity: 0; }
-  20% { opacity: 0; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
-  100% { opacity: 1; }
-}
-
-@keyframes _client_components_css_nav__fadeIn {
-  0% { opacity: 0; }
-  20% { opacity: 0; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
-  100% { opacity: 1; }
 }

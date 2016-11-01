@@ -22,8 +22,8 @@ export default React.createClass({
                 <Link className={Styles.backButton}to="/human/work" onClick={this.props.back}><Back/><span>go back</span></Link>
                 <div id="project">
                     <p className={Styles.projectTitle}>{project.title}</p>
+                    <div className={Styles.mainImage} style={{backgroundImage: "url(../../"+project.imgs[1] + ")"}}></div>
                     <p>{project.description}</p>
-                    <img src={"../../"+project.imgs[1]}/>
                 </div>
             </div>
         )
