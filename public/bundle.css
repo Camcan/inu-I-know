@@ -1,12 +1,4 @@
-._client_components_css_app__logo{
-	left: 30%;
-	width: 15%;
-	top: 5px;
-	width: 150px;
-	position: absolute;
-	opacity: 1;
-	margin-bottom: 0px;
-}._client_components_css_human__hide {
+._client_components_css_human__hide {
 	opacity: 0;
 	visibility: hidden;
 }
@@ -89,6 +81,7 @@
 ._client_components_css_human__center {
 	margin-top: 20%;
 	margin-left: 30%;
+	margin-bottom: 50px;
 	width: 50%;
 	height: auto;
 	padding: none;
@@ -159,26 +152,37 @@
 	margin-left: -15%;
 }
 ._client_components_css_human__project {
-	/*margin-top: -100px;*/
+	margin-top: -50px;
 }
 ._client_components_css_human__projectTitle {
-	margin-right: 0px;
-	margin-top: -50px;
+	margin: 0px;
 	text-align: right;
 	font-size: 50px;
- -ms-transition: margin-right 0.3s ease-in-out; 
+     -ms-transition: margin-right 0.3s ease-in-out; 
 	transition: margin-right 0.3s ease-in-out;
 }
-._client_components_css_human__projectTitle {
-	margin-right: 50px;
+._client_components_css_human__projectLinks {
+	text-align: right;
+	margin-bottom: 10px;
+	height: 50px;
+	opacity: 0.5;
+	-ms-transition: opacity 0.2s ease-out; 
+	transition: opacity 0.2s ease-out
+}
+._client_components_css_human__projectLinks p {
+	margin-top: 0px;
+}
+._client_components_css_human__projectLinks:hover {
+	opacity: 1;
 }
 ._client_components_css_human__mainImage {
 	height: 100%;
 	width: 100%;
 }
-
 ._client_components_css_human__backButton {
-	margin-left: -15%;
+	position: absolute;
+	margin-left: -10%;
+	margin-top: 50px;
 	padding-left: 50px;
  -ms-transition: padding-left 0.3s ease-in-out; 
 	transition: padding-left 0.3s ease-in-out;
@@ -195,6 +199,10 @@
 ._client_components_css_human__backButton:hover > span {
 	opacity: 1;
 	visibility: visible;
+}
+._client_components_css_human__tiles {
+	width: 700px;
+	white-space: nowrap;
 }
 ._client_components_css_human__tile {
 	display: block;
@@ -232,7 +240,15 @@
 	transition: all 0.2s ease-out;
 }
 
-._client_components_css_code__monotype {
+._client_components_css_app__logo{
+	left: 30%;
+	width: 15%;
+	top: 5px;
+	width: 150px;
+	position: absolute;
+	opacity: 1;
+	margin-bottom: 0px;
+}._client_components_css_code__monotype {
 	font-family: 'Roboto Mono', monospace;
 	color: white;
 	background-color: black;
@@ -316,7 +332,31 @@ margin-left: 10%;
 	transition: all 0.2s ease-out
 }
 
-._client_components_css_nav__hide {
+._client_components_css_prompt__blink {
+ animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes _client_components_css_prompt__blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes _client_components_css_prompt__blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+._client_components_css_prompt__hide {
+	visibility: hidden;
+}
+
+._client_components_css_prompt__hideInput {
+	width: 0px;
+	border: none;
+}._client_components_css_nav__hide {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -364,28 +404,22 @@ margin-left: 10%;
   60% { opacity: 0.5; }
   80% { opacity: 0.9; }
   100% { opacity: 1; }
-}._client_components_css_prompt__blink {
- animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
-  -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
+}._client_components_css_projectLinks__projectLinks {
+	text-align: right;
+	margin-bottom: 10px;
+	height: 50px;
+	color: white;
 }
-
-@keyframes _client_components_css_prompt__blink-animation {
-  to {
-    visibility: hidden;
-  }
+._client_components_css_projectLinks__projectLink {
+	display: inline-block;
+	float: right;
+	clear: both;
+	max-width: 200px;
+	opacity: 0.5;
+	-ms-transition: opacity 0.2s ease-out; 
+	transition: opacity 0.2s ease-out;
+ 	margin: 0px;
 }
-
-@-webkit-keyframes _client_components_css_prompt__blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-._client_components_css_prompt__hide {
-	visibility: hidden;
-}
-
-._client_components_css_prompt__hideInput {
-	width: 0px;
-	border: none;
+._client_components_css_projectLinks__projectLink:hover {
+	opacity: 1;
 }

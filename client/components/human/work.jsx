@@ -42,14 +42,21 @@ export default React.createClass({
             if (this.state.menu) {
                     titleStyle = HumanStyles.myWork
                     this.state.pageContents = 
-                        <div id="tiles">
+                        <div className={HumanStyles.tiles}>
                             {this.state.projects.map(project => (
                                 <Link to={`/human/work/${project.title}`}><Tile project={project} passTitle={this.mouseoverTile} select={this.selectProject}/></Link>
                             ))}
                         </div>
             } else {
                 titleStyle = HumanStyles.myWorkProject
-                this.state.pageContents =<Project title={this.state.project.title} description={this.state.project.desc} imgs={this.state.project.imgs} back={this.showMenu}/>
+                this.state.pageContents = <Project 
+                                            title={this.state.project.title}
+                                            description={this.state.project.desc}
+                                            imgs={this.state.project.imgs}
+                                            github={this.state.project.link.github}
+                                            live={this.state.project.link.live}
+                                            back={this.showMenu}
+                                        />
             }
         }
         return ( 

@@ -1,14 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Styles from '../css/human.css'
+import Links from './projectLinks.jsx'
 import Back from '../icons/back.js'
+import Web from '../icons/earth.js'
+import Github from '../icons/github.js'
 import {Link} from 'react-router'
 export default React.createClass({
      propTypes: {
             back: React.PropTypes.func,
             title: React.PropTypes.string,
             description: React.PropTypes.string,
-            imgs: React. PropTypes.array
+            imgs: React. PropTypes.array,
+            live: React.PropTypes.string,
+            github: React.PropTypes.string
     },
 	clickTile: function(title){
 		this.setState({project: title})
@@ -22,7 +27,8 @@ export default React.createClass({
                 <Link className={Styles.backButton}to="/human/work" onClick={this.props.back}><Back/><span>go back</span></Link>
                 <div id="project">
                     <p className={Styles.projectTitle}>{project.title}</p>
-                    <div className={Styles.mainImage} style={{backgroundImage: "url(../../"+project.imgs[1] + ")"}}></div>
+                    <Links github={project.github} live={project.live}/>
+                    <img className={Styles.mainImage} src={"../../" + project.imgs[1]}/>
                     <p>{project.description}</p>
                 </div>
             </div>

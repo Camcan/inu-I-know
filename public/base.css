@@ -8,6 +8,11 @@ html {
     position: relative;
 }
 
+p, h1, h2,h3, a {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	text-decoration: none;
+}
 
 body {
 	margin: 0px;
@@ -46,9 +51,11 @@ body {
 #footer > .right {
 	right: 50px;
 }
-
-p, h1, h2,h3, a {
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	text-decoration: none;
+.highlight {
+	opacity: 0.5;
+	-ms-transition: opacity 0.2s ease-out; 
+	transition: opacity 0.2s ease-out
+}
+.highlight:hover {
+	opacity: 1;
 }

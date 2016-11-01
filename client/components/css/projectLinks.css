@@ -1,0 +1,19 @@
+.projectLinks {
+	text-align: right;
+	margin-bottom: 10px;
+	height: 50px;
+	color: white;
+}
+.projectLink {
+	display: inline-block;
+	float: right;
+	clear: both;
+	max-width: 200px;
+	opacity: 0.5;
+	-ms-transition: opacity 0.2s ease-out; 
+	transition: opacity 0.2s ease-out;
+ 	margin: 0px;
+}
+.projectLink:hover {
+	opacity: 1;
+}

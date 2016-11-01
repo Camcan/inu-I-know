@@ -81,6 +81,7 @@
 .center {
 	margin-top: 20%;
 	margin-left: 30%;
+	margin-bottom: 50px;
 	width: 50%;
 	height: auto;
 	padding: none;
@@ -151,26 +152,37 @@
 	margin-left: -15%;
 }
 .project {
-	/*margin-top: -100px;*/
+	margin-top: -50px;
 }
 .projectTitle {
-	margin-right: 0px;
-	margin-top: -50px;
+	margin: 0px;
 	text-align: right;
 	font-size: 50px;
- -ms-transition: margin-right 0.3s ease-in-out; 
+     -ms-transition: margin-right 0.3s ease-in-out; 
 	transition: margin-right 0.3s ease-in-out;
 }
-.projectTitle {
-	margin-right: 50px;
+.projectLinks {
+	text-align: right;
+	margin-bottom: 10px;
+	height: 50px;
+	opacity: 0.5;
+	-ms-transition: opacity 0.2s ease-out; 
+	transition: opacity 0.2s ease-out
+}
+.projectLinks p {
+	margin-top: 0px;
+}
+.projectLinks:hover {
+	opacity: 1;
 }
 .mainImage {
 	height: 100%;
 	width: 100%;
 }
-
 .backButton {
-	margin-left: -15%;
+	position: absolute;
+	margin-left: -10%;
+	margin-top: 50px;
 	padding-left: 50px;
  -ms-transition: padding-left 0.3s ease-in-out; 
 	transition: padding-left 0.3s ease-in-out;
@@ -187,6 +199,10 @@
 .backButton:hover > span {
 	opacity: 1;
 	visibility: visible;
+}
+.tiles {
+	width: 700px;
+	white-space: nowrap;
 }
 .tile {
 	display: block;
