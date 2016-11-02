@@ -1,9 +1,9 @@
 {
 	"projects": [
 	    {
-	      "title": "Old Personal Site",
-	      "suffix": ".old",
-	      "desc": "Basic front end interface using jQuery, HTML5 & CSS3",
+	      "title": "ThisSite",
+	      "suffix": ".this",
+	      "desc": ["What I've used to create this site.", "I gained a lot of experience helping people work through problems while acting as a teacher-aide at Enspiral Dev Academy, where React/Redux are now core to the carriculum. In spite of my apparent fluency, I've found limited oppertunity to make use of the technologies myself. This has been a space for me to play further vanilla ReactJS and modular CSS while re-upping my web-presence."],
 	       "tech": ["jQuery", "HTML5", "CSS3"],
 	       "link": {
 	       	"live": "http://camcan.github.io/in-color.html",
@@ -13,7 +13,7 @@
 	    {
 	      "title": "ApexArt",
 	      "suffix": ".apex-art",
-	      "desc": "Mobile-first portfolio site for designer Bella Cole. This is still in development.",
+	      "desc": ["Mobile-first portfolio site for designer Bella Cole. This is still in development."],
 	       "tech": ["Angular", "Browserify", "HTML5", "CSS3"],
 	       "link": {
 	       	"live": "http://apexart.github.io",
@@ -25,7 +25,7 @@
 	      "title": "bookit",
 	      "subtitle": "Because why talk to people?",
 	      "suffix": ".book-it",
-	      "desc": "Driven by our own experiences of 'hell' while work in the hospitality industry, where in even the most pristegious of establishments, bookings are often handled by voice-call, pen, & paper. BookIt eliminates the limitless possibility for human error through a succulent web-app. The service allows resteraunteurs to allocate tables/seating to automated booking, and users to search through vacant tables as a location-based service. I worked together with Zachary Landes ( zacharylandes.github.io ) in creating the front-end of the service during our final project for Enspiral Dev Academy's bootcamp. Book It, because why talk to people.",
+	      "desc": ["Responsive web-app allowing resteraunts and prospective diners to automate their booking process.", "Driven by our own experiences of 'hell' while work in the hospitality industry, where in even the most pristegious of establishments, bookings are often handled by voice-call, pen, & paper. BookIt eliminates the limitless possibility for human error through a succulent web-app. The service allows resteraunteurs to allocate tables/seating to automated booking, and users to search through vacant tables as a location-based service. I worked together with Zachary Landes ( zacharylandes.github.io ) in creating the front-end of the service during our final project for Enspiral Dev Academy's bootcamp. Book It, because why talk to people."],
 	      "link": {
 	       	"live":"http://ruru-2015.github.io/book-it-client-frontend",
 	       	"github":"https://github.com/ruru-2015/book-it-client-frontend"

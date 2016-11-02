@@ -10,7 +10,7 @@ export default React.createClass({
      propTypes: {
             back: React.PropTypes.func,
             title: React.PropTypes.string,
-            description: React.PropTypes.string,
+            description: React.PropTypes.array,
             imgs: React. PropTypes.array,
             live: React.PropTypes.string,
             github: React.PropTypes.string
@@ -29,7 +29,7 @@ export default React.createClass({
                     <p className={Styles.projectTitle}>{project.title}</p>
                     <Links github={project.github} live={project.live}/>
                     <img className={Styles.mainImage} src={"../../" + project.imgs[1]}/>
-                    <p>{project.description}</p>
+                    <p>{project.description[1]}</p>
                 </div>
             </div>
         )
