@@ -31,7 +31,7 @@ export default React.createClass({
 					<h1>Campbell Hawkes</h1>
 					<h2>web developer</h2>
 				</div>
-				<div className={Styles.nav  "highlight"}>
+				<div className={Styles.nav + " highlight"}>
 					<Link to="/code" >{"<Code/>"}</Link>
 				    <Link to="/human/who">human</Link>
 			    </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Styles from '../css/human.css'
+import Styles from '../css/work.css'
 import Links from './projectLinks.jsx'
 import Back from '../icons/back.js'
 import Web from '../icons/earth.js'

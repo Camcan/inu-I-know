@@ -8,7 +8,7 @@ var hide = Styles.hide
 export default React.createClass({
 
 	componentDidMount: function(){
-		setTimeout(function(){document.getElementById("nav").className = navStyle;},2000);
+		setTimeout(function(){document.getElementById("nav").className = navStyle + " highlight";},2000);
 	},
     render: function() {
     	if (this.props.home == true) {

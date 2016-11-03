@@ -30,15 +30,6 @@ body {
     right: 0;
     height: 50px;
 }
-#footer a {
-	padding: 20px;
-	opacity: 0.5;
-}
-#footer a:hover {
-	opacity: 1;
-	-ms-transition: all 0.2s ease-out; 
-	transition: all 0.2s ease-out
-}
 #footer div {
 	position: absolute;
 	max-width: 200px;
@@ -51,11 +42,11 @@ body {
 #footer > .right {
 	right: 50px;
 }
-.highlight {
-	opacity: 0.5;
-	-ms-transition: opacity 0.2s ease-out; 
-	transition: opacity 0.2s ease-out
+.highlight a {
+	opacity: 0.7;
+	-ms-transition: opacity 0.1s ease-out; 
+	transition: opacity 0.1s ease-out
 }
-.highlight:hover {
+.highlight a:hover {
 	opacity: 1;
 }

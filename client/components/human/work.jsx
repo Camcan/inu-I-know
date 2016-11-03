@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import {Link} from 'react-router'
 import Tile from './tile.jsx'
 import Project from './project.jsx'
-import HumanStyles from '../css/human.css'
+import Styles from '../css/work.css'
 import DB from '../../db.json'
 
 export default React.createClass({
@@ -40,15 +40,15 @@ export default React.createClass({
         if (this.state.projects) {
             // this.setState({projects: this.props.db.projects })
             if (this.state.menu) {
-                    titleStyle = HumanStyles.myWork
-                    this.state.pageContents = 
-                        <div className={HumanStyles.tiles}>
-                            {this.state.projects.map(project => (
-                                <Link to={`/human/work/${project.title}`}><Tile project={project} passTitle={this.mouseoverTile} select={this.selectProject}/></Link>
-                            ))}
-                        </div>
+                titleStyle = Styles.myWork
+                this.state.pageContents = 
+                    <div className={Styles.tiles}>
+                        {this.state.projects.map(project => (
+                            <Link to={`/human/work/${project.title}`}><Tile project={project} passTitle={this.mouseoverTile} select={this.selectProject}/></Link>
+                        ))}
+                    </div>
             } else {
-                titleStyle = HumanStyles.myWorkProject
+                titleStyle = Styles.myWorkProject
                 this.state.pageContents = <Project 
                                             title={this.state.project.title}
                                             description={this.state.project.desc}
@@ -60,10 +60,10 @@ export default React.createClass({
             }
         }
         return ( 
-    		<div className={HumanStyles.center}>
+    		<div className={Styles.center}>
                 <h2 className={titleStyle}>my work</h2>
                {this.state.pageContents}
-               <h1 className={HumanStyles.bgTitle}>{this.state.title}</h1>
+               <h1 className={Styles.bgTitle}>{this.state.title}</h1>
             </div>
         )
     }

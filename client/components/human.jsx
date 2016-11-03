@@ -20,8 +20,8 @@ export default React.createClass({
     	</script>
 	        	<div style={{opacity: 0 + "!important"}}className={Styles.head}>
 		            <h1 >Cam; human</h1> 
+		          <Nav/>
 	            </div>
-	          <Nav/>
 	          <div id="content">
 	            {this.props.children}
 	            </div>

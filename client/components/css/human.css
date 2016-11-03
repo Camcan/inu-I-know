@@ -20,11 +20,10 @@
 	transition: 1s ease-in-out;
 }
 .head { 
-	position: absolute;
-	margin-left: 170px;
+	position: fixed;
+	padding-left: 170px;
+	width: 100%;
 	top: 20px;
-	max-width: 300px;
-	min-width: 200px;
 	-webkit-animation-delay: 0s;
     animation-delay: 0s;
 	-webkit-animation-name: fadeIn;
@@ -32,6 +31,9 @@
  	animation-name: fadeIn;
   	animation-duration: 2s;
   	opacity: 1 !important;
+}
+.head h1 {
+	max-width: 300px;
 }
 
 @-webkit-keyframes fadeIn { 
@@ -99,89 +101,7 @@
 	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
 	background-size: cover;
 }
-.bgTitle {
-	opacity: 0;
-}
-.bgTitle {
-	left: 10%;
-	top: 20%;
-	font-size: 300px;
-	height: 0px;
-	margin: 0px;
-	position: absolute;
-	opacity: 0.08;
-	-ms-transition: opacity 0.3s ease-in-out; 
-	transition: opacity 0.3s ease-in-out;
-	z-index: -1;
-}
-.myWork {
-	margin: 0;
-	margin-left:  0px;
-	 -ms-transition: margin-left 0.3s ease-in-out; 
-	transition: margin-left 0.3s ease-in-out;
-}
-.myWorkProject {
-	 -ms-transition: margin-left 0.3s ease-in-out; 
-	transition: margin-left 0.3s ease-in-out;
-	margin-left: -15%;
-}
-.project {
-	margin-top: -50px;
-}
-.projectTitle {
-	margin: 0px;
-	text-align: right;
-	font-size: 50px;
-     -ms-transition: margin-right 0.3s ease-in-out; 
-	transition: margin-right 0.3s ease-in-out;
-}
 
-.mainImage {
-	height: 100%;
-	width: 100%;
-}
-.backButton {
-	position: absolute;
-	margin-left: -10%;
-	margin-top: 50px;
-	padding-left: 50px;
- -ms-transition: padding-left 0.3s ease-in-out; 
-	transition: padding-left 0.3s ease-in-out;
-}
-.backButton span {
-	opacity: 0;
-	-ms-transition: opacity 0.4s ease-in-out; 
-	transition: opacity 0.4s ease-in-out;
-}
-.backButton:hover {
-	padding-left: 0px;
-}
-
-.backButton:hover > span {
-	opacity: 1;
-	visibility: visible;
-}
-.tiles {
-	width: 700px;
-	white-space: nowrap;
-}
-.tile {
-	display: block;
-    width: 200px;
-    height: 150px;
-    float: left;
-	overflow: hidden;
-    background: red;
-    -ms-transition: all 0.2s ease-in-out; 
-	transition: all 0.2s ease-in-out;
-}
-.tile img {
-	overflow: none;
-}
-.tile:hover {
-	width: 250px;
-	height: 150px;
-}
 .socialButtons {
 	max-width
 	color: white;

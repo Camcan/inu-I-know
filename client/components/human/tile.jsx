@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import HumanStyles from '../css/human.css'
+import Styles from '../css/work.css'
 export default React.createClass({
     propTypes: {
             passTitle: React.PropTypes.func,
@@ -16,7 +16,7 @@ export default React.createClass({
     },
     render: function() {
         return (
-              <div id={this.props.title} className={HumanStyles.tile} onMouseEnter={this.handleMouseover} onClick={this.handleClick}>
+              <div id={this.props.title} className={Styles.tile} onMouseEnter={this.handleMouseover} onClick={this.handleClick}>
                     <img src={"../../"+this.props.project.imgs[0]}/>
                 </div>
         );
