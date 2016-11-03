@@ -31,8 +31,5 @@ export default React.createClass({
 					</a>
 			</div>
 		)
-
-		
-
 	}
 })

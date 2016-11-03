@@ -1,8 +1,15 @@
-._client_components_css_human__hide {
+._client_components_css_app__logo{
+	left: 30%;
+	width: 15%;
+	top: 5px;
+	width: 150px;
+	position: absolute;
+	opacity: 1;
+	margin-bottom: 0px;
+}._client_components_css_human__hide {
 	opacity: 0;
 	visibility: hidden;
 }
-
 ._client_components_css_human__headHuman {
 	text-align: left;
 }
@@ -19,7 +26,6 @@
 ._client_components_css_human__logo{
 	left: 20px;
 	transition: 1s ease-in-out;
-	margin-bottom: 0px;
 }
 ._client_components_css_human__head { 
 	position: absolute;
@@ -34,30 +40,6 @@
  	animation-name: _client_components_css_human__fadeIn;
   	animation-duration: 2s;
   	opacity: 1 !important;
-}
-._client_components_css_human__nav {
-	position: absolute;
-	max-width: 300px;
-	right: 20px;
-	top: 50px;
-	text-align: center;
-	-webkit-animation-name: _client_components_css_human__fadeIn;
-    -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_human__fadeIn;
-  	animation-duration: 1s;
-  	visibility: visible;
-  	opacity: 1;
-}
-._client_components_css_human__nav a {
-	opacity: 0.5;
-	min-width: 100px;
-	margin: 20px;
-	padding: 10px;
-}
-._client_components_css_human__nav a:hover {
-	opacity: 1;
-	-ms-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;  
 }
 
 @-webkit-keyframes _client_components_css_human__fadeIn { 
@@ -161,20 +143,7 @@
      -ms-transition: margin-right 0.3s ease-in-out; 
 	transition: margin-right 0.3s ease-in-out;
 }
-._client_components_css_human__projectLinks {
-	text-align: right;
-	margin-bottom: 10px;
-	height: 50px;
-	opacity: 0.5;
-	-ms-transition: opacity 0.2s ease-out; 
-	transition: opacity 0.2s ease-out
-}
-._client_components_css_human__projectLinks p {
-	margin-top: 0px;
-}
-._client_components_css_human__projectLinks:hover {
-	opacity: 1;
-}
+
 ._client_components_css_human__mainImage {
 	height: 100%;
 	width: 100%;
@@ -238,16 +207,6 @@
 	opacity: 1;
 	-ms-transition: all 0.2s ease-out; 
 	transition: all 0.2s ease-out;
-}
-
-._client_components_css_app__logo{
-	left: 30%;
-	width: 15%;
-	top: 5px;
-	width: 150px;
-	position: absolute;
-	opacity: 1;
-	margin-bottom: 0px;
 }._client_components_css_code__monotype {
 	font-family: 'Roboto Mono', monospace;
 	color: white;

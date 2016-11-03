@@ -13,9 +13,13 @@ export default React.createClass({
         		y = e.clientY
         	
         		console.log("X:", x, "Y: ", y)
-        	right.style.opacity =  x/view/2 
+        		if (x < view/2){
+		        	right.style.opacity =  x/view 
+        		} else {
+        			right.style.opacity = 1 - x/view
+        		}
         	right.style.left = (2*x/view - 1) + "%"
-        	left.style.opacity = (view-x)/view + 0.2
+        	// left.style.opacity = (view-x)/view + 0.2
   		}
     },
 	render: function(){ 
@@ -27,7 +31,7 @@ export default React.createClass({
 					<h1>Campbell Hawkes</h1>
 					<h2>web developer</h2>
 				</div>
-				<div className={Styles.nav}>
+				<div className={Styles.nav  "highlight"}>
 					<Link to="/code" >{"<Code/>"}</Link>
 				    <Link to="/human/who">human</Link>
 			    </div>

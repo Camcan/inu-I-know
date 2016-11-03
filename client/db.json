@@ -1,19 +1,31 @@
 {
 	"projects": [
 	    {
-	      "title": "ThisSite",
+	      "title": "This Site",
 	      "suffix": ".this",
 	      "desc": ["What I've used to create this site.", "I gained a lot of experience helping people work through problems while acting as a teacher-aide at Enspiral Dev Academy, where React/Redux are now core to the carriculum. In spite of my apparent fluency, I've found limited oppertunity to make use of the technologies myself. This has been a space for me to play further vanilla ReactJS and modular CSS while re-upping my web-presence."],
-	       "tech": ["jQuery", "HTML5", "CSS3"],
+	       "tech": ["React.js", "Express.js",  	"Modular CSS"],
 	       "link": {
-	       	"live": "http://camcan.github.io/in-color.html",
+	       	"github": "http://github.com/camcan/inu-i-know",
 	       },
-	      "imgs": ["img/human.jpg","img/old-site-screenshot.png", "img/old-site-screenshot.png"]
+	      "imgs": ["img/human.jpg","img/old-site-screenshot.png"]
+	    },
+	    {
+	    	"title": "Old Site",
+	    	"suffix": ".oldSite",
+	    	"desc": ["My previous website", "Here I emulated the most reliable and simple interface I know, the terminal, using AngularJS. As it turns out, this isn't the most appealing form of interface for a point-and-click website, however this was a fun little project and remains online as a landing page with my GitHub handle."],
+	    	"link": {
+	    		"live": "http://camcan.github.io",
+	    		"github": "http://github.com/camcan/camcan.github.io"
+	    	},
+	    	"tech": ["Angular.js"],
+	    	"imgs": ["img/old-site-tile.png", "img/old-site-desktop.png"]
+
 	    },
 	    {
 	      "title": "ApexArt",
-	      "suffix": ".apex-art",
-	      "desc": ["Mobile-first portfolio site for designer Bella Cole. This is still in development."],
+	      "suffix": ".apexArt",
+	      "desc": ["Mobile-first portfolio site for designer Bella Cole. This is still in development.", "This is a portfolio for designer and friend, Bella Cole. Built using AngularJS, I opted for a very simple, static setup, so that this can be adopted and further expanded on by the artist. While I did the initial development, this is an ongoing, collaborative project."],
 	       "tech": ["Angular", "Browserify", "HTML5", "CSS3"],
 	       "link": {
 	       	"live": "http://apexart.github.io",
@@ -24,13 +36,13 @@
 		{
 	      "title": "bookit",
 	      "subtitle": "Because why talk to people?",
-	      "suffix": ".book-it",
+	      "suffix": ".bookIt",
 	      "desc": ["Responsive web-app allowing resteraunts and prospective diners to automate their booking process.", "Driven by our own experiences of 'hell' while work in the hospitality industry, where in even the most pristegious of establishments, bookings are often handled by voice-call, pen, & paper. BookIt eliminates the limitless possibility for human error through a succulent web-app. The service allows resteraunteurs to allocate tables/seating to automated booking, and users to search through vacant tables as a location-based service. I worked together with Zachary Landes ( zacharylandes.github.io ) in creating the front-end of the service during our final project for Enspiral Dev Academy's bootcamp. Book It, because why talk to people."],
 	      "link": {
 	       	"live":"http://ruru-2015.github.io/book-it-client-frontend",
 	       	"github":"https://github.com/ruru-2015/book-it-client-frontend"
 	       },
-	       "tech": ["Rails", "Angular JS"],
+	       "tech": ["Rails", "Angular.js"],
 	      "imgs": ["img/bookit.jpg", "img/screenshot-book-it.png"]
 	    }
 	]
