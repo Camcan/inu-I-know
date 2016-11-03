@@ -5,10 +5,8 @@
 }
 
 .nav {
-	position: absolute;
-	max-width: 300px;
-	right: 250px;
-  top: 35px;
+  background: black;
+	width: 300px;
 	text-align: center;
 	-webkit-animation-name: fadeIn;
     -webkit-animation-duration: 1s;
@@ -17,6 +15,7 @@
   	visibility: visible;
   	opacity: 1;
 }
+
 .nav a {
 	min-width: 100px;
 	margin: 20px;
@@ -39,4 +38,12 @@
   60% { opacity: 0.5; }
   80% { opacity: 0.9; }
   100% { opacity: 1; }
+}
+
+@media screen and (min-width:   500px) {
+  .nav {
+    position: absolute;
+    right: 40px;
+    top: 35px;
+  }
 }

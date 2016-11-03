@@ -21,7 +21,6 @@
 }
 .head { 
 	position: fixed;
-	padding-left: 170px;
 	width: 100%;
 	top: 20px;
 	-webkit-animation-delay: 0s;
@@ -33,6 +32,7 @@
   	opacity: 1 !important;
 }
 .head h1 {
+	margin-left: 170px;
 	max-width: 300px;
 }
 

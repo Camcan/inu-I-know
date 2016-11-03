@@ -1,8 +1,7 @@
 .center {
-	margin-top: 20%;
-	margin-left: 30%;
+	margin-top: 200px;
+	margin-left: 20px;
 	margin-bottom: 50px;
-	width: 50%;
 	height: auto;
 	padding: none;
 	-webkit-animation-name: fadeIn;
@@ -61,20 +60,14 @@
 }
 .tile {
 	display: block;
-    width: 200px;
-    height: 150px;
+	width: 100px;
+	height: 50px;
     float: left;
 	overflow: hidden;
-    background: red;
-    -ms-transition: all 0.2s ease-in-out; 
-	transition: all 0.2s ease-in-out;
+    background: grey;
 }
 .tile img {
 	overflow: none;
-}
-.tile:hover {
-	width: 250px;
-	height: 150px;
 }
 .project {
 	margin-top: -50px;
@@ -111,4 +104,23 @@
 .backButton:hover > span {
 	opacity: 1;
 	visibility: visible;
+}
+
+@media screen and (min-width:   500px) {
+	.center {
+		width: 50%;
+		margin-top: 20%;
+		margin-left: 30%;
+	}
+	.tile {
+	  	width: 200px;
+	    height: 150px;
+	    -ms-transition: all 0.2s ease-in-out; 
+		transition: all 0.2s ease-in-out;
+	}
+	.tile:hover {
+		width: 250px;
+		height: 150px;
+	}
+
 }
