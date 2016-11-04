@@ -6,7 +6,7 @@
 
 .nav {
   background: black;
-	width: 300px;
+	width: 100%;
 	text-align: center;
 	-webkit-animation-name: fadeIn;
     -webkit-animation-duration: 1s;
@@ -40,8 +40,9 @@
   100% { opacity: 1; }
 }
 
-@media screen and (min-width:   500px) {
+@media screen and (min-width:   730px) {
   .nav {
+    width: 300px;
     position: absolute;
     right: 40px;
     top: 35px;

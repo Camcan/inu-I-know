@@ -55,7 +55,7 @@
 	z-index: -1;
 }
 .tiles {
-	width: 700px;
+	max-width: 300px;
 	white-space: nowrap;
 }
 .tile {
@@ -111,6 +111,9 @@
 		width: 50%;
 		margin-top: 20%;
 		margin-left: 30%;
+	}
+	.tiles {
+		max-width: 700px;;
 	}
 	.tile {
 	  	width: 200px;

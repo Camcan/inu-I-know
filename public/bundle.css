@@ -75,58 +75,6 @@
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
-}
-._client_components_css_human__who h2 {
-	margin: 0px;
-	margin-left: 100px;
-	opacity: 0;
-}
-
-._client_components_css_human__who h2 {
-	margin-left: 0px;
-	opacity: 1;
-	-ms-transition: all 3s ease-out;  /* IE10 */
-    transition: all 3s ease-out;  
-}
-
-._client_components_css_human__whoCol{
-	display: inline-block;
-	text-align: box;
-	width: 30%;
-	max-width: 200px;
-	padding: 0 5% 0;
-	min-width: 200px;
-}
-
-._client_components_css_human__profileImg {
-	height: 150px;
-	width: 150px;
-	opacity: 0.5;
-	top: 25%;
-	right: 30%;
-	z-index: -1;
-	position: absolute;
-	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
-	background-size: cover;
-}
-
-._client_components_css_human__socialButtons {
-	max-width
-	color: white;
-	text-align: left;
-	margin-top: 20px;
-	height: 50px;
-	text-align: center;
-}
-._client_components_css_human__socialButtons a {
-	opacity: 0.5;
-	height: 100px;
-	margin: 5px 10px;
-}
-._client_components_css_human__socialButtons a:hover {
-	opacity: 1;
-	-ms-transition: all 0.2s ease-out; 
-	transition: all 0.2s ease-out;
 }._client_components_css_code__monotype {
 	font-family: 'Roboto Mono', monospace;
 	color: white;
@@ -221,6 +169,93 @@ margin-left: 10%;
 		min-width: 400px;
 		max-width: 600px;
 	}
+}@-webkit-keyframes _client_components_css_who__fadeIn { 
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+@keyframes _client_components_css_who__fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+._client_components_css_who__center {
+	margin-top: 200px;
+	margin-bottom: 50px;
+	margin-right: 10px;
+	height: auto;
+	padding: none;
+	-webkit-animation-name: _client_components_css_who__fadeIn;
+    -webkit-animation-duration: 1s;
+ 	animation-name: _client_components_css_who__fadeIn;
+  	animation-duration: 1s;
+  	visibility: visible;
+  	opacity: 1;
+}
+._client_components_css_who__who h2 {
+	margin: 0px;
+	margin-left: 100px;
+	opacity: 0;
+}
+
+._client_components_css_who__who h2 {
+	margin-left: 0px;
+	opacity: 1;
+	-ms-transition: all 3s ease-out;  /* IE10 */
+    transition: all 3s ease-out;  
+}
+._client_components_css_who__whoCol{
+	display: inline-block;
+	text-align: box;
+	width: 30%;
+	max-width: 200px;
+	padding: 0 5% 0;
+	min-width: 200px;
+}
+._client_components_css_who__profileImg {
+	height: 150px;
+	width: 150px;
+	opacity: 0.5;
+	top: 25%;
+	right: 30%;
+	z-index: -1;
+	position: absolute;
+	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
+	background-size: cover;
+}
+._client_components_css_who__socialButtons {
+	max-width
+	color: white;
+	text-align: left;
+	margin-top: 20px;
+	height: 50px;
+	text-align: center;
+}
+._client_components_css_who__socialButtons a {
+	opacity: 0.5;
+	height: 100px;
+	margin: 5px 10px;
+}
+._client_components_css_who__socialButtons a:hover {
+	opacity: 1;
+	-ms-transition: all 0.2s ease-out; 
+	transition: all 0.2s ease-out;
+}
+
+@media screen and (min-width: 500px){
+	._client_components_css_who__center {
+		margin-top: 300px;
+		margin-left: 30%;
+		margin-bottom: 50px;
+		width: 50%;
+	}
 }._client_components_css_work__center {
 	margin-top: 200px;
 	margin-left: 20px;
@@ -278,7 +313,7 @@ margin-left: 10%;
 	z-index: -1;
 }
 ._client_components_css_work__tiles {
-	width: 700px;
+	max-width: 300px;
 	white-space: nowrap;
 }
 ._client_components_css_work__tile {
@@ -335,6 +370,9 @@ margin-left: 10%;
 		margin-top: 20%;
 		margin-left: 30%;
 	}
+	._client_components_css_work__tiles {
+		max-width: 700px;;
+	}
 	._client_components_css_work__tile {
 	  	width: 200px;
 	    height: 150px;
@@ -378,7 +416,7 @@ margin-left: 10%;
 
 ._client_components_css_nav__nav {
   background: black;
-	width: 300px;
+	width: 100%;
 	text-align: center;
 	-webkit-animation-name: _client_components_css_nav__fadeIn;
     -webkit-animation-duration: 1s;
@@ -412,8 +450,9 @@ margin-left: 10%;
   100% { opacity: 1; }
 }
 
-@media screen and (min-width:   500px) {
+@media screen and (min-width:   730px) {
   ._client_components_css_nav__nav {
+    width: 300px;
     position: absolute;
     right: 40px;
     top: 35px;
