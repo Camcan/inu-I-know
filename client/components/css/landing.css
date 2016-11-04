@@ -1,3 +1,7 @@
+.landing {
+	text-align: center;
+}
+
 .logo {
 	width: 200px;
 	transition: 1s ease-in-out;
@@ -5,12 +9,8 @@
 .logoCenter{
 	width: 200px;
 }
-.landing {
-	text-align: center;
-}
-.landing a {
-	text-decoration: none;
-	cursor: pointer;
+.title {
+	margin-top: 150px;
 }
 .bgLeft{
 	width: 100%;
@@ -35,17 +35,16 @@
 
 }
 .nav a {
-	min-width: 200px;
+	padding: 10px 20px;
 	max-width: 500px;
 	display: inline-block;
 }
 .socialButtons {
 	margin-top: 50px;
-	height: 200px;
+	height: 50px;
 	display: inline-block;
-	min-width: 400px;
-	max-width: 600px;
-
+	min-width: 200px;
+	max-width: 400px;
 }
 .socialButtons a {
 	height: 100px;
@@ -58,3 +57,15 @@
 	transition: all 0.2s ease-out
 }
 
+@media screen and (min-width: 500px) {
+	.title {
+		margin-top: 0px;
+	}
+	.nav a {
+		min-width: 200px;
+	}
+	.socialButtons {
+		min-width: 400px;
+		max-width: 600px;
+	}
+}

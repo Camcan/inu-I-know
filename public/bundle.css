@@ -151,19 +151,19 @@ margin-left: 10%;
 }
 ._client_components_css_code__socialButtons > a > svg {
 	viewBox: 0 0 60 60;
-}._client_components_css_landing__logo {
+}._client_components_css_landing__landing {
+	text-align: center;
+}
+
+._client_components_css_landing__logo {
 	width: 200px;
 	transition: 1s ease-in-out;
 }
 ._client_components_css_landing__logoCenter{
 	width: 200px;
 }
-._client_components_css_landing__landing {
-	text-align: center;
-}
-._client_components_css_landing__landing a {
-	text-decoration: none;
-	cursor: pointer;
+._client_components_css_landing__title {
+	margin-top: 150px;
 }
 ._client_components_css_landing__bgLeft{
 	width: 100%;
@@ -188,17 +188,16 @@ margin-left: 10%;
 
 }
 ._client_components_css_landing__nav a {
-	min-width: 200px;
+	padding: 10px 20px;
 	max-width: 500px;
 	display: inline-block;
 }
 ._client_components_css_landing__socialButtons {
 	margin-top: 50px;
-	height: 200px;
+	height: 50px;
 	display: inline-block;
-	min-width: 400px;
-	max-width: 600px;
-
+	min-width: 200px;
+	max-width: 400px;
 }
 ._client_components_css_landing__socialButtons a {
 	height: 100px;
@@ -211,7 +210,18 @@ margin-left: 10%;
 	transition: all 0.2s ease-out
 }
 
-._client_components_css_work__center {
+@media screen and (min-width: 500px) {
+	._client_components_css_landing__title {
+		margin-top: 0px;
+	}
+	._client_components_css_landing__nav a {
+		min-width: 200px;
+	}
+	._client_components_css_landing__socialButtons {
+		min-width: 400px;
+		max-width: 600px;
+	}
+}._client_components_css_work__center {
 	margin-top: 200px;
 	margin-left: 20px;
 	margin-bottom: 50px;

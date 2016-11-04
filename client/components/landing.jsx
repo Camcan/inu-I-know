@@ -27,7 +27,7 @@ export default React.createClass({
 			<div className={Styles.landing}>
 				<div id="bgleft" className={Styles.bgLeft}></div>
 				<div id="bgright" className={Styles.bgRight}></div>
-				<div id="title">            
+				<div className={Styles.title}>            
 					<h1>Campbell Hawkes</h1>
 					<h2>web developer</h2>
 				</div>
