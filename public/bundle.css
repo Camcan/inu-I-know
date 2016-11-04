@@ -78,35 +78,11 @@
 
 @media screen and (min-width: 500px){
 	._client_components_css_human__center {
-		margin-top: 300px;
+		margin-top: 270px;
 		margin-left: 30%;
 		margin-bottom: 50px;
 		width: 50%;
 	}
-}._client_components_css_code__monotype {
-	font-family: 'Roboto Mono', monospace;
-	color: white;
-	background-color: black;
-}
-._client_components_css_code__monotype a {
-	color: white;
-	text-decoration: none;
-}
-._client_components_css_code__indent1 {
-margin-left: 5%;
-}
-._client_components_css_code__indent2 {
-margin-left: 10%;
-}
-._client_components_css_code__socialButtons {
-	width: 100%;
-	max-width: ;
-}
-._client_components_css_code__socialButtons > a {
-	margin: 5%;
-}
-._client_components_css_code__socialButtons > a > svg {
-	viewBox: 0 0 60 60;
 }._client_components_css_landing__landing {
 	text-align: center;
 }
@@ -177,6 +153,30 @@ margin-left: 10%;
 		min-width: 400px;
 		max-width: 600px;
 	}
+}._client_components_css_code__monotype {
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+	background-color: black;
+}
+._client_components_css_code__monotype a {
+	color: white;
+	text-decoration: none;
+}
+._client_components_css_code__indent1 {
+margin-left: 5%;
+}
+._client_components_css_code__indent2 {
+margin-left: 10%;
+}
+._client_components_css_code__socialButtons {
+	width: 100%;
+	max-width: ;
+}
+._client_components_css_code__socialButtons > a {
+	margin: 5%;
+}
+._client_components_css_code__socialButtons > a > svg {
+	viewBox: 0 0 60 60;
 }@-webkit-keyframes _client_components_css_who__fadeIn { 
   0% { opacity: 0; }
   20% { opacity: 0; }
@@ -265,7 +265,8 @@ margin-left: 10%;
 		width: 50%;
 	}
 }._client_components_css_work__myWork {
-	margin: 0 0 0 50px;
+	position: fixed;
+	margin: -30px 0 0 50px;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 }
@@ -273,7 +274,7 @@ margin-left: 10%;
 	position: fixed;
 	-ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
-	margin-left: 0px;
+	margin: -30px 0 0 0;
 }
 ._client_components_css_work__bgTitle {
 	opacity: 0;
@@ -306,7 +307,7 @@ margin-left: 10%;
 	overflow: none;
 }
 ._client_components_css_work__project {
-	margin-top: -50px;
+	/*margin-top: -50px;*/
 }
 ._client_components_css_work__projectTitle {
 	margin: 0px;
@@ -321,10 +322,9 @@ margin-left: 10%;
 	width: 100%;
 }
 ._client_components_css_work__backButton {
-	position: absolute;
-	margin-left: -10%;
-	margin-top: 50px;
-	padding-left: 50px;
+	position: fixed;
+	margin-left: 10px;
+	margin-top: 0px;
  -ms-transition: padding-left 0.3s ease-in-out; 
 	transition: padding-left 0.3s ease-in-out;
 }
@@ -344,7 +344,7 @@ margin-left: 10%;
 		margin-left:  0px;
 	}
 	._client_components_css_work__myWorkProject {
-		margin-left: -15%;
+		margin-left: -150px;
 	}
 	._client_components_css_work__tiles {
 		margin-left: -50px;
@@ -360,6 +360,10 @@ margin-left: 10%;
 		width: 250px;
 		height: 150px;
 	}
+	._client_components_css_work__backButton {
+		padding-left: 50px;
+		margin-left: -140px;
+	}
 	._client_components_css_work__backButton:hover {
 		padding-left: 0px;
 	}
@@ -368,30 +372,6 @@ margin-left: 10%;
 		opacity: 1;
 		visibility: visible;
 	}
-}._client_components_css_prompt__blink {
- animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
-  -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
-}
-
-@keyframes _client_components_css_prompt__blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-@-webkit-keyframes _client_components_css_prompt__blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-._client_components_css_prompt__hide {
-	visibility: hidden;
-}
-
-._client_components_css_prompt__hideInput {
-	width: 0px;
-	border: none;
 }._client_components_css_nav__hide {
   position: absolute;
   opacity: 0;
@@ -441,6 +421,30 @@ margin-left: 10%;
     right: 40px;
     top: 35px;
   }
+}._client_components_css_prompt__blink {
+ animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes _client_components_css_prompt__blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes _client_components_css_prompt__blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+._client_components_css_prompt__hide {
+	visibility: hidden;
+}
+
+._client_components_css_prompt__hideInput {
+	width: 0px;
+	border: none;
 }._client_components_css_projectLinks__projectLinks {
 	text-align: right;
 	margin-bottom: 10px;
