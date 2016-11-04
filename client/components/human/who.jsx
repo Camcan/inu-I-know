@@ -7,8 +7,8 @@ import Styles from '../css/who.css'
 export default React.createClass({
     render: function() {
         return ( 
-        	<div className={Styles.center}>
-                    <h2>who?</h2>
+        	<div>
+                <h2>who?</h2>
                 <div className={Styles.whoCol}>
                     <p>Cam (Campbell Hawkes); 20, Web Developer</p>
                     <p>Completed the bootcamp provided by Enspiral Dev Academy, and have been doing stuff for and in agency with Enspiral for the past six months</p>

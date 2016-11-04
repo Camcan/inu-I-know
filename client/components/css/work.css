@@ -1,43 +1,13 @@
-.center {
-	margin-top: 200px;
-	margin-left: 20px;
-	margin-bottom: 50px;
-	height: auto;
-	padding: none;
-	-webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
- 	animation-name: fadeIn;
-  	animation-duration: 1s;
-  	visibility: visible;
-  	opacity: 1;
-}
-@-webkit-keyframes fadeIn { 
-  0% { opacity: 0; }
-  20% { opacity: 0; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
-  100% { opacity: 1; }
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  20% { opacity: 0; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
-  100% { opacity: 1; }
-}
 .myWork {
-	margin: 0;
-	margin-left:  0px;
+	margin: 0 0 0 50px;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 }
 .myWorkProject {
-	 -ms-transition: margin-left 0.3s ease-in-out; 
+	position: fixed;
+	-ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
-	margin-left: -15%;
+	margin-left: 0px;
 }
 .bgTitle {
 	opacity: 0;
@@ -48,7 +18,7 @@
 	font-size: 300px;
 	height: 0px;
 	margin: 0px;
-	position: absolute;
+	position: fixed;
 	opacity: 0.1;
 	-ms-transition: opacity 0.3s ease-in-out; 
 	transition: opacity 0.3s ease-in-out;
@@ -97,14 +67,6 @@
 	-ms-transition: opacity 0.4s ease-in-out; 
 	transition: opacity 0.4s ease-in-out;
 }
-.backButton:hover {
-	padding-left: 0px;
-}
-
-.backButton:hover > span {
-	opacity: 1;
-	visibility: visible;
-}
 
 @media screen and (min-width:   500px) {
 	.center {
@@ -112,8 +74,15 @@
 		margin-top: 20%;
 		margin-left: 30%;
 	}
+	.myWork {
+		margin-left:  0px;
+	}
+	.myWorkProject {
+		margin-left: -15%;
+	}
 	.tiles {
-		max-width: 700px;;
+		margin-left: -50px;
+		max-width: 1000px;;
 	}
 	.tile {
 	  	width: 200px;
@@ -125,5 +94,12 @@
 		width: 250px;
 		height: 150px;
 	}
+	.backButton:hover {
+		padding-left: 0px;
+	}
 
+	.backButton:hover > span {
+		opacity: 1;
+		visibility: visible;
+	}
 }

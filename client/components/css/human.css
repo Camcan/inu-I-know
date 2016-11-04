@@ -10,7 +10,7 @@
 	width: 15%;
 	top: 5px;
 	width: 150px;
-	position: absolute;
+	position: fixed;
 	opacity: 1;
 	margin-bottom: 0px;
 	z-index: -1;
@@ -36,6 +36,20 @@
 	max-width: 300px;
 }
 
+.center {
+	margin-top: 200px;
+	margin-bottom: 50px;
+	margin-right: 10px;
+	height: auto;
+	padding: none;
+	-webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+ 	animation-name: fadeIn;
+  	animation-duration: 1s;
+  	visibility: visible;
+  	opacity: 1;
+}
+
 @-webkit-keyframes fadeIn { 
   0% { opacity: 0; }
   20% { opacity: 0; }
@@ -54,17 +68,11 @@
   100% { opacity: 1; }
 }
 
-.center {
-	margin-top: 20%;
-	margin-left: 30%;
-	margin-bottom: 50px;
-	width: 50%;
-	height: auto;
-	padding: none;
-	-webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
- 	animation-name: fadeIn;
-  	animation-duration: 1s;
-  	visibility: visible;
-  	opacity: 1;
+@media screen and (min-width: 500px){
+	.center {
+		margin-top: 300px;
+		margin-left: 30%;
+		margin-bottom: 50px;
+		width: 50%;
+	}
 }

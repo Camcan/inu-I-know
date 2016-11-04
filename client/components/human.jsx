@@ -22,7 +22,7 @@ export default React.createClass({
 		            <h1 >Cam; human</h1> 
 		          <Nav/>
 	            </div>
-	          <div id="content">
+	          <div className={Styles.center}>
 	            {this.props.children}
 	            </div>
 	        </div>

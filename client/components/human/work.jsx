@@ -60,7 +60,7 @@ export default React.createClass({
             }
         }
         return ( 
-    		<div className={Styles.center}>
+    		<div>
                 <h2 className={titleStyle}>my work</h2>
                {this.state.pageContents}
                <h1 className={Styles.bgTitle}>{this.state.title}</h1>
