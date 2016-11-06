@@ -83,6 +83,30 @@
 		margin-bottom: 50px;
 		width: 50%;
 	}
+}._client_components_css_code__monotype {
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+	background-color: black;
+}
+._client_components_css_code__monotype a {
+	color: white;
+	text-decoration: none;
+}
+._client_components_css_code__indent1 {
+margin-left: 5%;
+}
+._client_components_css_code__indent2 {
+margin-left: 10%;
+}
+._client_components_css_code__socialButtons {
+	width: 100%;
+	max-width: ;
+}
+._client_components_css_code__socialButtons > a {
+	margin: 5%;
+}
+._client_components_css_code__socialButtons > a > svg {
+	viewBox: 0 0 60 60;
 }._client_components_css_landing__landing {
 	text-align: center;
 }
@@ -153,30 +177,6 @@
 		min-width: 400px;
 		max-width: 600px;
 	}
-}._client_components_css_code__monotype {
-	font-family: 'Roboto Mono', monospace;
-	color: white;
-	background-color: black;
-}
-._client_components_css_code__monotype a {
-	color: white;
-	text-decoration: none;
-}
-._client_components_css_code__indent1 {
-margin-left: 5%;
-}
-._client_components_css_code__indent2 {
-margin-left: 10%;
-}
-._client_components_css_code__socialButtons {
-	width: 100%;
-	max-width: ;
-}
-._client_components_css_code__socialButtons > a {
-	margin: 5%;
-}
-._client_components_css_code__socialButtons > a > svg {
-	viewBox: 0 0 60 60;
 }@-webkit-keyframes _client_components_css_who__fadeIn { 
   0% { opacity: 0; }
   20% { opacity: 0; }
@@ -372,6 +372,30 @@ margin-left: 10%;
 		opacity: 1;
 		visibility: visible;
 	}
+}._client_components_css_prompt__blink {
+ animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes _client_components_css_prompt__blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes _client_components_css_prompt__blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+._client_components_css_prompt__hide {
+	visibility: hidden;
+}
+
+._client_components_css_prompt__hideInput {
+	width: 0px;
+	border: none;
 }._client_components_css_nav__hide {
   position: absolute;
   opacity: 0;
@@ -421,30 +445,6 @@ margin-left: 10%;
     right: 40px;
     top: 35px;
   }
-}._client_components_css_prompt__blink {
- animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
-  -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
-}
-
-@keyframes _client_components_css_prompt__blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-@-webkit-keyframes _client_components_css_prompt__blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-._client_components_css_prompt__hide {
-	visibility: hidden;
-}
-
-._client_components_css_prompt__hideInput {
-	width: 0px;
-	border: none;
 }._client_components_css_projectLinks__projectLinks {
 	text-align: right;
 	margin-bottom: 10px;
