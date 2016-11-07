@@ -1,5 +1,6 @@
 .myWork {
-	margin: 0 0 0 50px;
+	position: fixed;
+	margin: -30px 0 0 50px;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 }
@@ -7,7 +8,7 @@
 	position: fixed;
 	-ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
-	margin-left: 0px;
+	margin: -30px 0 0 0;
 }
 .bgTitle {
 	opacity: 0;
@@ -40,7 +41,7 @@
 	overflow: none;
 }
 .project {
-	margin-top: -50px;
+	/*margin-top: -50px;*/
 }
 .projectTitle {
 	margin: 0px;
@@ -55,10 +56,9 @@
 	width: 100%;
 }
 .backButton {
-	position: absolute;
-	margin-left: -10%;
-	margin-top: 50px;
-	padding-left: 50px;
+	position: fixed;
+	margin-left: 10px;
+	margin-top: 0px;
  -ms-transition: padding-left 0.3s ease-in-out; 
 	transition: padding-left 0.3s ease-in-out;
 }
@@ -78,7 +78,7 @@
 		margin-left:  0px;
 	}
 	.myWorkProject {
-		margin-left: -15%;
+		margin-left: -150px;
 	}
 	.tiles {
 		margin-left: -50px;
@@ -93,6 +93,10 @@
 	.tile:hover {
 		width: 250px;
 		height: 150px;
+	}
+	.backButton {
+		padding-left: 50px;
+		margin-left: -140px;
 	}
 	.backButton:hover {
 		padding-left: 0px;

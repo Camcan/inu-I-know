@@ -23,7 +23,7 @@ export default React.createClass({
     render: function() {
         var project = this.props
         return ( 
-    		<div className={Styles.project}>
+    		<div>
                 <Link className={Styles.backButton}to="/human/work" onClick={this.props.back}><Back/><span>go back</span></Link>
                 <div id="project">
                     <p className={Styles.projectTitle}>{project.title}</p>

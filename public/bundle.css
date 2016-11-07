@@ -78,7 +78,7 @@
 
 @media screen and (min-width: 500px){
 	._client_components_css_human__center {
-		margin-top: 300px;
+		margin-top: 270px;
 		margin-left: 30%;
 		margin-bottom: 50px;
 		width: 50%;
@@ -265,7 +265,8 @@ margin-left: 10%;
 		width: 50%;
 	}
 }._client_components_css_work__myWork {
-	margin: 0 0 0 50px;
+	position: fixed;
+	margin: -30px 0 0 50px;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 }
@@ -273,7 +274,7 @@ margin-left: 10%;
 	position: fixed;
 	-ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
-	margin-left: 0px;
+	margin: -30px 0 0 0;
 }
 ._client_components_css_work__bgTitle {
 	opacity: 0;
@@ -306,7 +307,7 @@ margin-left: 10%;
 	overflow: none;
 }
 ._client_components_css_work__project {
-	margin-top: -50px;
+	/*margin-top: -50px;*/
 }
 ._client_components_css_work__projectTitle {
 	margin: 0px;
@@ -321,10 +322,9 @@ margin-left: 10%;
 	width: 100%;
 }
 ._client_components_css_work__backButton {
-	position: absolute;
-	margin-left: -10%;
-	margin-top: 50px;
-	padding-left: 50px;
+	position: fixed;
+	margin-left: 10px;
+	margin-top: 0px;
  -ms-transition: padding-left 0.3s ease-in-out; 
 	transition: padding-left 0.3s ease-in-out;
 }
@@ -344,7 +344,7 @@ margin-left: 10%;
 		margin-left:  0px;
 	}
 	._client_components_css_work__myWorkProject {
-		margin-left: -15%;
+		margin-left: -150px;
 	}
 	._client_components_css_work__tiles {
 		margin-left: -50px;
@@ -359,6 +359,10 @@ margin-left: 10%;
 	._client_components_css_work__tile:hover {
 		width: 250px;
 		height: 150px;
+	}
+	._client_components_css_work__backButton {
+		padding-left: 50px;
+		margin-left: -140px;
 	}
 	._client_components_css_work__backButton:hover {
 		padding-left: 0px;
