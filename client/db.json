@@ -8,7 +8,7 @@
 	       "link": {
 	       	"github": "http://github.com/camcan/inu-i-know",
 	       },
-	      "imgs": ["img/human.jpg","img/old-site-screenshot.png"]
+	      "imgs": ["img/this-tile.png","img/this-project.png"]
 	    },
 	    {
 	    	"title": "Old Site",
@@ -19,7 +19,7 @@
 	    		"github": "http://github.com/camcan/camcan.github.io"
 	    	},
 	    	"tech": ["Angular.js"],
-	    	"imgs": ["img/old-site-tile.png", "img/old-site-desktop.png"]
+	    	"imgs": ["img/old-site-tile.png", "img/old-site-output.gif"]
 
 	    },
 	    {
@@ -31,7 +31,7 @@
 	       	"live": "http://apexart.github.io",
 	       	"github": "https://github.com/ApexArt/apexart.github.io"
 	       },
-	      "imgs": ["img/apex-screenshot.png", "img/apex-screenshot-desktop.jpg", "img/apex-mobile-home.jpg", "img/apex-mobile-menu.jpg"]
+	      "imgs": ["img/apex-screenshot.png", "img/apex-project.jpg", "img/apex-mobile-home.jpg", "img/apex-mobile-menu.jpg"]
 	    },
 		{
 	      "title": "bookit",

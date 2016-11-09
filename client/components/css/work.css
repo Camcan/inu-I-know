@@ -38,7 +38,7 @@
     background: grey;
 }
 .tile img {
-	overflow: none;
+	min-height: 100px;
 }
 .project {
 	/*margin-top: -50px;*/
@@ -93,6 +93,9 @@
 	.tile:hover {
 		width: 250px;
 		height: 150px;
+	}
+	.tile img {
+		min-height: 150px;
 	}
 	.backButton {
 		padding-left: 50px;

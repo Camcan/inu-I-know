@@ -304,7 +304,7 @@ margin-left: 10%;
     background: grey;
 }
 ._client_components_css_work__tile img {
-	overflow: none;
+	min-height: 100px;
 }
 ._client_components_css_work__project {
 	/*margin-top: -50px;*/
@@ -359,6 +359,9 @@ margin-left: 10%;
 	._client_components_css_work__tile:hover {
 		width: 250px;
 		height: 150px;
+	}
+	._client_components_css_work__tile img {
+		min-height: 150px;
 	}
 	._client_components_css_work__backButton {
 		padding-left: 50px;
