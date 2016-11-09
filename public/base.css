@@ -24,6 +24,53 @@ body {
 	height: 100%;
 	background: black;
 }
+
+#loader-wrapper .section {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    z-index: 5;
+} 
+#loader-wrapper .section.left {
+    left: 0;
+}
+ 
+#loader-wrapper .section.right {
+    right: 0;
+}
+
+#loader-wrapper.loaded  .section {
+    -webkit-transition: all 0.3s 0.3s ease-out; 
+            transition: all 0.3s 0.3s ease-out;
+}
+
+#loader-wrapper.loaded  .section.right {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+#loader-wrapper.loaded .section.left {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+#loader {
+	z-index: 6;
+	position: absolute;
+	width: 20%;
+	top: 20%;
+}
+
+.loaded #loader {
+	opacity: 0;
+    visibility: hidden;
+	-webkit-transition: opacity 0.6s linear, visibility 0s 0.6s; 
+            transition: opacity 0.6s linear, visibility 0s 0.6s;
+}
+
 #app {
 	height: 100%;
 }
@@ -49,6 +96,9 @@ body {
 }
 
 @media screen and (min-width: 500px) {
+	#loader {
+		left: 40%;
+	}
 	#footer div {
 		position: absolute;
 		bottom: 20px;

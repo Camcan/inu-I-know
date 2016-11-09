@@ -22,6 +22,29 @@ var App = React.createClass({
     render: function() {
 		var route = this.props.routes[this.props.routes.length-1].path
 		console.log(route)
+		var checkLoad = setInterval(function() {
+	    	if (document.readyState === "complete") {
+	    		loader(0)
+	        	clearInterval(checkLoad)
+	    	}
+		}, 10)
+		function setProgress(amt){
+		  amt = (amt < 0) ? 0 : (amt > 1) ? 1 : amt;
+		  document.getElementById("stop1").setAttribute("offset", amt);
+		  document.getElementById("stop2").setAttribute("offset", amt);
+		}
+
+		loader(0)
+
+		function loader(e) {
+		  setProgress(e)
+		  e += 0.01
+		  if (e < 1) {
+		    setTimeout(loader, 10, e)
+		  } else {
+				document.getElementById('loader-wrapper').className = "loaded"
+		  }
+		}
 		if (route.includes("/human")){
 			Styles = HumanStyles
 		} else {
