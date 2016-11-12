@@ -26,8 +26,14 @@
 	z-index: -1;
 }
 .tiles {
+	opacity: 0;
 	max-width: 300px;
 	white-space: nowrap;
+}
+.tiles {
+	opacity: 1;
+	-ms-transition: opacity 1s ease-out;  /* IE10 */
+    transition: opacity 1s ease-out; 
 }
 .tile {
 	display: block;
@@ -41,6 +47,10 @@
 	min-height: 100px;
 }
 .project {
+	-webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+ 	animation-name: fadeIn;
+  	animation-duration: 1s;
 	/*margin-top: -50px;*/
 	overflow: hidden;
 	text-align: right;

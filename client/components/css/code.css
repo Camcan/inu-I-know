@@ -2,6 +2,8 @@
 	font-family: 'Roboto Mono', monospace;
 	color: white;
 	background-color: black;
+	padding-top: 50px;
+
 }
 .monotype a {
 	color: white;
@@ -22,4 +24,9 @@ margin-left: 10%;
 }
 .socialButtons > a > svg {
 	viewBox: 0 0 60 60;
+}
+@media screen and (min-width:   500px) {
+	.monotype {
+		padding-top: 50px;
+	}
 }
