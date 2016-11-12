@@ -29,7 +29,7 @@ export default React.createClass({
                     <p className={Styles.projectTitle}>{project.title}</p>
                     <Links github={project.github} live={project.live}/>
                     <img className={Styles.mainImage} src={"../../" + project.imgs[1]}/>
-                    <p>{project.description[1]}</p>
+                    <p className={Styles.descr}>{project.description[1]}</p>
                 </div>
             </div>
         )
