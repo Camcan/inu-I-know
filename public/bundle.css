@@ -1,12 +1,4 @@
-._client_components_css_app__logo{
-	left: 30%;
-	width: 15%;
-	top: 5px;
-	width: 150px;
-	position: absolute;
-	opacity: 1;
-	margin-bottom: 0px;
-}._client_components_css_human__hide {
+._client_components_css_human__hide {
 	opacity: 0;
 	visibility: hidden;
 }
@@ -83,6 +75,14 @@
 		margin-bottom: 50px;
 		width: 50%;
 	}
+}._client_components_css_app__logo{
+	left: 30%;
+	width: 15%;
+	top: 5px;
+	width: 150px;
+	position: absolute;
+	opacity: 1;
+	margin-bottom: 0px;
 }._client_components_css_code__monotype {
 	font-family: 'Roboto Mono', monospace;
 	color: white;
