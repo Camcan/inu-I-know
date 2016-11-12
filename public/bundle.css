@@ -312,6 +312,8 @@ margin-left: 10%;
 }
 ._client_components_css_work__project {
 	/*margin-top: -50px;*/
+	overflow: hidden;
+	text-align: right;
 }
 ._client_components_css_work__projectTitle {
 	margin: 0px;
@@ -322,8 +324,13 @@ margin-left: 10%;
 }
 
 ._client_components_css_work__mainImage {
-	height: 100%;
-	width: 100%;
+	height: auto;
+	margin-left: -40%;
+	width: 140%;
+}
+._client_components_css_work__descr {
+    text-align: right;
+	max-width: 100%;
 }
 ._client_components_css_work__backButton {
 	position: fixed;
@@ -340,7 +347,7 @@ margin-left: 10%;
 
 @media screen and (min-width:   500px) {
 	._client_components_css_work__center {
-		width: 50%;
+		width: 70%;
 		margin-top: 20%;
 		margin-left: 30%;
 	}
@@ -379,6 +386,24 @@ margin-left: 10%;
 		opacity: 1;
 		visibility: visible;
 	}
+	._client_components_css_work__projectTitle {
+		margin-right: 0px;
+	}	
+}
+@media screen and (min-width:   950px) {
+	._client_components_css_work__mainImage {
+		margin-left: 0;
+		width: 100%;
+	}
+	._client_components_css_work__descr {
+		position: absolute;
+	    top: 370px;
+	    left: 50px;
+	    max-width: 400px;
+	    padding: 20px;
+	    background: rgba(0,0,0, 0.5)
+	}	
+
 }._client_components_css_prompt__blink {
  animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
   -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
