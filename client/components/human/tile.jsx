@@ -17,7 +17,7 @@ export default React.createClass({
     render: function() {
         return (
               <div id={this.props.title} className={Styles.tile} onMouseEnter={this.handleMouseover} onClick={this.handleClick}>
-                    <img src={"../../"+this.props.project.imgs[0]}/>
+                    <img src={"../"+this.props.project.imgs[0]}/>
                 </div>
         );
     }

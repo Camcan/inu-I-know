@@ -77,7 +77,8 @@ body {
 #loader {
 	z-index: 6;
 	position: absolute;
-	width: 20%;
+  margin: auto auto;
+	width: auto;
 	top: 20%;
 }
 

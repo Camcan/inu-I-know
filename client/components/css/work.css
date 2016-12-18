@@ -41,7 +41,7 @@
 	height: 50px;
     float: left;
 	overflow: hidden;
-    background: grey;
+    background: none;
 }
 .tile img {
 	min-height: 100px;

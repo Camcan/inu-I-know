@@ -39,7 +39,7 @@
   "scripts": {
     "start": "node server.js",
     "watch": "watchify -p [css-modulesify -o public/bundle.css] client/app.js -o public/scripts/bundle.js -dv & nodemon server.js",
-    "bundle": "browserify client/app.js -o public/scripts/bundle.js",
+    "bundle": "browserify -p [css-modulesify -o public/bundle.css] client/app.js -o public/scripts/bundle.js",
     "test": "echo \"Ain't nobody got time for that.\" && exit 1"
   },
   "repository": {
