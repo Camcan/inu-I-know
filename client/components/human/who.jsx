@@ -14,11 +14,11 @@ export default React.createClass({
                     <p>Completed the bootcamp provided by Enspiral Dev Academy, and have been doing stuff for and in agency with Enspiral for the past six months</p>
                 </div>
                 <div className={Styles.whoCol}>
-        		      <div className={Styles.profileImg}></div>
                     <p>Enjoying life in Wellington while immersing myself in different environments.</p>
                     <p>Currently looking for a full-time position.</p>
                     <Social className={Styles.socialButtons}/>
                 </div>
+    		      <div className={Styles.profileImg}></div>
         	</div>
         )
     }

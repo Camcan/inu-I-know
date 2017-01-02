@@ -28,14 +28,14 @@
 	text-align: box;
 	width: 30%;
 	max-width: 200px;
-	padding: 0 5% 0;
+	padding: 0 0 0 5%;
 	min-width: 200px;
 }
 .profileImg {
 	height: 150px;
 	width: 150px;
 	opacity: 0.5;
-	top: 20%;
+	top: 5%;
 	right: 5%;
 	z-index: -1;
 	position: absolute;
@@ -67,8 +67,7 @@
 
 @media screen and (min-width: 500px){
 	.profileImg {
-		top: 25%;
-		right: 30%;
+		right: 20%;
 	}
 	.center {
 		margin-top: 300px;
