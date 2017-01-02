@@ -10,14 +10,14 @@ export default React.createClass({
 	},
     render: function() {
         return ( 
-        	<div>
-		<script>
-		document.getElementById("content").addEventListener("click", function(e){
-       
-            console.log(this)
-       
-    	})
-    	</script>
+	    	<div>
+				<script>
+				document.getElementById("content").addEventListener("click", function(e){
+		       
+		            console.log(this)
+		       
+		    	})
+		    	</script>
 	        	<div style={{opacity: 0 + "!important"}}className={Styles.head}>
 		            <h1 >Cam; human</h1> 
 		          <Nav/>

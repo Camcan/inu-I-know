@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.14.0",
+    "history": "^2.0.0",
     "react": "^15.3.2",
     "react-binding": "^0.7.5",
     "react-css-modules": "^3.7.10",

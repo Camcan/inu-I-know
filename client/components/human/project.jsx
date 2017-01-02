@@ -24,12 +24,12 @@ export default React.createClass({
         var project = this.props
         return ( 
     		<div>
-                <Link className={Styles.backButton}to="/human/work" onClick={this.props.back}><Back/><span>go back</span></Link>
+                <Link className={Styles.backButton}to="/work" onClick={this.props.back}><Back/><span>go back</span></Link>
                 <div id="project">
                     <p className={Styles.projectTitle}>{project.title}</p>
                     <Links github={project.github} live={project.live}/>
                     <img className={Styles.mainImage} src={"../../" + project.imgs[1]}/>
-                    <p>{project.description[1]}</p>
+                    <p className={Styles.descr}>{project.description[1]}</p>
                 </div>
             </div>
         )

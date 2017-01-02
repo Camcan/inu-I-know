@@ -17,9 +17,8 @@ export default React.createClass({
 	            	</div>
     	} else {
         return <div id="nav" className={hide}>
-			    	<Link to="/human/who">who?</Link>
-		    		<Link to="/human/work">my work</Link>
-	            	<Link to="/home">home</Link>
+			    	<Link to="/who">who?</Link>
+		    		<Link to="/work">my work</Link>
             	</div>
     	}
 }})
