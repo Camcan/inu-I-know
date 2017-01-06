@@ -6,7 +6,9 @@ import Back from './icons/back.js'
 var navStyle = Styles.nav
 var hide = Styles.hide
 export default React.createClass({
-
+	propTypes: {
+        transition: React.PropTypes.func
+    },
 	componentDidMount: function(){
 		setTimeout(function(){document.getElementById("nav").className = navStyle + " highlight";},2000);
 	},
@@ -17,8 +19,8 @@ export default React.createClass({
 	            	</div>
     	} else {
         return <div id="nav" className={hide}>
-			    	<Link to="/who">who?</Link>
-		    		<Link to="/work">my work</Link>
+			    	<Link onClick={() => this.props.transition()} to="/who">who?</Link>
+		    		<Link onClick={() => this.props.transition()} to="/work">my work</Link>
             	</div>
     	}
 }})

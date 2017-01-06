@@ -4,10 +4,14 @@ import { Router, Route, browserHistory, IndexRedirect, Link} from 'react-router'
 import Social from '../social-links.jsx'
 import Styles from '../css/who.css'
 
+var show = true
 export default React.createClass({
+    componentDidMount: function() {
+        show
+    },
     render: function() {
         return ( 
-        	<div>
+        	<div className={show}>
                 <h2>who?</h2>
                 <div className={Styles.whoCol}>
                     <p>Cam (Campbell Hawkes); 20, Web Developer</p>

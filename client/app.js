@@ -60,7 +60,7 @@ var App = React.createClass({
 
 const browserHistory = useRouterHistory(createHistory)({
       basename: '/de'
-});
+})
 
 ReactDOM.render( 
 	<Router history={browserHistory}>
