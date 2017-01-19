@@ -111,12 +111,16 @@ div {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    max-height:70px;
     text-align: center;
     overflow: visible;
 }
+
 #footer div {
-	margin: 20px;
+	margin: 0px;
+  max-height: 30px;
+  position: inline;
+  vertical-align: bottom;
 }
 .highlight a {
 	opacity: 0.7;
@@ -128,15 +132,17 @@ div {
 }
 
 @media screen and (min-width: 500px) {
+  #footer {
+     max-height:40px;
+  }
 	#footer div {
 		position: absolute;
     max-width: 200px;
-		bottom: 20px;
 	}
 	#footer > .left {
-		left: 50px;
+		left: 20px;
 	}
 	#footer > .right {
-		right: 50px;
+		right: 20px;
 	}
 }
