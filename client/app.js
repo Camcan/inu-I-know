@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, browserHistory, IndexRedirect, Link} from 'react-router'
+import { Router, Route, IndexRedirect, Link, useRouterHistory} from 'react-router'
+import { createHistory } from 'history'
 import CSSModules from 'react-css-modules'
 import Code from './components/code.jsx'
 import Human from './components/human.jsx'
@@ -45,14 +46,11 @@ var App = React.createClass({
 				document.getElementById('loader-wrapper').className = "loaded"
 		  }
 		}
-		if (route.includes("/human")){
-			Styles = HumanStyles
-		} else {
-			Styles = AppStyles
-		}
+		Styles = HumanStyles
+
         return ( 
         	<div id="app" className={AppStyles.app}>
-				<img className={Styles.logo} src={"./img/montagnes-white.svg"}/>
+				<img className={Styles.logo} src={"../img/montagnes-white.svg"}/>
 	        	{this.props.children}
 	        	<Footer/>
         	</div>
@@ -60,17 +58,18 @@ var App = React.createClass({
     }
 })
 
+const browserHistory = useRouterHistory(createHistory)({
+      basename: '/de'
+})
+
 ReactDOM.render( 
 	<Router history={browserHistory}>
 	    <Route path="/" component={App}>
-		    <IndexRedirect to="home"/>
-		    <Route name="home" path="/home" component={Home}/>
-		    <Route name="code" path="/code" component={Code}/>
-		    <Route name="human" path="/human" component={Human}>
-		    	<Route name="who" path="/human/who" component={Who}/>
-		     	<Route name="about" path="/human/about" component={AboutMe}/>
-		     	<Route name="work" path="/human/work" component={Work} db={DB}>
-		     		<Route name="project" path="/human/work/:title" handler={Work}/>
+		    <IndexRedirect to="who"/>
+		    <Route name="human" path="/" component={Human}>
+		    	<Route name="who" path="/who" component={Who}/>
+		     	<Route name="work" path="/work" component={Work} db={DB}>
+		     		<Route name="project" path="/work/:title" handler={Work}/>
 		     	</Route>
 		    </Route>
 	    </Route>

@@ -8,10 +8,13 @@ app.use('/', express.static(path.join(__dirname, 'public')))
 app.locals.settings['x-powered-by'] = false
 
 
-app.get(['/', '/home'], function(req, res) {
+app.get(['/', '/who', '/work', '/de'], function(req, res) {
    res.sendFile(path.join(__dirname, 'client/views/base.html'))
 })
 
+app.get(['/de/*'], function(req, res){
+	res.redirect('/')
+})
 app.use(function(req, res) {
       res.status(400);
      res.sendFile(path.join(__dirname, 'client/views/404.html'));

@@ -1,12 +1,8 @@
-.hide {
-	opacity: 0;
-	visibility: hidden;
-}
 .headHuman {
 	text-align: left;
 }
 .logo{
-	left: 30%;
+	z-index: 1;
 	width: 15%;
 	top: 5px;
 	width: 150px;
@@ -38,11 +34,12 @@
 }
 
 .center {
-	margin-top: 200px;
+	margin-top: 150px;
 	margin-bottom: 50px;
 	margin-right: 10px;
 	height: auto;
 	padding: none;
+	position: fixed;
 	-webkit-animation-name: fadeIn;
     -webkit-animation-duration: 1s;
  	animation-name: fadeIn;
@@ -68,6 +65,13 @@
   80% { opacity: 0.9; }
   100% { opacity: 1; }
 }
+
+.hide {
+	opacity: 0;
+	/*visibility: hidden;*/
+	transition: all 0.2s;
+}
+
 
 @media screen and (min-width: 500px){
 	.center {

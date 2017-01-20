@@ -44,7 +44,7 @@ export default React.createClass({
                 this.state.pageContents = 
                     <div className={Styles.tiles}>
                         {this.state.projects.map(project => (
-                            <Link to={`/human/work/${project.title}`}><Tile project={project} passTitle={this.mouseoverTile} select={this.selectProject}/></Link>
+                            <Link to={`/work/${project.title}`}><Tile project={project} passTitle={this.mouseoverTile} select={this.selectProject}/></Link>
                         ))}
                     </div>
             } else {

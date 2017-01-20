@@ -1,12 +1,19 @@
-._client_components_css_human__hide {
-	opacity: 0;
-	visibility: hidden;
+._client_components_css_app__logo{
+	left: 30%;
+	width: 15%;
+	top: 5px;
+	width: 150px;
+	position: absolute;
+	opacity: 1;
+	margin-bottom: 0px;
 }
-._client_components_css_human__headHuman {
+._client_components_css_app__app {
+	height: auto;
+}._client_components_css_human__headHuman {
 	text-align: left;
 }
 ._client_components_css_human__logo{
-	left: 30%;
+	z-index: 1;
 	width: 15%;
 	top: 5px;
 	width: 150px;
@@ -38,11 +45,12 @@
 }
 
 ._client_components_css_human__center {
-	margin-top: 200px;
+	margin-top: 150px;
 	margin-bottom: 50px;
 	margin-right: 10px;
 	height: auto;
 	padding: none;
+	position: fixed;
 	-webkit-animation-name: _client_components_css_human__fadeIn;
     -webkit-animation-duration: 1s;
  	animation-name: _client_components_css_human__fadeIn;
@@ -69,6 +77,13 @@
   100% { opacity: 1; }
 }
 
+._client_components_css_human__hide {
+	opacity: 0;
+	/*visibility: hidden;*/
+	transition: all 0.2s;
+}
+
+
 @media screen and (min-width: 500px){
 	._client_components_css_human__center {
 		margin-top: 270px;
@@ -76,14 +91,6 @@
 		margin-bottom: 50px;
 		width: 50%;
 	}
-}._client_components_css_app__logo{
-	left: 30%;
-	width: 15%;
-	top: 5px;
-	width: 150px;
-	position: absolute;
-	opacity: 1;
-	margin-bottom: 0px;
 }._client_components_css_code__monotype {
 	font-family: 'Roboto Mono', monospace;
 	color: white;
@@ -185,44 +192,43 @@ margin-left: 10%;
 		min-width: 400px;
 		max-width: 600px;
 	}
+<<<<<<< HEAD
 }._client_components_css_who__center {
 	margin-top: 200px;
 	margin-bottom: 50px;
 	margin-right: 10px;
 	height: auto;
 	padding: none;
+=======
+}._client_components_css_who__hide {
+  	visibility: hidden;
+  	opacity: 0;
+}
+
+._client_components_css_who__fadeIn {
+>>>>>>> fix-home
 	-webkit-animation-name: _client_components_css_who__fadeIn;
     -webkit-animation-duration: 1s;
  	animation-name: _client_components_css_who__fadeIn;
   	animation-duration: 1s;
-  	visibility: visible;
-  	opacity: 1;
-}
-._client_components_css_who__who h2 {
-	margin: 0px;
-	margin-left: 100px;
-	opacity: 0;
-}
-
-._client_components_css_who__who h2 {
-	margin-left: 0px;
-	opacity: 1;
-	-ms-transition: all 3s ease-out;  /* IE10 */
-    transition: all 3s ease-out;  
 }
 ._client_components_css_who__whoCol{
-	display: inline-block;
+	display: inline-table;
 	text-align: box;
 	width: 30%;
 	max-width: 200px;
-	padding: 0 5% 0;
+	padding: 0 0 0 5%;
 	min-width: 200px;
 }
 ._client_components_css_who__profileImg {
 	height: 150px;
 	width: 150px;
 	opacity: 0.5;
+<<<<<<< HEAD
 	top: 20%;
+=======
+	top: 5%;
+>>>>>>> fix-home
 	right: 5%;
 	z-index: -1;
 	position: absolute;
@@ -234,7 +240,7 @@ margin-left: 10%;
   	animation-duration: 1s;
 }
 ._client_components_css_who__socialButtons {
-	max-width
+	vertical-align: bottom;
 	color: white;
 	text-align: left;
 	margin-top: 20px;
@@ -242,9 +248,9 @@ margin-left: 10%;
 	text-align: center;
 }
 ._client_components_css_who__socialButtons a {
+	display: inline-block;
 	opacity: 0.5;
-	height: 100px;
-	margin: 5px 10px;
+	margin: 10px 10px 0px;
 }
 ._client_components_css_who__socialButtons a:hover {
 	opacity: 1;
@@ -254,16 +260,27 @@ margin-left: 10%;
 
 @media screen and (min-width: 500px){
 	._client_components_css_who__profileImg {
+<<<<<<< HEAD
 		top: 25%;
 		right: 30%;
+=======
+		right: 0px;
+>>>>>>> fix-home
 	}
 	._client_components_css_who__center {
 		margin-top: 300px;
 		margin-left: 30%;
 		margin-bottom: 50px;
 		width: 50%;
+		max-width: 700px;
 	}
-}._client_components_css_work__myWork {
+}
+@media screen and (min-width: 1300px){
+	._client_components_css_who__profileImg {
+		/*right: 10%;*/
+	}
+
+	}._client_components_css_work__myWork {
 	position: fixed;
 	margin: -30px 0 0 50px;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
