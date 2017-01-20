@@ -1,15 +1,4 @@
-._client_components_css_app__logo{
-	left: 30%;
-	width: 15%;
-	top: 5px;
-	width: 150px;
-	position: absolute;
-	opacity: 1;
-	margin-bottom: 0px;
-}
-._client_components_css_app__app {
-	height: auto;
-}._client_components_css_human__headHuman {
+._client_components_css_human__headHuman {
 	text-align: left;
 }
 ._client_components_css_human__logo{
@@ -91,37 +80,17 @@
 		margin-bottom: 50px;
 		width: 50%;
 	}
-}._client_components_css_code__monotype {
-	font-family: 'Roboto Mono', monospace;
-	color: white;
-	background-color: black;
-	padding-top: 50px;
-
+}._client_components_css_app__logo{
+	left: 30%;
+	width: 15%;
+	top: 5px;
+	width: 150px;
+	position: absolute;
+	opacity: 1;
+	margin-bottom: 0px;
 }
-._client_components_css_code__monotype a {
-	color: white;
-	text-decoration: none;
-}
-._client_components_css_code__indent1 {
-margin-left: 5%;
-}
-._client_components_css_code__indent2 {
-margin-left: 10%;
-}
-._client_components_css_code__socialButtons {
-	width: 100%;
-	max-width: ;
-}
-._client_components_css_code__socialButtons > a {
-	margin: 5%;
-}
-._client_components_css_code__socialButtons > a > svg {
-	viewBox: 0 0 60 60;
-}
-@media screen and (min-width:   500px) {
-	._client_components_css_code__monotype {
-		padding-top: 50px;
-	}
+._client_components_css_app__app {
+	height: auto;
 }._client_components_css_landing__landing {
 	text-align: center;
 }
@@ -192,21 +161,43 @@ margin-left: 10%;
 		min-width: 400px;
 		max-width: 600px;
 	}
-<<<<<<< HEAD
-}._client_components_css_who__center {
-	margin-top: 200px;
-	margin-bottom: 50px;
-	margin-right: 10px;
-	height: auto;
-	padding: none;
-=======
+}._client_components_css_code__monotype {
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+	background-color: black;
+	padding-top: 50px;
+
+}
+._client_components_css_code__monotype a {
+	color: white;
+	text-decoration: none;
+}
+._client_components_css_code__indent1 {
+margin-left: 5%;
+}
+._client_components_css_code__indent2 {
+margin-left: 10%;
+}
+._client_components_css_code__socialButtons {
+	width: 100%;
+	max-width: ;
+}
+._client_components_css_code__socialButtons > a {
+	margin: 5%;
+}
+._client_components_css_code__socialButtons > a > svg {
+	viewBox: 0 0 60 60;
+}
+@media screen and (min-width:   500px) {
+	._client_components_css_code__monotype {
+		padding-top: 50px;
+	}
 }._client_components_css_who__hide {
   	visibility: hidden;
   	opacity: 0;
 }
 
 ._client_components_css_who__fadeIn {
->>>>>>> fix-home
 	-webkit-animation-name: _client_components_css_who__fadeIn;
     -webkit-animation-duration: 1s;
  	animation-name: _client_components_css_who__fadeIn;
@@ -224,11 +215,7 @@ margin-left: 10%;
 	height: 150px;
 	width: 150px;
 	opacity: 0.5;
-<<<<<<< HEAD
-	top: 20%;
-=======
 	top: 5%;
->>>>>>> fix-home
 	right: 5%;
 	z-index: -1;
 	position: absolute;
@@ -260,12 +247,7 @@ margin-left: 10%;
 
 @media screen and (min-width: 500px){
 	._client_components_css_who__profileImg {
-<<<<<<< HEAD
-		top: 25%;
-		right: 30%;
-=======
 		right: 0px;
->>>>>>> fix-home
 	}
 	._client_components_css_who__center {
 		margin-top: 300px;
@@ -280,7 +262,8 @@ margin-left: 10%;
 		/*right: 10%;*/
 	}
 
-	}._client_components_css_work__myWork {
+	}
+._client_components_css_work__myWork {
 	position: fixed;
 	margin: -30px 0 0 50px;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
@@ -426,30 +409,6 @@ margin-left: 10%;
 	    background: rgba(0,0,0, 0.5)
 	}	
 
-}._client_components_css_prompt__blink {
- animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
-  -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
-}
-
-@keyframes _client_components_css_prompt__blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-@-webkit-keyframes _client_components_css_prompt__blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-._client_components_css_prompt__hide {
-	visibility: hidden;
-}
-
-._client_components_css_prompt__hideInput {
-	width: 0px;
-	border: none;
 }._client_components_css_nav__hide {
   position: absolute;
   opacity: 0;
@@ -499,6 +458,30 @@ margin-left: 10%;
     right: 40px;
     top: 35px;
   }
+}._client_components_css_prompt__blink {
+ animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes _client_components_css_prompt__blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes _client_components_css_prompt__blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+._client_components_css_prompt__hide {
+	visibility: hidden;
+}
+
+._client_components_css_prompt__hideInput {
+	width: 0px;
+	border: none;
 }._client_components_css_projectLinks__projectLinks {
 	text-align: right;
 	margin-bottom: 10px;
