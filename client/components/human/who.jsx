@@ -7,14 +7,16 @@ import Styles from '../css/who.css'
 var show = true
 export default React.createClass({
     componentDidMount: function() {
-        show
+    },
+    componentWillEnter: function() {
+        console.log("Preload", this)
     },
     render: function() {
         return ( 
-        	<div className={show}>
+        	<div className={Styles.fadeIn}>
                 <h2>who?</h2>
                 <div className={Styles.whoCol}>
-                    <p>Cam (Campbell Hawkes); 20, Web Developer</p>
+                    <p>Cam (Campbell Hawkes); 21, Web Developer</p>
                     <p>Completed the bootcamp provided by Enspiral Dev Academy, and have been doing stuff for and in agency with Enspiral for the past six months</p>
                 </div>
                 <div className={Styles.whoCol}>

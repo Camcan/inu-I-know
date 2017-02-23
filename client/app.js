@@ -50,7 +50,7 @@ var App = React.createClass({
 
         return ( 
         	<div id="app" className={AppStyles.app}>
-				<img className={Styles.logo} src={"../img/montagnes-white.svg"}/>
+				<Link to="/who"><img className={Styles.logo} src={"../img/montagnes-white.svg"}/></Link>
 	        	{this.props.children}
 	        	<Footer/>
         	</div>
