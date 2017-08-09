@@ -29,6 +29,7 @@
 ._client_components_css_human__head { 
 	position: fixed;
 	width: 100%;
+   height: 200px;
 	top: 20px;
 	background: black;
 	-webkit-animation-delay: 0s;
@@ -45,18 +46,21 @@
 }
 
 ._client_components_css_human__center {
-	margin-top: 150px;
 	margin-bottom: 50px;
-	margin-right: 10px;
+	top: 250px;
+   left: 10px;
+   right: 10px;
 	height: auto;
 	padding: none;
-	position: fixed;
+	position: absolute;
 	-webkit-animation-name: _client_components_css_human__fadeIn;
     -webkit-animation-duration: 1s;
  	animation-name: _client_components_css_human__fadeIn;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
+   display: flex;
+   justify-content: center;
 }
 
 @-webkit-keyframes _client_components_css_human__fadeIn { 
@@ -86,129 +90,34 @@
 
 @media screen and (min-width: 500px){
 	._client_components_css_human__center {
-		margin-top: 270px;
-		margin-left: 30%;
 		margin-bottom: 50px;
-		width: 50%;
 	}
-}._client_components_css_code__monotype {
-	font-family: 'Roboto Mono', monospace;
-	color: white;
-	background-color: black;
-	padding-top: 50px;
-
 }
-._client_components_css_code__monotype a {
-	color: white;
-	text-decoration: none;
-}
-._client_components_css_code__indent1 {
-margin-left: 5%;
-}
-._client_components_css_code__indent2 {
-margin-left: 10%;
-}
-._client_components_css_code__socialButtons {
-	width: 100%;
-	max-width: ;
-}
-._client_components_css_code__socialButtons > a {
-	margin: 5%;
-}
-._client_components_css_code__socialButtons > a > svg {
-	viewBox: 0 0 60 60;
-}
-@media screen and (min-width:   500px) {
-	._client_components_css_code__monotype {
-		padding-top: 50px;
-	}
-}._client_components_css_landing__landing {
-	text-align: center;
-}
-
-._client_components_css_landing__logo {
-	width: 200px;
-	transition: 1s ease-in-out;
-}
-._client_components_css_landing__logoCenter{
-	width: 200px;
-}
-._client_components_css_landing__title {
-	margin-top: 150px;
-}
-._client_components_css_landing__bgLeft{
-	width: 100%;
-	height: 80%;
-	background: black;
-	position: absolute;
-	opacity: 0.1;
-	z-index: -1;
-}
-._client_components_css_landing__bgRight{
-	width: 100%;
-	height: 80%;
-	left: -20%;
-	position: absolute;
-	background: #e0ffc7 url(./img/skate.jpg) no-repeat 20%;  
-	opacity: 0.1;
-	z-index: -1;
-}
-
-._client_components_css_landing__nav {
-	margin-top: 50px;
-
-}
-._client_components_css_landing__nav a {
-	padding: 10px 20px;
-	max-width: 500px;
-	display: inline-block;
-}
-._client_components_css_landing__socialButtons {
-	margin-top: 50px;
-	height: 50px;
-	display: inline-block;
-	min-width: 200px;
-	max-width: 400px;
-}
-._client_components_css_landing__socialButtons a {
-	height: 100px;
-	margin: 5px 5%;
-	opacity: 0.5;
-}
-._client_components_css_landing__socialButtons a:hover {
-	opacity: 1;
-	-ms-transition: all 0.2s ease-out; 
-	transition: all 0.2s ease-out
-}
-
-@media screen and (min-width: 500px) {
-	._client_components_css_landing__title {
-		margin-top: 0px;
-	}
-	._client_components_css_landing__nav a {
-		min-width: 200px;
-	}
-	._client_components_css_landing__socialButtons {
-		min-width: 400px;
-		max-width: 600px;
-	}
-}._client_components_css_who__hide {
+._client_components_css_who__hide {
   	visibility: hidden;
   	opacity: 0;
 }
 
 ._client_components_css_who__fadeIn {
+   max-width: 900px;
+   padding: 10px;
+   display: flex;
+   justify-content: flex-end;
+   flex-flow: row wrap;
 	-webkit-animation-name: _client_components_css_who__fadeIn;
     -webkit-animation-duration: 1s;
  	animation-name: _client_components_css_who__fadeIn;
   	animation-duration: 1s;
 }
+._client_components_css_who__fadeIn h2 {
+   padding-right: 50px;
+}
 ._client_components_css_who__whoCol{
-	display: inline-table;
-	text-align: box;
+	text-align: justify;
 	width: 30%;
 	max-width: 200px;
-	padding: 0 0 0 5%;
+	padding: 0;
+   margin-right: 40px;
 	min-width: 200px;
 }
 ._client_components_css_who__profileImg {
@@ -217,7 +126,7 @@ margin-left: 10%;
 	opacity: 0.5;
 	top: 5%;
 	right: 5%;
-	z-index: -1;
+	z-index: 0;
 	position: absolute;
 	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
 	background-size: cover;
@@ -245,11 +154,11 @@ margin-left: 10%;
 	transition: all 0.2s ease-out;
 }
 
-@media screen and (min-width: 500px){
-	._client_components_css_who__profileImg {
-		right: 0px;
-	}
-	._client_components_css_who__center {
+@media screen and (min-width: 550px){
+	._client_components_css_who__fadeIn {
+      justify-content: center
+   }
+   ._client_components_css_who__center {
 		margin-top: 300px;
 		margin-left: 30%;
 		margin-bottom: 50px;
@@ -259,10 +168,14 @@ margin-left: 10%;
 }
 @media screen and (min-width: 1300px){
 	._client_components_css_who__profileImg {
-		/*right: 10%;*/
+		right: 10%;
 	}
 
-	}
+}
+._client_components_css_work__projectsContainer{
+   width: 90%;
+   max-width: 1000px;
+}
 ._client_components_css_work__myWork {
 	position: fixed;
 	margin: -30px 0 0 50px;
@@ -409,7 +322,76 @@ margin-left: 10%;
 	    background: rgba(0,0,0, 0.5)
 	}	
 
-}._client_components_css_nav__hide {
+}
+._client_components_css_timeline__container{
+   display: flex;
+   justify-content: center;
+   padding: 0px 20px;
+}
+._client_components_css_timeline__timeline{
+   width: 90%;
+   padding: 10px;
+   max-width: 1200px;
+}
+._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar{
+   position: absolute;
+   top: 10px;
+   bottom: 10px;
+   z-index: 1;
+   height: 90%;
+   width: 6px;
+   background: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar ._client_components_css_timeline__node_start{
+   position: relative;
+   top: -60px;
+   left: -7px;
+   height: 80px;
+   width: 100px;
+}
+
+._client_components_css_timeline__timeline ._client_components_css_timeline__items {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around
+}
+
+._client_components_css_timeline__timeline ,items ._client_components_css_timeline__item {
+   color: white;
+   margin-left: 15px;
+}
+
+._client_components_css_timeline__timeline ._client_components_css_timeline__items ._client_components_css_timeline__item ._client_components_css_timeline__title {
+   margin-left: 70px;
+   font-size: 20px
+}
+._client_components_css_timeline__timeline ._client_components_css_timeline__items ._client_components_css_timeline__item ._client_components_css_timeline__node {
+   position: relative;
+   top: -10px;
+   left: -7px;
+   height: 0px;
+}
+._client_components_css_timeline__timeline ._client_components_css_timeline__items ._client_components_css_timeline__item ._client_components_css_timeline__node svg {
+   position: absolute;
+   left: 0;
+}
+._client_components_css_timeline__timeline ._client_components_css_timeline__items ._client_components_css_timeline__item ._client_components_css_timeline__period {
+   position: relative;
+   margin: 0;
+   left: 100px;
+   top: -10px;
+   z-index: 1;
+   color: #eee;
+   height: 18px;
+   padding: 0 5px;
+   max-width: 200px;
+   text-align: left;
+}
+._client_components_css_nav__hide {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -458,30 +440,6 @@ margin-left: 10%;
     right: 40px;
     top: 35px;
   }
-}._client_components_css_prompt__blink {
- animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
-  -webkit-animation: _client_components_css_prompt__blink-animation 1s steps(2, start) infinite;
-}
-
-@keyframes _client_components_css_prompt__blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-@-webkit-keyframes _client_components_css_prompt__blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-._client_components_css_prompt__hide {
-	visibility: hidden;
-}
-
-._client_components_css_prompt__hideInput {
-	width: 0px;
-	border: none;
 }._client_components_css_projectLinks__projectLinks {
 	text-align: right;
 	margin-bottom: 10px;

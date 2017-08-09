@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from './css/human.css'
 import {router, Link, browserHistory} from 'react-router'
-import Nav from './nav.jsx'
+import Nav from './page/nav.jsx'
 
 var navStyle = Styles.nav
 var hide = Styles.hide

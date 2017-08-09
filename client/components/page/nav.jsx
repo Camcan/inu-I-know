@@ -1,7 +1,7 @@
 import React from 'react'
-import Styles from './css/nav.css'
 import {Link} from 'react-router'
-import Back from './icons/back.js'
+import Styles from '../css/nav.css'
+import Back from '../assets/icons/back.js'
 
 var navStyle = Styles.nav
 var hide = Styles.hide
@@ -18,9 +18,12 @@ export default React.createClass({
 		    			<Link to="/home">back home<Back/></Link>
 	            	</div>
     	} else {
-        return <div id="nav" className={hide}>
+        return (
+           <div id="nav" className={hide}>
 			    	<Link onClick={() => this.props.transition()} to="/who">who?</Link>
-		    		<Link onClick={() => this.props.transition()} to="/work">my work</Link>
-            	</div>
+		    		<Link onClick={() => this.props.transition()} to="/work">projects</Link>
+               <Link onClick={() => this.props.transition()} to="/history">work</Link>
+            </div>
+         )
     	}
 }})

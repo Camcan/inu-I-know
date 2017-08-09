@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Styles from '../css/projectLinks.css'
-import Back from '../icons/back.js'
-import Web from '../icons/earth.js'
-import Github from '../icons/github.js'
+import Back from '../assets/icons/back.js'
+import Web from '../assets/icons/earth.js'
+import Github from '../assets/icons/github.js'
 export default React.createClass({
      propTypes: {
             live: React.PropTypes.string,

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, browserHistory, IndexRedirect, Link} from 'react-router'
-import Social from '../social-links.jsx'
+import Social from '../social/social-links.jsx'
 import Styles from '../css/who.css'
 
 var show = true

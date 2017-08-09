@@ -1,11 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-import GitHub from './icons/github.js'
-import LinkedIn from './icons/linkedin'
-import Twitter from './icons/twitter'
-import Mobile from './icons/mobile'
-import Envelope from './icons/envelope'
+import GitHub from '../assets/icons/github.js'
+import LinkedIn from '../assets/icons/linkedin'
+import Twitter from '../assets/icons/twitter'
+import Mobile from '../assets/icons/mobile'
+import Envelope from '../assets/icons/envelope'
 
 export default React.createClass({
 	propTypes: {

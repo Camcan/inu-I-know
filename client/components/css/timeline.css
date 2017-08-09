@@ -1,0 +1,68 @@
+.container{
+   display: flex;
+   justify-content: center;
+   padding: 0px 20px;
+}
+.timeline{
+   width: 90%;
+   padding: 10px;
+   max-width: 1200px;
+}
+.timeline .sidebar{
+   position: absolute;
+   top: 10px;
+   bottom: 10px;
+   z-index: 1;
+   height: 90%;
+   width: 6px;
+   background: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.timeline .sidebar .node_start{
+   position: relative;
+   top: -60px;
+   left: -7px;
+   height: 80px;
+   width: 100px;
+}
+
+.timeline .items {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around
+}
+
+.timeline ,items .item {
+   color: white;
+   margin-left: 15px;
+}
+
+.timeline .items .item .title {
+   margin-left: 70px;
+   font-size: 20px
+}
+.timeline .items .item .node {
+   position: relative;
+   top: -10px;
+   left: -7px;
+   height: 0px;
+}
+.timeline .items .item .node svg {
+   position: absolute;
+   left: 0;
+}
+.timeline .items .item .period {
+   position: relative;
+   margin: 0;
+   left: 100px;
+   top: -10px;
+   z-index: 1;
+   color: #eee;
+   height: 18px;
+   padding: 0 5px;
+   max-width: 200px;
+   text-align: left;
+}
