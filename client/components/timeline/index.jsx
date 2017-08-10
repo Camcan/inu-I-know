@@ -10,6 +10,9 @@ export default React.createClass({
    render:function(){
       return(
          <div className={Styles.container}>
+            <div className={Styles.title}>
+               <h3>Timeline</h3>
+            </div>
             <Timeline />
          </div>
       )

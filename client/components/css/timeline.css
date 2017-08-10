@@ -1,11 +1,17 @@
 .container{
    display: flex;
    justify-content: center;
+   flex-direction: column;
    padding: 0px 20px;
+}
+.container .title {
+   width: 100%;
+   text-align: center;
+   height: 100px;
 }
 .timeline{
    width: 90%;
-   padding: 10px;
+   padding: 10px 10px 10px 50px;
    max-width: 1200px;
 }
 .timeline .sidebar{
@@ -15,6 +21,7 @@
    z-index: 1;
    height: 90%;
    width: 6px;
+   padding-bottom: 20%;
    background: white;
    display: flex;
    flex-direction: column;
@@ -27,34 +34,53 @@
    height: 80px;
    width: 100px;
 }
-
+.timeline .sidebar .year {
+   -moz-transform: rotate(270deg);
+   -o-transform: rotate(270deg); 
+   -webkit-transform: rotate(270deg); 
+   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=270)";
+   color: #eee;
+   font-size: 18px;
+   position: relative;
+   left: -50px
+}
 .timeline .items {
    height: 100%;
+   padding-bottom: 300px;
    display: flex;
    flex-direction: column;
    justify-content: space-around
 }
 
-.timeline ,items .item {
+.timeline .item {
+   display: relative;
    color: white;
-   margin-left: 15px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
 }
-
-.timeline .items .item .title {
-   margin-left: 70px;
-   font-size: 20px
+.timeline .item .branch {
+   width: 50%;
+   min-width: 250px;
 }
-.timeline .items .item .node {
+.timeline .item .branch .title {
+   margin: 0px 0px 10px 70px;
+   font-size: 20px;
+   height: 30px;
+   text-align: left;
+}
+.timeline .item .branch .node {
    position: relative;
    top: -10px;
    left: -7px;
    height: 0px;
 }
-.timeline .items .item .node svg {
+.timeline .item .branch .node svg {
    position: absolute;
    left: 0;
 }
-.timeline .items .item .period {
+.timeline .item .branch .period {
    position: relative;
    margin: 0;
    left: 100px;
@@ -65,4 +91,25 @@
    padding: 0 5px;
    max-width: 200px;
    text-align: left;
+}
+.timeline .item .logo {
+   width: 50%;
+   min-width: 250px;
+   display: flex;
+   justify-content: flex-end
+}
+.timeline .item .logo img {
+   opacity: 0.3;
+   height: 250px
+}
+
+.timeline .item .content {
+   background-color: white;
+   height: 200px;
+   opacity: 0;
+   transition: opacity 0.5s ease-out
+}
+
+.timeline .item .content.reveal {
+   opacity: 1
 }

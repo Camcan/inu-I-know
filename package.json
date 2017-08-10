@@ -4,6 +4,7 @@
   "description": "Simple react spike session",
   "main": "server.js",
   "dependencies": {
+    "exenv": "^1.2.2",
     "express": "^4.14.0",
     "history": "^2.0.0",
     "react": "^15.3.2",
