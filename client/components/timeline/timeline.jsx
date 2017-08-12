@@ -20,7 +20,7 @@ const timeline = [
       slug: "freelance",
       period: "August 2016- July 2017",
       logo: "../img/montagnes-white.svg",
-      brief: []
+      brief: ["Throughout 2016 and early 2017 I was engaged in remote contract work in an Agile//SCRUM environment. The work was primarily around email campaigns and HTML templating for all email clients."]
     },
    {  title: "Enspiral Dev Academy",
       slug: "eda",
@@ -41,7 +41,8 @@ export default class Timeline extends Component {
       this.state = {
          ...props,
          transition: false,
-         selectedProject: timeline[0].slug
+         selectedProject: timeline[0].slug,
+         initialPosition: null
       }
       this.handleScroll = this.handleScroll.bind(this)
    }
@@ -50,25 +51,23 @@ export default class Timeline extends Component {
          document.addEventListener('scroll', this.handleScroll);
          console.log("CAN USE DOM")
       }
+       this.setState({initialPosition: document.getElementsByClassName(Styles.container)[0].getBoundingClientRect()
+       })
    }
    componentWillUnmount() {
       document.removeEventListener('scroll', this.handleScroll);
-   }
-   handleScroll(){
+   } 
+    handleScroll(){
+      
        console.log("SCRILLING")
-      const projects = [].slice.call(document.getElementsByClassName(Styles.item))
-      let selection = [1000];
-      for (var i = 0; i < projects.length; i++){
-         let item = [projects[i].getBoundingClientRect().top, projects[i].dataset.slug]
-         if (item[0] > 200 && item[0] < selection[0]){
-            selection = item
-         } 
-      }
-      if (selection[1] !== this.state.selectedProject && selection[1]){
-         this.setState({ selectedProject: null })
-        setTimeout(
-              ()=>this.setState({ selectedProject: selection[1]}),
-              1000)
+      let offsetRatio = ( (this.state.initialPosition.top - document.getElementsByClassName(Styles.container)[0].getBoundingClientRect().top) / this.state.initialPosition.top )
+      console.log(offsetRatio)
+      let selection = timeline[Math.round(offsetRatio*timeline.length)].slug
+         console.log("Selection", selection)
+      if (selection !== this.state.selectedProject){
+         this.setState({
+            selectedProject: selection
+         })
          console.log("Showing:", this.state.selectedProject)
       }
    }
@@ -129,10 +128,11 @@ export default class Timeline extends Component {
                                  <img src={item.logo} />
                               </div>
                            
-                                 <p className={Styles.title}>
+                                 
+                                 <div className={Styles.brief}>
+                                    <p className={Styles.title}>
                                     {item.title}
                                  </p>
-                                 <div className={Styles.brief}>
                                     {  item.brief.map((p)=>{
                                           return <p>{p}</p>                          
                                        })

@@ -4,8 +4,10 @@
    flex-direction: column;
    padding: 0px 20px;
 }
-.container .title {
+.container .pageTitle {
+   position: fixed;
    width: 100%;
+   top: 15%;
    text-align: center;
    height: 100px;
 }
@@ -20,10 +22,9 @@
    top: 10px;
    bottom: 10px;
    z-index: 1;
-   min-height: 500px;
    width: 6px;
-   margin-bottom: -50px;
-   padding-bottom: 50px;
+   margin-bottom: -300px;
+   padding-bottom: 300px;
    background: white;
    display: flex;
    flex-direction: column;
@@ -134,14 +135,14 @@
    top: 30%;
    height: 250px
 }
-.timeline .item .content .title {
-   z-index: 1;
-   margin: 20px 20% 20px 20px;
-}
-
 .timeline .item .content .brief {
    z-index: 1;
    text-align: center;
    margin: 10px 20px;
    max-width: 500px;
 }
+.timeline .item .content .brief .title {
+   margin: 20px 20px 20px 20px;
+}
+
+
