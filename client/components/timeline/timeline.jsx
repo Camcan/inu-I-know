@@ -12,14 +12,23 @@ const timeline = [
       slug: "meta",
       period: "July 2017 - present",
       logo: "../img/work/meta/meta.png",
-      brief: [],
+      brief: ["Metamorphic Development: An agile environment with a young and rapidly evolving, tight-knit team talented in storytelling, design and programming. The Studio's primary role is in consultation and development bespoke web and native solutions."],
       description: [],
     },
     {
       title: "Freelance Work",
       slug: "freelance",
       period: "August 2016- July 2017",
-      logo: "../img/montagnes-white.svg"
+      logo: "../img/montagnes-white.svg",
+      brief: []
+    },
+   {  title: "Enspiral Dev Academy",
+      slug: "eda",
+      period: "March - July 2016",
+      logo: "../img/work/eda/eda-flag.png",
+      brief: [
+         "During the early part of 2016, I held a part­time position supporting the teaching team for Enspiral Dev Academy’s in-house component of the course, shaping approaches to web­development concepts while offering technical guidance as students progressed through a Node.js curriculum. The free­flowing nature of the position allowed me to take a great deal of initiative to provide the greatest value for students as they progressed through material, acting as a guide for their ‘design thinking’, and furthering their development of soft skills. This included leading mindfulness meditation sessions, pairing with students, and facilitating group discussions while maintaining traction of advancing technical knowledge."
+         ]
     }
 
 ]
@@ -56,7 +65,10 @@ export default class Timeline extends Component {
          } 
       }
       if (selection[1] !== this.state.selectedProject && selection[1]){
-         this.setState({selectedProject: selection[1] })
+         this.setState({ selectedProject: null })
+        setTimeout(
+              ()=>this.setState({ selectedProject: selection[1]}),
+              1000)
          console.log("Showing:", this.state.selectedProject)
       }
    }
@@ -82,8 +94,15 @@ export default class Timeline extends Component {
                {
                   timeline.map((item)=>{
                      return (
-                        <div data-slug={item.slug} className={Styles.item}>
-                           <div className={Styles.branch}>
+                        <div data-slug={item.slug} className={[
+                           Styles.item, 
+                           (this.state.selectedProject == item.slug) ? Styles.selected : ""
+                        ].join(" ")}>
+                           <div className={[
+                              Styles.branch,
+                              ((this.state.selectedProject == item.slug) ? Styles.selectedBranch : "") 
+                           ].join(" ")
+                           }>
                              <p className={Styles.title}>
                                  {item.title}
                               </p>
@@ -93,7 +112,7 @@ export default class Timeline extends Component {
                                     paddingTop: '7px',
                                     paddingLeft: '5px'
                                     }}
-                                    width="100px" 
+                                    width={(this.state.selectedProject == item.slug) ? "120px" : "100px"} 
                                     height="6px" 
                                     fill="white" 
                                  />
@@ -102,13 +121,24 @@ export default class Timeline extends Component {
                                  {item.period}
                               </p>
                            </div>
-                           <div className={Styles.logo}>
-                              <img src={item.logo} />
-                           </div>
-                           <div className={[
+                          <div className={[
                                     Styles.content,
                                     ((this.state.selectedProject == item.slug) ? Styles.reveal : "")
                                  ].join(" ")}>
+                               <div className={Styles.logo}>
+                                 <img src={item.logo} />
+                              </div>
+                           
+                                 <p className={Styles.title}>
+                                    {item.title}
+                                 </p>
+                                 <div className={Styles.brief}>
+                                    {  item.brief.map((p)=>{
+                                          return <p>{p}</p>                          
+                                       })
+
+                                    }
+                                 </div>
                            </div>
                         </div>
                      )

@@ -9,7 +9,8 @@
    text-align: center;
    height: 100px;
 }
-.timeline{
+.timeline {
+   height: 90%;
    width: 90%;
    padding: 10px 10px 10px 50px;
    max-width: 1200px;
@@ -19,14 +20,16 @@
    top: 10px;
    bottom: 10px;
    z-index: 1;
-   height: 90%;
+   min-height: 500px;
    width: 6px;
-   padding-bottom: 20%;
+   margin-bottom: -50px;
+   padding-bottom: 50px;
    background: white;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
+
 .timeline .sidebar .node_start{
    position: relative;
    top: -60px;
@@ -46,7 +49,7 @@
 }
 .timeline .items {
    height: 100%;
-   padding-bottom: 300px;
+   padding-bottom: 0px;
    display: flex;
    flex-direction: column;
    justify-content: space-around
@@ -61,8 +64,16 @@
    justify-content: flex-start;
 }
 .timeline .item .branch {
+   position: relative;
+   margin-left: 0;
    width: 50%;
+   
    min-width: 250px;
+   min-height: 150px;
+   transition: margin-left 0.3s ease-out;
+}
+.timeline .item .branch.selectedBranch  {
+      margin-left: 20px;
 }
 .timeline .item .branch .title {
    margin: 0px 0px 10px 70px;
@@ -70,21 +81,23 @@
    height: 30px;
    text-align: left;
 }
+
 .timeline .item .branch .node {
    position: relative;
    top: -10px;
    left: -7px;
    height: 0px;
+   transition: left 0.3s;
+}
+.timeline .item .branch.selectedBranch .node {
+   left: -27px
 }
 .timeline .item .branch .node svg {
    position: absolute;
    left: 0;
 }
 .timeline .item .branch .period {
-   position: relative;
-   margin: 0;
-   left: 100px;
-   top: -10px;
+   margin: -7px 10px 10px 110px;
    z-index: 1;
    color: #eee;
    height: 18px;
@@ -92,24 +105,43 @@
    max-width: 200px;
    text-align: left;
 }
-.timeline .item .logo {
+.timeline .item .content{ 
+   position: fixed;
+   top: 30%;
+   height: 200px;
+   opacity: 0;
+   z-index: 5;
+   transition: opacity 1s ease-out;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+
+.timeline .item .content.reveal {
+   opacity: 1
+}
+.timeline .item .content .logo {
+   position: absolute;
+   z-index: 0;
    width: 50%;
    min-width: 250px;
    display: flex;
    justify-content: flex-end
 }
-.timeline .item .logo img {
+.timeline .item .content .logo img {
+   position: fixed;
    opacity: 0.3;
+   top: 30%;
    height: 250px
 }
-
-.timeline .item .content {
-   background-color: white;
-   height: 200px;
-   opacity: 0;
-   transition: opacity 0.5s ease-out
+.timeline .item .content .title {
+   z-index: 1;
+   margin: 20px 20% 20px 20px;
 }
 
-.timeline .item .content.reveal {
-   opacity: 1
+.timeline .item .content .brief {
+   z-index: 1;
+   text-align: center;
+   margin: 10px 20px;
+   max-width: 500px;
 }
