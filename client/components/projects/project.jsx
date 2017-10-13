@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Styles from '../css/work.css'
 import Links from './projectLinks.jsx'
-import Back from '../icons/back.js'
-import Web from '../icons/earth.js'
-import Github from '../icons/github.js'
+import Back from '../assets/icons/back.js'
+import Web from '../assets/icons/earth.js'
+import Github from '../assets/icons/github.js'
 import {Link} from 'react-router'
 export default React.createClass({
      propTypes: {

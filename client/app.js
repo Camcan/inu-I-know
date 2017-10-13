@@ -3,16 +3,14 @@ import ReactDOM from 'react-dom'
 import { Router, Route, IndexRedirect, Link, useRouterHistory} from 'react-router'
 import { createHistory } from 'history'
 import CSSModules from 'react-css-modules'
-import Code from './components/code.jsx'
 import Human from './components/human.jsx'
-import Home from './components/landing.jsx'
-import Who from './components/human/who.jsx'
-import AboutMe from './components/human/about.jsx'
-import Work from './components/human/work.jsx'
-import Project from './components/human/project.jsx'
+import Who from './components/who/who.jsx'
+import Work from './components/projects/work.jsx'
+import Timeline from './components/timeline/index.jsx'
+import Project from './components/projects/project.jsx'
 import AppStyles from './components/css/app.css'
 import HumanStyles from './components/css/human.css'
-import Footer from './components/footer.jsx'
+import Footer from './components/page/footer.jsx'
 import DB from './db.json'
 
 var Styles
@@ -71,6 +69,7 @@ ReactDOM.render(
 		     	<Route name="work" path="/work" component={Work} db={DB}>
 		     		<Route name="project" path="/work/:title" handler={Work}/>
 		     	</Route>
+            <Route name="timeline" path="/history" component={Timeline}/>
 		    </Route>
 	    </Route>
  	</Router>,

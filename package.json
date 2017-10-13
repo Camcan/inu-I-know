@@ -4,6 +4,7 @@
   "description": "Simple react spike session",
   "main": "server.js",
   "dependencies": {
+    "exenv": "^1.2.2",
     "express": "^4.14.0",
     "history": "^2.0.0",
     "react": "^15.3.2",
@@ -21,7 +22,7 @@
     "css-modulesify": "^0.25.1",
     "red-tape": "0.0.2",
     "tape": "^4.6.0",
-    "watchify": "^3.7.0"
+    "watchify": "^3.9.0"
   },
   "browserify": {
     "transform": [
@@ -38,7 +39,7 @@
     ]
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "forever server.js",
     "watch": "watchify -p [css-modulesify -o public/bundle.css] client/app.js -o public/scripts/bundle.js -dv & nodemon server.js",
     "bundle": "browserify client/app.js -o public/scripts/bundle.js",
     "test": "echo \"Ain't nobody got time for that.\" && exit 1"

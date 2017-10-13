@@ -1,0 +1,148 @@
+.container{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 0px 20px;
+}
+.container .pageTitle {
+   position: fixed;
+   width: 100%;
+   top: 15%;
+   text-align: center;
+   height: 100px;
+}
+.timeline {
+   height: 90%;
+   width: 90%;
+   padding: 10px 10px 10px 50px;
+   max-width: 1200px;
+}
+.timeline .sidebar{
+   position: absolute;
+   top: 10px;
+   bottom: 10px;
+   z-index: 1;
+   width: 6px;
+   margin-bottom: -300px;
+   padding-bottom: 300px;
+   background: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.timeline .sidebar .node_start{
+   position: relative;
+   top: -60px;
+   left: -7px;
+   height: 80px;
+   width: 100px;
+}
+.timeline .sidebar .year {
+   -moz-transform: rotate(270deg);
+   -o-transform: rotate(270deg); 
+   -webkit-transform: rotate(270deg); 
+   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=270)";
+   color: #eee;
+   font-size: 18px;
+   position: relative;
+   left: -50px
+}
+.timeline .items {
+   height: 100%;
+   padding-bottom: 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around
+}
+
+.timeline .item {
+   display: relative;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+}
+.timeline .item .branch {
+   position: relative;
+   margin-left: 0;
+   width: 50%;
+   
+   min-width: 250px;
+   min-height: 150px;
+   transition: margin-left 0.3s ease-out;
+}
+.timeline .item .branch.selectedBranch  {
+      margin-left: 20px;
+}
+.timeline .item .branch .title {
+   margin: 0px 0px 10px 70px;
+   font-size: 20px;
+   height: 30px;
+   text-align: left;
+}
+
+.timeline .item .branch .node {
+   position: relative;
+   top: -10px;
+   left: -7px;
+   height: 0px;
+   transition: left 0.3s;
+}
+.timeline .item .branch.selectedBranch .node {
+   left: -27px
+}
+.timeline .item .branch .node svg {
+   position: absolute;
+   left: 0;
+}
+.timeline .item .branch .period {
+   margin: -7px 10px 10px 110px;
+   z-index: 1;
+   color: #eee;
+   height: 18px;
+   padding: 0 5px;
+   max-width: 200px;
+   text-align: left;
+}
+.timeline .item .content{ 
+   position: fixed;
+   top: 30%;
+   height: 200px;
+   opacity: 0;
+   z-index: 5;
+   transition: opacity 1s ease-out;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+
+.timeline .item .content.reveal {
+   opacity: 1
+}
+.timeline .item .content .logo {
+   position: absolute;
+   z-index: 0;
+   width: 50%;
+   min-width: 250px;
+   display: flex;
+   justify-content: flex-end
+}
+.timeline .item .content .logo img {
+   position: fixed;
+   opacity: 0.3;
+   top: 30%;
+   height: 250px
+}
+.timeline .item .content .brief {
+   z-index: 1;
+   text-align: center;
+   margin: 10px 20px;
+   max-width: 500px;
+}
+.timeline .item .content .brief .title {
+   margin: 20px 20px 20px 20px;
+}
+
+

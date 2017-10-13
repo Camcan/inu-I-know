@@ -4,17 +4,25 @@
 }
 
 .fadeIn {
+   max-width: 900px;
+   padding: 10px;
+   display: flex;
+   justify-content: flex-end;
+   flex-flow: row wrap;
 	-webkit-animation-name: fadeIn;
     -webkit-animation-duration: 1s;
  	animation-name: fadeIn;
   	animation-duration: 1s;
 }
+.fadeIn h2 {
+   padding-right: 50px;
+}
 .whoCol{
-	display: inline-table;
-	text-align: box;
+	text-align: justify;
 	width: 30%;
-	max-width: 200px;
-	padding: 0 0 0 5%;
+	max-width: 230px;
+	padding: 0;
+   margin-right: 40px;
 	min-width: 200px;
 }
 .profileImg {
@@ -23,7 +31,7 @@
 	opacity: 0.5;
 	top: 5%;
 	right: 5%;
-	z-index: -1;
+	z-index: 0;
 	position: absolute;
 	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
 	background-size: cover;
@@ -51,11 +59,11 @@
 	transition: all 0.2s ease-out;
 }
 
-@media screen and (min-width: 500px){
-	.profileImg {
-		right: 0px;
-	}
-	.center {
+@media screen and (min-width: 550px){
+	.fadeIn {
+      justify-content: center
+   }
+   .center {
 		margin-top: 300px;
 		margin-left: 30%;
 		margin-bottom: 50px;
@@ -65,7 +73,7 @@
 }
 @media screen and (min-width: 1300px){
 	.profileImg {
-		/*right: 10%;*/
+		right: 10%;
 	}
 
-	}
+}
