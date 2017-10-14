@@ -17,13 +17,13 @@ export default React.createClass({
                 <h2>who?</h2>
                 <div className={Styles.whoCol}>
                     <p>
-                        Cam (Campbell Hawkes); 21
+                        Cam (Campbell Hawkes)
                      </p>
                      <p>
-                        Developer 
+                        Developer; skier, skater, & avid tree climber
                      </p>
                      <p>
-                        Metamorphic Studios
+                        Will code for food.
                      </p>
                     
                 </div>
@@ -32,7 +32,7 @@ export default React.createClass({
                         Reductionist problem solving; pragmatism and flow.
                      </p>  
                   <p>
-                     Enjoying life in Wellington while immersing myself in different environments.
+                     Most of my time is split between the Southern Alps and Wellington, New Zealand.
                   </p>
                     <Social className={Styles.socialButtons}/>
                 </div>
