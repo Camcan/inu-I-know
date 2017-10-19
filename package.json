@@ -22,6 +22,8 @@
     "css-modulesify": "^0.25.1",
     "red-tape": "0.0.2",
     "tape": "^4.6.0",
+    "uglify-js": "^3.1.4",
+    "uglifyify": "^4.0.4",
     "watchify": "^3.9.0"
   },
   "browserify": {
@@ -41,7 +43,7 @@
   "scripts": {
     "start": "node server.js",
     "watch": "watchify -p [css-modulesify -o public/bundle.css] client/app.js -o public/scripts/bundle.js -dv & nodemon server.js",
-    "bundle": "browserify client/app.js -o public/scripts/bundle.js",
+    "build": "NODE_ENV=production browserify  -p [css-modulesify -o public/bundle.css] client/app.js -g uglifyify | uglifyjs --compress --mangle > public/scripts/bundle.js",
     "test": "echo \"Ain't nobody got time for that.\" && exit 1"
   },
   "repository": {
