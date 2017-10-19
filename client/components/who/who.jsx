@@ -23,7 +23,7 @@ export default React.createClass({
                         Developer; skier, skater, & avid tree climber
                      </p>
                      <p>
-                        Will code for food.
+                        Will code for grapes.
                      </p>
                     
                 </div>
