@@ -7,6 +7,9 @@ app.set('view engine', 'html')
 app.use('/', express.static(path.join(__dirname, 'public')))
 app.locals.settings['x-powered-by'] = false
 
+app.get(['/de/resume'], function(req, res){
+   res.sendFile(path.join(__dirname, 'public/cv/CV.html'));
+})
 
 app.get(['/', '/who', '/work', '/de'], function(req, res) {
    res.sendFile(path.join(__dirname, 'client/views/base.html'))
@@ -15,6 +18,12 @@ app.get(['/', '/who', '/work', '/de'], function(req, res) {
 app.get(['/de/*'], function(req, res){
 	res.redirect('/')
 })
+
+
+
+
+
+
 app.use(function(req, res) {
       res.status(400);
      res.sendFile(path.join(__dirname, 'client/views/404.html'));
