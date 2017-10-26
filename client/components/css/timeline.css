@@ -137,12 +137,20 @@
 }
 .timeline .item .content .brief {
    z-index: 1;
-   text-align: center;
    margin: 10px 20px;
    max-width: 500px;
+   text-align: left;
 }
 .timeline .item .content .brief .title {
    margin: 20px 20px 20px 20px;
+   text-align: center;
 }
 
-
+@media screen and (min-width: 1000px){
+   .timeline .items {
+      padding-top: 100px;
+   }
+   .timeline .item .branch {
+      min-height: 200px;
+   }
+}

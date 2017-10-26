@@ -27,7 +27,8 @@ const timeline = [
       period: "March - July 2016",
       logo: "../img/work/eda/eda-flag.png",
       brief: [
-         "During the early part of 2016, I held a part­time position supporting the teaching team for Enspiral Dev Academy’s in-house component of the course, shaping approaches to web­development concepts while offering technical guidance as students progressed through a Node.js curriculum. The free­flowing nature of the position allowed me to take a great deal of initiative to provide the greatest value for students as they progressed through material, acting as a guide for their ‘design thinking’, and furthering their development of soft skills. This included leading mindfulness meditation sessions, pairing with students, and facilitating group discussions while maintaining traction of advancing technical knowledge."
+         "During the early part of 2016, I held a part­time position supporting the teaching team for Enspiral Dev Academy’s in-house component of the course, shaping approaches to web­development concepts while offering technical guidance as students progressed through a Node.js curriculum.",
+      "The free­flowing nature of the position allowed me to take a great deal of initiative to provide the greatest value for students as they progressed through material, acting as a guide for their ‘design thinking’, and furthering their development of soft skills. This included leading mindfulness meditation sessions, pairing with students, and facilitating group discussions while maintaining traction of advancing technical knowledge."
          ]
     }
 
@@ -59,8 +60,8 @@ export default class Timeline extends Component {
    } 
     handleScroll(){
       
-       console.log("SCRILLING")
-      let offsetRatio = ( (this.state.initialPosition.top - document.getElementsByClassName(Styles.container)[0].getBoundingClientRect().top) / this.state.initialPosition.top )
+      let container = document.getElementsByClassName(Styles.container)[0];
+       let offsetRatio = ( (this.state.initialPosition.top - container.getBoundingClientRect().top) / (container.getBoundingClientRect().height) )
       console.log(offsetRatio)
       let selection = timeline[Math.round(offsetRatio*timeline.length)].slug
          console.log("Selection", selection)
