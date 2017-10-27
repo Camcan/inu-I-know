@@ -1,10 +1,13 @@
 .projectsContainer{
    width: 90%;
+   margin-top: 30px;
    max-width: 1000px;
+   display: flex;
+   flex-flow: row wrap;
 }
 .myWork {
 	position: fixed;
-	margin: -30px 0 0 50px;
+	margin: 0 0 0 0px;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 }
@@ -30,27 +33,26 @@
 	z-index: -1;
 }
 .tiles {
-	opacity: 0;
-	max-width: 300px;
-	white-space: nowrap;
+   padding-left: 150px;
+   padding-top: 30px;
+	max-width: 90%;
+   display: flex;
+	flex-flow: column wrap;
 }
-.tiles {
-	opacity: 1;
-	-ms-transition: opacity 1s ease-out;  /* IE10 */
-    transition: opacity 1s ease-out; 
-}
+
 .tile {
-	display: block;
-	width: 100px;
-	height: 50px;
-    float: left;
+	opacity: 0.7;
+   display: block;
+	width: 150px;
+	height: 90px;
 	overflow: hidden;
-    background: grey;
+   background: rgba(255,255,255,0.2);
 }
 .tile img {
-	min-height: 100px;
+	min-height: 50px;
 }
 .project {
+   padding-top: 30px;
 	-webkit-animation-name: fadeIn;
     -webkit-animation-duration: 1s;
  	animation-name: fadeIn;
@@ -60,22 +62,34 @@
 	text-align: right;
 }
 .projectTitle {
-	margin: 0px;
-	text-align: right;
-	font-size: 50px;
-     -ms-transition: margin-right 0.3s ease-in-out; 
-	transition: margin-right 0.3s ease-in-out;
+   font-size: 20px
 }
 
+.mainImageContainer {
+   max-height: 200px;
+   overflow: hidden;
+}
 .mainImage {
 	height: auto;
-	margin-left: -40%;
-	width: 140%;
+   margin-left: -10%;
+	width: 100%;
 }
-.descr {
+.secondImage {
+   max-width: 100%;
+   height: auto;
+   max-height: 400px;
+   opacity: 0.8;
+   transition: opacity 0.3s ease-in;
+}
+.project img:active, .project img:hover {
+   opacity: 1;
+}
+.blerb, .descr {
     text-align: right;
 	max-width: 100%;
 }
+
+
 .backButton {
 	position: fixed;
 	margin-left: 10px;
@@ -95,32 +109,44 @@
 		margin-top: 20%;
 		margin-left: 30%;
 	}
+   .projectsContainer {
+      padding-left: 10%;
+   }
 	.myWork {
-		margin-left:  0px;
+		margin-left:  70px;
 	}
 	.myWorkProject {
-		margin-left: -150px;
+		margin-left: -50px;
 	}
 	.tiles {
-		margin-left: -50px;
-		max-width: 1000px;;
-	}
-	.tile {
-	  	width: 200px;
+      position: fixed;
+      margin-top: 50px;
+      padding-left: 0px;
+      max-height: 350px;
+      flex-flow: row wrap;
+      justify-content: center;
+   }
+   .tile {
+	  	position: relative;
+      z-index: 5;
+      opacity: 0.7;
+      width: 200px;
 	    height: 150px;
+       transform: scale(1);
 	    -ms-transition: all 0.2s ease-in-out; 
 		transition: all 0.2s ease-in-out;
 	}
 	.tile:hover {
-		width: 250px;
-		height: 150px;
+      z-index: 6;
+      opacity: 1;
+		transform: scale(1.01)
 	}
 	.tile img {
 		min-height: 150px;
 	}
 	.backButton {
 		padding-left: 50px;
-		margin-left: -140px;
+		margin-left: -50px;
 	}
 	.backButton:hover {
 		padding-left: 0px;
@@ -130,22 +156,61 @@
 		opacity: 1;
 		visibility: visible;
 	}
+   .project {
+      max-width: 90%;
+   }
 	.projectTitle {
 		margin-right: 0px;
 	}	
-}
-@media screen and (min-width:   950px) {
-	.mainImage {
+   .mainImageContainer {
+      max-height: 400px;
+   }
+   .mainImage {
+      opacity: 0.9;
+      filter: invert(0.7);
 		margin-left: 0;
 		width: 100%;
+      transition: opacity 0.2s ease-in-out;
+      transition: filter 0.3s ease-out 0.1s;
 	}
-	.descr {
-		position: absolute;
-	    top: 370px;
-	    left: 50px;
-	    max-width: 400px;
-	    padding: 20px;
-	    background: rgba(0,0,0, 0.5)
-	}	
+   .mainImage:hover {
+      opacity: 1;
+      filter: none;
+   }
+}
+@media screen and (min-width: 800px){
+   .tiles {
+      justify-content: flex-start;
+      padding-left: 0px;
+   } 
+   .content {
+      display: flex;
+      margin-top: 30px;
+      width: 100%;
+   }
+   .descr {
+      min-width: 400px;
+      margin-right: 30px;
+   }
+   .secondImage {
+      max-height: 500px;
+   }
+}
+@media screen and (min-width:   1080px) {
+	.myWorkProject, .backButton {
+      margin-left: -100px
+   }
+   .tiles {
+      max-width: 100%;
+   }
+   
+   .project {
+      max-width: 100%;
+      margin-top: -100px;
+   }
+
+   .descr {
+      max-width: 500px
+   }
 
 }

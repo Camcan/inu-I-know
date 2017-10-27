@@ -1,4 +1,4 @@
-._client_components_css_app__logo{
+._logo_14nfk_1{
 	left: 30%;
 	width: 15%;
 	top: 5px;
@@ -7,12 +7,12 @@
 	opacity: 1;
 	margin-bottom: 0px;
 }
-._client_components_css_app__app {
+._app_14nfk_10 {
 	height: auto;
-}._client_components_css_human__headHuman {
+}._headHuman_toh46_1 {
 	text-align: left;
 }
-._client_components_css_human__logo{
+._logo_toh46_4{
 	z-index: 1;
 	width: 15%;
 	top: 5px;
@@ -22,11 +22,11 @@
 	margin-bottom: 0px;
 	z-index: 1;
 }
-._client_components_css_human__logo{
+._logo_toh46_4{
 	left: 20px;
 	transition: 1s ease-in-out;
 }
-._client_components_css_human__head { 
+._head_toh46_1 { 
 	position: fixed;
 	width: 100%;
    height: 200px;
@@ -34,18 +34,18 @@
 	background: black;
 	-webkit-animation-delay: 0s;
     animation-delay: 0s;
-	-webkit-animation-name: _client_components_css_human__fadeIn;
+	-webkit-animation-name: _fadeIn_toh46_1;
     -webkit-animation-duration: 2s;
- 	animation-name: _client_components_css_human__fadeIn;
+ 	animation-name: _fadeIn_toh46_1;
   	animation-duration: 2s;
   	opacity: 1;
 }
-._client_components_css_human__head h1 {
+._head_toh46_1 h1 {
 	margin-left: 170px;
 	max-width: 300px;
 }
 
-._client_components_css_human__center {
+._center_toh46_37 {
 	margin-bottom: 50px;
 	top: 250px;
    left: 10px;
@@ -53,9 +53,9 @@
 	height: auto;
 	padding: none;
 	position: absolute;
-	-webkit-animation-name: _client_components_css_human__fadeIn;
+	-webkit-animation-name: _fadeIn_toh46_1;
     -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_human__fadeIn;
+ 	animation-name: _fadeIn_toh46_1;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
@@ -63,7 +63,7 @@
    justify-content: center;
 }
 
-@-webkit-keyframes _client_components_css_human__fadeIn { 
+@-webkit-keyframes _fadeIn_toh46_1 { 
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -72,7 +72,7 @@
   100% { opacity: 1; }
 }
 
-@keyframes _client_components_css_human__fadeIn {
+@keyframes _fadeIn_toh46_1 {
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -81,7 +81,7 @@
   100% { opacity: 1; }
 }
 
-._client_components_css_human__hide {
+._hide_toh46_73 {
 	opacity: 0;
 	/*visibility: hidden;*/
 	transition: all 0.2s;
@@ -89,30 +89,30 @@
 
 
 @media screen and (min-width: 500px){
-	._client_components_css_human__center {
+	._center_toh46_37 {
 		margin-bottom: 50px;
 	}
 }
-._client_components_css_who__hide {
+._hide_13u80_1 {
   	visibility: hidden;
   	opacity: 0;
 }
 
-._client_components_css_who__fadeIn {
+._fadeIn_13u80_6 {
    max-width: 900px;
    padding: 10px;
    display: flex;
    justify-content: flex-end;
    flex-flow: row wrap;
-	-webkit-animation-name: _client_components_css_who__fadeIn;
+	-webkit-animation-name: _fadeIn_13u80_6;
     -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_who__fadeIn;
+ 	animation-name: _fadeIn_13u80_6;
   	animation-duration: 1s;
 }
-._client_components_css_who__fadeIn h2 {
+._fadeIn_13u80_6 h2 {
    padding-right: 50px;
 }
-._client_components_css_who__whoCol{
+._whoCol_13u80_20{
 	text-align: justify;
 	width: 30%;
 	max-width: 230px;
@@ -120,7 +120,7 @@
    margin-right: 40px;
 	min-width: 200px;
 }
-._client_components_css_who__profileImg {
+._profileImg_13u80_28 {
 	height: 150px;
 	width: 150px;
 	opacity: 0.5;
@@ -130,12 +130,12 @@
 	position: absolute;
 	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
 	background-size: cover;
-	-webkit-animation-name: _client_components_css_who__fadeIn;
+	-webkit-animation-name: _fadeIn_13u80_6;
     -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_who__fadeIn;
+ 	animation-name: _fadeIn_13u80_6;
   	animation-duration: 1s;
 }
-._client_components_css_who__socialButtons {
+._socialButtons_13u80_43 {
 	vertical-align: bottom;
 	color: white;
 	text-align: left;
@@ -143,26 +143,26 @@
 	height: 100px;
 	text-align: center;
 }
-._client_components_css_who__socialButtons a {
+._socialButtons_13u80_43 a {
 	display: inline-block;
 	opacity: 0.5;
 	margin: 10px 10px 0px;
 }
-._client_components_css_who__socialButtons a svg {
+._socialButtons_13u80_43 a svg {
    height: 20px;
    width: 20px;
 }
-._client_components_css_who__socialButtons a:hover {
+._socialButtons_13u80_43 a:hover {
 	opacity: 1;
 	-ms-transition: all 0.2s ease-out; 
 	transition: all 0.2s ease-out;
 }
 
 @media screen and (min-width: 550px){
-	._client_components_css_who__fadeIn {
+	._fadeIn_13u80_6 {
       justify-content: center
    }
-   ._client_components_css_who__center {
+   ._center_13u80_70 {
 		margin-top: 300px;
 		margin-left: 30%;
 		margin-bottom: 50px;
@@ -171,31 +171,34 @@
 	}
 }
 @media screen and (min-width: 1300px){
-	._client_components_css_who__profileImg {
+	._profileImg_13u80_28 {
 		right: 10%;
 	}
 
 }
-._client_components_css_work__projectsContainer{
+._projectsContainer_1cmam_1{
    width: 90%;
+   margin-top: 30px;
    max-width: 1000px;
+   display: flex;
+   flex-flow: row wrap;
 }
-._client_components_css_work__myWork {
+._myWork_1cmam_8 {
 	position: fixed;
-	margin: -30px 0 0 50px;
+	margin: 0 0 0 0px;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 }
-._client_components_css_work__myWorkProject {
+._myWorkProject_1cmam_14 {
 	position: fixed;
 	-ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 	margin: -30px 0 0 0;
 }
-._client_components_css_work__bgTitle {
+._bgTitle_1cmam_20 {
 	opacity: 0;
 }
-._client_components_css_work__bgTitle {
+._bgTitle_1cmam_20 {
 	left: 10%;
 	top: 20%;
 	font-size: 300px;
@@ -207,146 +210,208 @@
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
 }
-._client_components_css_work__tiles {
-	opacity: 0;
-	max-width: 300px;
-	white-space: nowrap;
+._tiles_1cmam_35 {
+   padding-left: 150px;
+   padding-top: 30px;
+	max-width: 90%;
+   display: flex;
+	flex-flow: column wrap;
 }
-._client_components_css_work__tiles {
-	opacity: 1;
-	-ms-transition: opacity 1s ease-out;  /* IE10 */
-    transition: opacity 1s ease-out; 
-}
-._client_components_css_work__tile {
-	display: block;
-	width: 100px;
-	height: 50px;
-    float: left;
+
+._tile_1cmam_35 {
+	opacity: 0.7;
+   display: block;
+	width: 150px;
+	height: 90px;
 	overflow: hidden;
-    background: grey;
+   background: rgba(255,255,255,0.2);
 }
-._client_components_css_work__tile img {
-	min-height: 100px;
+._tile_1cmam_35 img {
+	min-height: 50px;
 }
-._client_components_css_work__project {
-	-webkit-animation-name: _client_components_css_work__fadeIn;
+._project_1cmam_1 {
+   padding-top: 30px;
+	-webkit-animation-name: _fadeIn_1cmam_1;
     -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_work__fadeIn;
+ 	animation-name: _fadeIn_1cmam_1;
   	animation-duration: 1s;
 	/*margin-top: -50px;*/
 	overflow: hidden;
 	text-align: right;
 }
-._client_components_css_work__projectTitle {
-	margin: 0px;
-	text-align: right;
-	font-size: 50px;
-     -ms-transition: margin-right 0.3s ease-in-out; 
-	transition: margin-right 0.3s ease-in-out;
+._projectTitle_1cmam_64 {
+   font-size: 20px
 }
 
-._client_components_css_work__mainImage {
-	height: auto;
-	margin-left: -40%;
-	width: 140%;
+._mainImageContainer_1cmam_68 {
+   max-height: 200px;
+   overflow: hidden;
 }
-._client_components_css_work__descr {
+._mainImage_1cmam_68 {
+	height: auto;
+   margin-left: -10%;
+	width: 100%;
+}
+._secondImage_1cmam_77 {
+   max-width: 100%;
+   height: auto;
+   max-height: 400px;
+   opacity: 0.8;
+   transition: opacity 0.3s ease-in;
+}
+._project_1cmam_1 img:active, ._project_1cmam_1 img:hover {
+   opacity: 1;
+}
+._blerb_1cmam_87, ._descr_1cmam_87 {
     text-align: right;
 	max-width: 100%;
 }
-._client_components_css_work__backButton {
+
+
+._backButton_1cmam_93 {
 	position: fixed;
 	margin-left: 10px;
 	margin-top: 0px;
  -ms-transition: padding-left 0.3s ease-in-out; 
 	transition: padding-left 0.3s ease-in-out;
 }
-._client_components_css_work__backButton span {
+._backButton_1cmam_93 span {
 	opacity: 0;
 	-ms-transition: opacity 0.4s ease-in-out; 
 	transition: opacity 0.4s ease-in-out;
 }
 
 @media screen and (min-width:   500px) {
-	._client_components_css_work__center {
+	._center_1cmam_107 {
 		width: 70%;
 		margin-top: 20%;
 		margin-left: 30%;
 	}
-	._client_components_css_work__myWork {
-		margin-left:  0px;
+   ._projectsContainer_1cmam_1 {
+      padding-left: 10%;
+   }
+	._myWork_1cmam_8 {
+		margin-left:  70px;
 	}
-	._client_components_css_work__myWorkProject {
-		margin-left: -150px;
-	}
-	._client_components_css_work__tiles {
+	._myWorkProject_1cmam_14 {
 		margin-left: -50px;
-		max-width: 1000px;;
 	}
-	._client_components_css_work__tile {
-	  	width: 200px;
+	._tiles_1cmam_35 {
+      position: fixed;
+      margin-top: 50px;
+      padding-left: 0px;
+      max-height: 350px;
+      flex-flow: row wrap;
+      justify-content: center;
+   }
+   ._tile_1cmam_35 {
+	  	position: relative;
+      z-index: 5;
+      opacity: 0.7;
+      width: 200px;
 	    height: 150px;
+       transform: scale(1);
 	    -ms-transition: all 0.2s ease-in-out; 
 		transition: all 0.2s ease-in-out;
 	}
-	._client_components_css_work__tile:hover {
-		width: 250px;
-		height: 150px;
+	._tile_1cmam_35:hover {
+      z-index: 6;
+      opacity: 1;
+		transform: scale(1.01)
 	}
-	._client_components_css_work__tile img {
+	._tile_1cmam_35 img {
 		min-height: 150px;
 	}
-	._client_components_css_work__backButton {
+	._backButton_1cmam_93 {
 		padding-left: 50px;
-		margin-left: -140px;
+		margin-left: -50px;
 	}
-	._client_components_css_work__backButton:hover {
+	._backButton_1cmam_93:hover {
 		padding-left: 0px;
 	}
 
-	._client_components_css_work__backButton:hover > span {
+	._backButton_1cmam_93:hover > span {
 		opacity: 1;
 		visibility: visible;
 	}
-	._client_components_css_work__projectTitle {
+   ._project_1cmam_1 {
+      max-width: 90%;
+   }
+	._projectTitle_1cmam_64 {
 		margin-right: 0px;
 	}	
-}
-@media screen and (min-width:   950px) {
-	._client_components_css_work__mainImage {
+   ._mainImageContainer_1cmam_68 {
+      max-height: 400px;
+   }
+   ._mainImage_1cmam_68 {
+      opacity: 0.9;
+      filter: invert(0.7);
 		margin-left: 0;
 		width: 100%;
+      transition: opacity 0.2s ease-in-out;
+      transition: filter 0.3s ease-out 0.1s;
 	}
-	._client_components_css_work__descr {
-		position: absolute;
-	    top: 370px;
-	    left: 50px;
-	    max-width: 400px;
-	    padding: 20px;
-	    background: rgba(0,0,0, 0.5)
-	}	
+   ._mainImage_1cmam_68:hover {
+      opacity: 1;
+      filter: none;
+   }
+}
+@media screen and (min-width: 800px){
+   ._tiles_1cmam_35 {
+      justify-content: flex-start;
+      padding-left: 0px;
+   } 
+   ._content_1cmam_186 {
+      display: flex;
+      margin-top: 30px;
+      width: 100%;
+   }
+   ._descr_1cmam_87 {
+      min-width: 400px;
+      margin-right: 30px;
+   }
+   ._secondImage_1cmam_77 {
+      max-height: 500px;
+   }
+}
+@media screen and (min-width:   1080px) {
+	._myWorkProject_1cmam_14, ._backButton_1cmam_93 {
+      margin-left: -100px
+   }
+   ._tiles_1cmam_35 {
+      max-width: 100%;
+   }
+   
+   ._project_1cmam_1 {
+      max-width: 100%;
+      margin-top: -100px;
+   }
+
+   ._descr_1cmam_87 {
+      max-width: 500px
+   }
 
 }
-._client_components_css_timeline__container{
+._container_ltrn9_1{
    display: flex;
    justify-content: center;
    flex-direction: column;
    padding: 0px 20px;
 }
-._client_components_css_timeline__container ._client_components_css_timeline__pageTitle {
+._container_ltrn9_1 ._pageTitle_ltrn9_7 {
    position: fixed;
    width: 100%;
    top: 15%;
    text-align: center;
    height: 100px;
 }
-._client_components_css_timeline__timeline {
+._timeline_ltrn9_14 {
    height: 90%;
    width: 90%;
    padding: 10px 10px 10px 50px;
    max-width: 1200px;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar{
+._timeline_ltrn9_14 ._sidebar_ltrn9_20{
    position: absolute;
    top: 10px;
    bottom: 10px;
@@ -360,14 +425,14 @@
    justify-content: space-between;
 }
 
-._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar ._client_components_css_timeline__node_start{
+._timeline_ltrn9_14 ._sidebar_ltrn9_20 ._node_start_ltrn9_34{
    position: relative;
    top: -60px;
    left: -7px;
    height: 80px;
    width: 100px;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar ._client_components_css_timeline__year {
+._timeline_ltrn9_14 ._sidebar_ltrn9_20 ._year_ltrn9_41 {
    -moz-transform: rotate(270deg);
    -o-transform: rotate(270deg); 
    -webkit-transform: rotate(270deg); 
@@ -377,7 +442,7 @@
    position: relative;
    left: -50px
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__items {
+._timeline_ltrn9_14 ._items_ltrn9_51 {
    height: 100%;
    padding-bottom: 0px;
    display: flex;
@@ -385,7 +450,7 @@
    justify-content: space-around
 }
 
-._client_components_css_timeline__timeline ._client_components_css_timeline__item {
+._timeline_ltrn9_14 ._item_ltrn9_51 {
    display: relative;
    color: white;
    display: flex;
@@ -393,7 +458,7 @@
    flex-wrap: wrap;
    justify-content: flex-start;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._branch_ltrn9_67 {
    position: relative;
    margin-left: 0;
    width: 50%;
@@ -402,31 +467,31 @@
    min-height: 150px;
    transition: margin-left 0.3s ease-out;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch._client_components_css_timeline__selectedBranch  {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._branch_ltrn9_67._selectedBranch_ltrn9_76  {
       margin-left: 20px;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__title {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._branch_ltrn9_67 ._title_ltrn9_79 {
    margin: 0px 0px 10px 70px;
    font-size: 20px;
    height: 30px;
    text-align: left;
 }
 
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__node {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._branch_ltrn9_67 ._node_ltrn9_34 {
    position: relative;
    top: -10px;
    left: -7px;
    height: 0px;
    transition: left 0.3s;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch._client_components_css_timeline__selectedBranch ._client_components_css_timeline__node {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._branch_ltrn9_67._selectedBranch_ltrn9_76 ._node_ltrn9_34 {
    left: -27px
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__node svg {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._branch_ltrn9_67 ._node_ltrn9_34 svg {
    position: absolute;
    left: 0;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__period {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._branch_ltrn9_67 ._period_ltrn9_100 {
    margin: -7px 10px 10px 110px;
    z-index: 1;
    color: #eee;
@@ -435,7 +500,7 @@
    max-width: 200px;
    text-align: left;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content{ 
+._timeline_ltrn9_14 ._item_ltrn9_51 ._content_ltrn9_109{ 
    position: fixed;
    top: 30%;
    height: 200px;
@@ -447,10 +512,10 @@
    justify-content: center;
 }
 
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content._client_components_css_timeline__reveal {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._content_ltrn9_109._reveal_ltrn9_121 {
    opacity: 1
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__logo {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._content_ltrn9_109 ._logo_ltrn9_124 {
    position: absolute;
    z-index: 0;
    width: 50%;
@@ -458,56 +523,56 @@
    display: flex;
    justify-content: flex-end
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__logo img {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._content_ltrn9_109 ._logo_ltrn9_124 img {
    position: fixed;
    opacity: 0.3;
    top: 30%;
    height: 250px
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__brief {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._content_ltrn9_109 ._brief_ltrn9_138 {
    z-index: 1;
    margin: 10px 20px;
    max-width: 500px;
    text-align: left;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__brief ._client_components_css_timeline__title {
+._timeline_ltrn9_14 ._item_ltrn9_51 ._content_ltrn9_109 ._brief_ltrn9_138 ._title_ltrn9_79 {
    margin: 20px 20px 20px 20px;
    text-align: center;
 }
 
 @media screen and (min-width: 1000px){
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__items {
+   ._timeline_ltrn9_14 ._items_ltrn9_51 {
       padding-top: 100px;
    }
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch {
+   ._timeline_ltrn9_14 ._item_ltrn9_51 ._branch_ltrn9_67 {
       min-height: 200px;
    }
 }
-._client_components_css_nav__hide {
+._hide_18nzv_1 {
   position: absolute;
   opacity: 0;
   visibility: hidden;
 }
 
-._client_components_css_nav__nav {
+._nav_18nzv_7 {
   background: black;
 	width: 100%;
 	text-align: center;
-	-webkit-animation-name: _client_components_css_nav__fadeIn;
+	-webkit-animation-name: _fadeIn_18nzv_1;
     -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_nav__fadeIn;
+ 	animation-name: _fadeIn_18nzv_1;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
 }
 
-._client_components_css_nav__nav a {
+._nav_18nzv_7 a {
 	min-width: 100px;
 	margin: 20px;
 	padding: 10px;
 }
 
-@-webkit-keyframes _client_components_css_nav__fadeIn { 
+@-webkit-keyframes _fadeIn_18nzv_1 { 
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -516,7 +581,7 @@
   100% { opacity: 1; }
 }
 
-@keyframes _client_components_css_nav__fadeIn {
+@keyframes _fadeIn_18nzv_1 {
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -526,19 +591,19 @@
 }
 
 @media screen and (min-width:   730px) {
-  ._client_components_css_nav__nav {
+  ._nav_18nzv_7 {
     width: 300px;
     position: absolute;
     right: 40px;
     top: 35px;
   }
-}._client_components_css_projectLinks__projectLinks {
+}._projectLinks_1q2k9_1 {
 	text-align: right;
 	margin-bottom: 10px;
 	min-height: 30px;
 	color: white;
 }
-._client_components_css_projectLinks__projectLink {
+._projectLink_1q2k9_1 {
 	display: inline-block;
    opacity: 0.7;
 	text-shadow: 0px 0px 4px #FFF; 
@@ -548,13 +613,13 @@
  	margin: 0px;
 }
 @media screen and (min-width: 800px){
-   ._client_components_css_projectLinks__projectLink {
+   ._projectLink_1q2k9_1 {
 	   text-shadow: none;
       opacity: 0.5;
 	-ms-transition: opacity 0.2s ease-out; 
 	transition: opacity 0.2s ease-out;
 }
-   ._client_components_css_projectLinks__projectLink:hover {
+   ._projectLink_1q2k9_1:hover {
 	   opacity: 1;
    }
 }

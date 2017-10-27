@@ -1,19 +1,26 @@
 .projectLinks {
 	text-align: right;
 	margin-bottom: 10px;
-	height: 50px;
+	min-height: 30px;
 	color: white;
 }
 .projectLink {
 	display: inline-block;
-	float: right;
+   opacity: 0.7;
+	text-shadow: 0px 0px 4px #FFF; 
+   float: right;
 	clear: both;
 	max-width: 200px;
-	opacity: 0.5;
-	-ms-transition: opacity 0.2s ease-out; 
-	transition: opacity 0.2s ease-out;
  	margin: 0px;
 }
-.projectLink:hover {
-	opacity: 1;
+@media screen and (min-width: 800px){
+   .projectLink {
+	   text-shadow: none;
+      opacity: 0.5;
+	-ms-transition: opacity 0.2s ease-out; 
+	transition: opacity 0.2s ease-out;
+}
+   .projectLink:hover {
+	   opacity: 1;
+   }
 }

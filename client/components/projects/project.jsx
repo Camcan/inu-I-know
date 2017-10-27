@@ -21,16 +21,26 @@ export default React.createClass({
 
 	},
     render: function() {
-        var project = this.props
-        return ( 
+      var project = this.props
+      return ( 
     		<div>
                 <Link className={Styles.backButton}to="/work" onClick={this.props.back}><Back/><span>go back</span></Link>
-                <div id="project">
+                <div className={Styles.project}>
                     <p className={Styles.projectTitle}>{project.title}</p>
                     <Links github={project.github} live={project.live}/>
+                    <p className={Styles.blerb}>{project.description[0]}</p>
+                    <div className={Styles.mainImageContainer}>
                     <img className={Styles.mainImage} src={"../../" + project.imgs[1]}/>
-                    <p className={Styles.descr}>{project.description[1]}</p>
-                </div>
+                    </div>
+                    <div className={Styles.content}>
+                        <p className={Styles.descr}>
+                           {project.description[1]}
+                        </p>
+                        { 
+                           (project.imgs[2])? <img className={Styles.secondImage} src={"../../" + project.imgs[2]}/> : null
+                        }
+                     </div>
+                  </div>
             </div>
         )
     }

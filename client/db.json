@@ -1,6 +1,16 @@
 {
 	"projects": [
-	    {
+	   {
+	      "title": "WalkiTalki",
+	      "suffix": ".walkitalki",
+	      "desc": ["In house app with Metamorphic Studios", "While working for Metamorphic Studios, I spent extended periods of time working on WalkiTalki, a mobile app built using React-Native."],
+	       "tech": ["React-Native"],
+	       "link": {
+	       	"live": "http://walkitalki.life"
+	       },
+	      "imgs": ["img/projects/walkitalki/logo.png", "img/projects/walkitalki/play-store.png", "img/projects/walkitalki/screenshots-android.png"]
+	    },
+      {
 	      "title": "This Site",
 	      "suffix": ".this",
 	      "desc": ["What I've used to create this site.", "I gained a lot of experience helping people work through problems while acting as a teacher-aide at Enspiral Dev Academy, where React/Redux are now core to the carriculum. In spite of my apparent fluency, I've found limited oppertunity to make use of the technologies myself. This has been a space for me to play further vanilla ReactJS and modular CSS while re-upping my web-presence."],
