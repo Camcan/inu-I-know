@@ -14,7 +14,7 @@
 .timeline {
    height: 90%;
    width: 90%;
-   padding: 10px 10px 10px 50px;
+   padding: 10px;
    max-width: 1200px;
 }
 .timeline .sidebar{
@@ -46,7 +46,7 @@
    color: #eee;
    font-size: 18px;
    position: relative;
-   left: -50px
+   left: -20px
 }
 .timeline .items {
    height: 100%;
@@ -67,17 +67,15 @@
 .timeline .item .branch {
    position: relative;
    margin-left: 0;
-   width: 50%;
-   
    min-width: 250px;
-   min-height: 150px;
+   min-height: 50px;
    transition: margin-left 0.3s ease-out;
 }
 .timeline .item .branch.selectedBranch  {
       margin-left: 20px;
 }
 .timeline .item .branch .title {
-   margin: 0px 0px 10px 70px;
+   margin: 0px 0px 10px 60px;
    font-size: 20px;
    height: 30px;
    text-align: left;
@@ -107,22 +105,21 @@
    text-align: left;
 }
 .timeline .item .content{ 
-   position: fixed;
-   top: 30%;
-   height: 200px;
-   opacity: 0;
+   position: relative;
+   min-height: 200px;
+   top: -50px;
+   opacity: 0.9;
    z-index: 5;
    transition: opacity 1s ease-out;
    display: flex;
    flex-flow: row wrap;
    justify-content: center;
 }
-
-.timeline .item .content.reveal {
+.timeline .item.reveal .content {
    opacity: 1
 }
 .timeline .item .content .logo {
-   position: absolute;
+   position: relative;
    z-index: 0;
    width: 50%;
    min-width: 250px;
@@ -130,10 +127,8 @@
    justify-content: flex-end
 }
 .timeline .item .content .logo img {
-   position: fixed;
    opacity: 0.3;
-   top: 30%;
-   height: 250px
+   height: 50px
 }
 .timeline .item .content .brief {
    z-index: 1;
@@ -144,8 +139,50 @@
 .timeline .item .content .brief .title {
    margin: 20px 20px 20px 20px;
    text-align: center;
+   display: none;
 }
 
+@media screen and (min-width: 800px){
+   .timeline {
+      padding-left: 50px;
+   }
+   .timeline .sidebar .year {
+      left: -50px;
+   }
+   .timeline .item .branch {
+      min-height: 150px;
+   }
+   .timeline .item .branch .title {
+      margin-left: 70px;
+   }
+   .timeline .item .content{ 
+      position: fixed;
+      top: 30%;
+      height: 200px;
+      opacity: 0;
+      z-index: 5;
+      transition: opacity 1s ease-out;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+   }
+
+   .timeline .item .content.reveal {
+      opacity: 1
+   }
+   .timeline .item .content .logo {
+      position: absolute
+   }
+   .timeline .item .content .logo img {
+      position: fixed;
+      opacity: 0.3;
+      top: 30%;
+      height: 250px
+   }
+   .timeline .item .content .brief .title {
+      display: visible
+   }
+}
 @media screen and (min-width: 1000px){
    .timeline .items {
       padding-top: 100px;

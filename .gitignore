@@ -5,6 +5,7 @@ npm-debug.log*
 
 # Vim relics
 *.swo
+*.swn
 *.swp
 
 # Runtime data
