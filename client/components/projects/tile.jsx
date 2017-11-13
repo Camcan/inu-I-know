@@ -15,10 +15,15 @@ export default React.createClass({
         this.props.select(this.props.project)
     },
     render: function() {
-        return (
-              <div id={this.props.title} className={Styles.tile} onMouseEnter={this.handleMouseover} onClick={this.handleClick}>
-                    <img src={"../../"+this.props.project.imgs[0]}/>
-                </div>
+        return (  
+            <div id={this.props.title} className={Styles.tileContainer} onMouseEnter={this.handleMouseover} onClick={this.handleClick}>
+                  <div className={Styles.tile}>
+                     <img src={"../../"+this.props.project.imgs[0]}/>
+                   </div>
+                  <div className={Styles.tileInfo}>
+                     <p>{this.props.project.title}</p>
+                  </div>
+               </div>
         );
     }
 });
