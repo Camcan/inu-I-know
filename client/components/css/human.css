@@ -2,14 +2,12 @@
 	text-align: left;
 }
 .logo{
-	z-index: 1;
+	z-index: 7;
 	width: 15%;
 	top: 5px;
 	width: 150px;
 	position: fixed;
 	opacity: 1;
-	margin-bottom: 0px;
-	z-index: 1;
 }
 .logo{
 	left: 20px;
@@ -18,9 +16,11 @@
 .head { 
 	position: fixed;
 	width: 100%;
+   z-index:6; 
    height: 200px;
-	top: 20px;
-	background: black;
+   padding-top: 20px;
+	top: 0px;
+	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
 	-webkit-animation-delay: 0s;
     animation-delay: 0s;
 	-webkit-animation-name: fadeIn;

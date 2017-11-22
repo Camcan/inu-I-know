@@ -2,7 +2,8 @@
 	left: 30%;
 	width: 15%;
 	top: 5px;
-	width: 150px;
+	z-index:7;
+   width: 150px;
 	position: absolute;
 	opacity: 1;
 	margin-bottom: 0px;
