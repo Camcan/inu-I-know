@@ -7,6 +7,7 @@
     "exenv": "^1.2.2",
     "express": "^4.14.0",
     "history": "^2.0.0",
+    "nodemon": "^1.12.1",
     "react": "^15.3.2",
     "react-binding": "^0.7.5",
     "react-css-modules": "^3.7.10",
@@ -22,7 +23,7 @@
     "css-modulesify": "^0.25.1",
     "red-tape": "0.0.2",
     "tape": "^4.6.0",
-    "uglify-js": "^3.1.4",
+    "uglify-js": "^3.2.0",
     "uglifyify": "^4.0.4",
     "watchify": "^3.9.0"
   },

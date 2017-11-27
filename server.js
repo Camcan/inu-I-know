@@ -16,7 +16,9 @@ app.get(['/', '/who', '/work', '/de'], function(req, res) {
 })
 
 app.get(['/de/*'], function(req, res){
-	res.redirect('/')
+   if (env == 'production') {
+      res.redirect('https://'+req.hostname+req.url);
+   } else res.redurect('/')
 })
 
 
@@ -30,7 +32,7 @@ app.use(function(req, res) {
  })
 app.use(function(error, req, res, next) {
       res.status(500);
-     res.render('500.jade', {title:'500: Internal Server Error', error: error});
+     res.render('500.jade', {title:'Congratulations; you found a five-hundy error', error: error});
  })
 
 app.listen(app.get('port'), function() {
