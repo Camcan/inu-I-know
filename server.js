@@ -8,7 +8,7 @@ app.use('/', express.static(path.join(__dirname, 'public')))
 app.locals.settings['x-powered-by'] = false
 
 app.get(['/de/resume'], function(req, res){
-   res.sendFile(path.join(__dirname, 'public/cv/CV.html'));
+   res.sendFile(path.join(__dirname, 'public/resume/CV.html'));
 })
 
 app.get(['/', '/who', '/work', '/de'], function(req, res) {
