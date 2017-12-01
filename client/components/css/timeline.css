@@ -23,8 +23,8 @@
    bottom: 10px;
    z-index: 1;
    width: 6px;
-   margin-bottom: -300px;
-   padding-bottom: 300px;
+   margin-bottom: -200px;
+   padding-bottom: 200px;
    background: white;
    display: flex;
    flex-direction: column;
@@ -142,15 +142,16 @@
    display: none;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 900px){
    .timeline {
       padding-left: 50px;
+      padding-bottom: 300px;
    }
    .timeline .sidebar .year {
       left: -50px;
    }
    .timeline .item .branch {
-      min-height: 150px;
+      min-height: 200px;
    }
    .timeline .item .branch .title {
       margin-left: 70px;
@@ -158,7 +159,8 @@
    .timeline .item .content{ 
       position: fixed;
       top: 30%;
-      height: 200px;
+      min-height: 200px;
+      padding-left: 50px;
       opacity: 0;
       z-index: 5;
       transition: opacity 1s ease-out;
@@ -171,7 +173,8 @@
       opacity: 1
    }
    .timeline .item .content .logo {
-      position: absolute
+      position: absolute;
+      right: 10%;
    }
    .timeline .item .content .logo img {
       position: fixed;
@@ -183,11 +186,8 @@
       display: visible
    }
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
    .timeline .items {
       padding-top: 100px;
-   }
-   .timeline .item .branch {
-      min-height: 200px;
    }
 }

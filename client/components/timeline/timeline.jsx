@@ -61,7 +61,7 @@ export default class Timeline extends Component {
     handleScroll(){
       
       let container = document.getElementsByClassName(Styles.container)[0];
-       let offsetRatio = ( (this.state.initialPosition.top - container.getBoundingClientRect().top) / (container.getBoundingClientRect().height) )
+       let offsetRatio = ( (this.state.initialPosition.top - container.getBoundingClientRect().top) / (container.getBoundingClientRect().height) + 0.1 )
       console.log(offsetRatio)
       let selection = timeline[Math.round(offsetRatio*timeline.length)].slug
          console.log("Selection", selection)
