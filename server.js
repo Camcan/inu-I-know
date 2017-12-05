@@ -1,24 +1,23 @@
 var path = require('path')
 var express = require('express')
+var httpsRedirect = require('express-https-redirect')
 var app = express()
 
 app.set('port', (process.env.PORT || 3000))
 app.set('view engine', 'html')
-app.use('/', express.static(path.join(__dirname, 'public')))
+app.use('/', httpsRedirect(), express.static(path.join(__dirname, 'public')))
 app.locals.settings['x-powered-by'] = false
 
 app.get(['/de/resume'], function(req, res){
    res.sendFile(path.join(__dirname, 'public/resume/CV.html'));
 })
 
-app.get(['/', '/who', '/work', '/de'], function(req, res) {
+app.get(['/'], function(req, res) {
    res.sendFile(path.join(__dirname, 'client/views/base.html'))
 })
 
 app.get(['/de/*'], function(req, res){
-   if (env == 'production') {
-      res.redirect('https://'+req.hostname+req.url);
-   } else res.redurect('/')
+   res.redirect('/')
 })
 
 
