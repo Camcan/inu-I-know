@@ -53,7 +53,7 @@ div {
 #loader-wrapper .section {
     position: fixed;
     top: 0;
-    width: 51%;
+    width: 50%;
     height: 100%;
     background: #fff;
     z-index: 10;
