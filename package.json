@@ -6,7 +6,6 @@
   "dependencies": {
     "exenv": "^1.2.2",
     "express": "^4.14.0",
-    "express-https-redirect": "^1.0.0",
     "history": "^2.0.0",
     "nodemon": "^1.12.1",
     "react": "^15.3.2",
@@ -43,7 +42,7 @@
     ]
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "watch": "watchify -p [css-modulesify -o public/bundle.css] client/app.js -o public/scripts/bundle.js -dv & nodemon server.js",
     "build": "NODE_ENV=production browserify  -p [css-modulesify -o public/bundle.css] client/app.js -g uglifyify | uglifyjs --compress --mangle > public/scripts/bundle.js",
     "test": "echo \"Ain't nobody got time for that.\" && exit 1"
