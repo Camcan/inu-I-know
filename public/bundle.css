@@ -95,26 +95,26 @@
 		margin-bottom: 50px;
 	}
 }
-._hide_13u80_1 {
+._hide_12ivy_1 {
   	visibility: hidden;
   	opacity: 0;
 }
 
-._fadeIn_13u80_6 {
+._fadeIn_12ivy_6 {
    max-width: 900px;
    padding: 10px;
    display: flex;
    justify-content: flex-end;
    flex-flow: row wrap;
-	-webkit-animation-name: _fadeIn_13u80_6;
+	-webkit-animation-name: _fadeIn_12ivy_6;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_13u80_6;
+ 	animation-name: _fadeIn_12ivy_6;
   	animation-duration: 1s;
 }
-._fadeIn_13u80_6 h2 {
+._fadeIn_12ivy_6 h2 {
    padding-right: 50px;
 }
-._whoCol_13u80_20{
+._whoCol_12ivy_20{
 	text-align: justify;
 	width: 30%;
 	max-width: 230px;
@@ -122,22 +122,21 @@
    margin-right: 40px;
 	min-width: 200px;
 }
-._profileImg_13u80_28 {
+._profileImg_12ivy_28 {
 	height: 150px;
 	width: 150px;
 	opacity: 0.5;
-	top: 5%;
+	margin-top: 20px;
 	right: 5%;
 	z-index: 0;
-	position: absolute;
 	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
 	background-size: cover;
-	-webkit-animation-name: _fadeIn_13u80_6;
+	-webkit-animation-name: _fadeIn_12ivy_6;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_13u80_6;
+ 	animation-name: _fadeIn_12ivy_6;
   	animation-duration: 1s;
 }
-._socialButtons_13u80_43 {
+._socialButtons_12ivy_42 {
 	vertical-align: bottom;
 	color: white;
 	text-align: left;
@@ -145,26 +144,26 @@
 	height: 100px;
 	text-align: center;
 }
-._socialButtons_13u80_43 a {
+._socialButtons_12ivy_42 a {
 	display: inline-block;
 	opacity: 0.5;
 	margin: 10px 10px 0px;
 }
-._socialButtons_13u80_43 a svg {
+._socialButtons_12ivy_42 a svg {
    height: 20px;
    width: 20px;
 }
-._socialButtons_13u80_43 a:hover {
+._socialButtons_12ivy_42 a:hover {
 	opacity: 1;
 	-ms-transition: all 0.2s ease-out; 
 	transition: all 0.2s ease-out;
 }
 
 @media screen and (min-width: 550px){
-	._fadeIn_13u80_6 {
+	._fadeIn_12ivy_6 {
       justify-content: center
    }
-   ._center_13u80_70 {
+   ._center_12ivy_69 {
 		margin-top: 300px;
 		margin-left: 30%;
 		margin-bottom: 50px;
@@ -173,35 +172,35 @@
 	}
 }
 @media screen and (min-width: 1300px){
-	._profileImg_13u80_28 {
+	._profileImg_12ivy_28 {
 		right: 10%;
 	}
 
 }
-._projectsContainer_raxan_1{
+._projectsContainer_16ng2_1{
    width: 90%;
    margin-top: 30px;
    max-width: 1000px;
    display: flex;
    flex-flow: row wrap;
 }
-._myWork_raxan_8 {
+._myWork_16ng2_8 {
 	position: fixed;
 	margin: 0 0 0 0px;
    background: black;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 }
-._myWorkProject_raxan_15 {
+._myWorkProject_16ng2_15 {
 	position: fixed;
 	-ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 	margin: -30px 0 0 0;
 }
-._bgTitle_raxan_21 {
+._bgTitle_16ng2_21 {
 	opacity: 0;
 }
-._bgTitle_raxan_21 {
+._bgTitle_16ng2_21 {
 	left: 10%;
 	top: 20%;
 	font-size: 300px;
@@ -213,19 +212,19 @@
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
 }
-._tiles_raxan_36 {
+._tiles_16ng2_36 {
    padding: 30px 0px;
 	max-width: 90%;
    display: flex;
 	flex-flow: column wrap;
 }
-._tileContainer_raxan_42 {
+._tileContainer_16ng2_42 {
    position: relative;
 	width: 100%;
 	height: 90px;
    margin: 5px;
 }
-._tile_raxan_36 {
+._tile_16ng2_36 {
 	position: absolute;
    right: 0px;
    opacity: 0.7;
@@ -235,90 +234,90 @@
    overflow: hidden;
    background: rgba(255,255,255,0.2);
 }
-._tile_raxan_36 img {
+._tile_16ng2_36 img {
 	min-height: 50px;
    z-index: 1;
 }
-._tileInfo_raxan_62 {
+._tileInfo_16ng2_62 {
    position: absolute;
    z-index: 2;
    right: 200px;
    top: 0px;
    left: 0px;
 }
-._tileInfo_raxan_62 p {
+._tileInfo_16ng2_62 p {
    margin: 0px;
    padding: 0px 3px;
    width: auto
 }
-._project_raxan_1 {
+._project_16ng2_1 {
    padding-top: 30px;
-	-webkit-animation-name: _fadeIn_raxan_1;
+	-webkit-animation-name: _fadeIn_16ng2_1;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_raxan_1;
+ 	animation-name: _fadeIn_16ng2_1;
   	animation-duration: 1s;
 	/*margin-top: -50px;*/
 	overflow: hidden;
 	text-align: right;
 }
-._projectTitle_raxan_84 {
+._projectTitle_16ng2_84 {
    font-size: 20px
 }
 
-._mainImageContainer_raxan_88 {
-   max-height: 200px;
+._mainImageContainer_16ng2_88 {
+   max-height: 150px;
    overflow: hidden;
 }
-._mainImage_raxan_88 {
+._mainImage_16ng2_88 {
 	height: auto;
    margin-left: -10%;
 	width: 100%;
 }
-._secondImage_raxan_97 {
+._secondImage_16ng2_97 {
    max-width: 100%;
    height: auto;
    max-height: 400px;
    opacity: 0.8;
    transition: opacity 0.3s ease-in;
 }
-._project_raxan_1 img:active, ._project_raxan_1 img:hover {
+._project_16ng2_1 img:active, ._project_16ng2_1 img:hover {
    opacity: 1;
 }
-._blerb_raxan_107, ._descr_raxan_107 {
+._blerb_16ng2_107, ._descr_16ng2_107 {
     text-align: right;
 	max-width: 100%;
 }
 
 
-._backButton_raxan_113 {
+._backButton_16ng2_113 {
 	position: fixed;
 	margin-left: 10px;
 	margin-top: 0px;
  -ms-transition: padding-left 0.3s ease-in-out; 
 	transition: padding-left 0.3s ease-in-out;
 }
-._backButton_raxan_113 span {
+._backButton_16ng2_113 span {
 	opacity: 0;
 	-ms-transition: opacity 0.4s ease-in-out; 
 	transition: opacity 0.4s ease-in-out;
 }
 
 @media screen and (min-width:   500px) {
-	._center_raxan_127 {
+	._center_16ng2_127 {
 		width: 70%;
 		margin-top: 20%;
 		margin-left: 30%;
 	}
-   ._projectsContainer_raxan_1 {
+   ._projectsContainer_16ng2_1 {
       padding-left: 10%;
    }
-	._myWork_raxan_8 {
+	._myWork_16ng2_8 {
 		margin-left:  70px;
 	}
-	._myWorkProject_raxan_15 {
+	._myWorkProject_16ng2_15 {
 		margin-left: -50px;
 	}
-	._tiles_raxan_36 {
+	._tiles_16ng2_36 {
       position: fixed;
       margin-top: 50px;
       padding-left: 0px;
@@ -326,7 +325,7 @@
       flex-flow: row wrap;
       justify-content: center;
    }
-   ._tileContainer_raxan_42 {
+   ._tileContainer_16ng2_42 {
       margin: 10px;
 	  	position: relative;
       z-index: 5;
@@ -337,12 +336,12 @@
 	    -ms-transition: all 0.2s ease-in-out; 
 		transition: all 0.2s ease-in-out;
 	}
-	._tileContainer_raxan_42:hover {
+	._tileContainer_16ng2_42:hover {
       z-index: 6;
       opacity: 1;
 		transform: scale(1.01)
 	}
-   ._tileInfo_raxan_62 {
+   ._tileInfo_16ng2_62 {
       top: 0px;
       bottom: 10px;
       right:20px;
@@ -350,39 +349,39 @@
       background: rgba(0,0,0,0.2);
       transition: opacity 0.3s 0.2s ease-out;
    }
-   ._tileContainer_raxan_42:hover ._tileInfo_raxan_62 {
+   ._tileContainer_16ng2_42:hover ._tileInfo_16ng2_62 {
       opacity: 1
    }
-   ._tileInfo_raxan_62 p {
+   ._tileInfo_16ng2_62 p {
       font-size: 20px;
    }
-	._tile_raxan_36 img {
+	._tile_16ng2_36 img {
       top: 0px;
       position: relative;
 		min-height: 150px;
    }
-	._backButton_raxan_113 {
+	._backButton_16ng2_113 {
 		padding-left: 50px;
 		margin-left: -50px;
 	}
-	._backButton_raxan_113:hover {
+	._backButton_16ng2_113:hover {
 		padding-left: 0px;
 	}
 
-	._backButton_raxan_113:hover > span {
+	._backButton_16ng2_113:hover > span {
 		opacity: 1;
 		visibility: visible;
 	}
-   ._project_raxan_1 {
+   ._project_16ng2_1 {
       max-width: 90%;
    }
-	._projectTitle_raxan_84 {
+	._projectTitle_16ng2_84 {
 		margin-right: 0px;
 	}	
-   ._mainImageContainer_raxan_88 {
+   ._mainImageContainer_16ng2_88 {
       max-height: 400px;
    }
-   ._mainImage_raxan_88 {
+   ._mainImage_16ng2_88 {
       opacity: 0.9;
       filter: invert(0.7);
 		margin-left: 0;
@@ -390,43 +389,43 @@
       transition: opacity 0.2s ease-in-out;
       transition: filter 0.3s ease-out 0.1s;
 	}
-   ._mainImage_raxan_88:hover {
+   ._mainImage_16ng2_88:hover {
       opacity: 1;
       filter: none;
    }
 }
 @media screen and (min-width: 800px){
-   ._tiles_raxan_36 {
+   ._tiles_16ng2_36 {
       justify-content: flex-start;
       padding-left: 0px;
    } 
-   ._content_raxan_223 {
+   ._content_16ng2_223 {
       display: flex;
       margin-top: 30px;
       width: 100%;
    }
-   ._descr_raxan_107 {
+   ._descr_16ng2_107 {
       min-width: 400px;
       margin-right: 30px;
    }
-   ._secondImage_raxan_97 {
+   ._secondImage_16ng2_97 {
       max-height: 500px;
    }
 }
 @media screen and (min-width:   1080px) {
-	._myWorkProject_raxan_15, ._backButton_raxan_113 {
+	._myWorkProject_16ng2_15, ._backButton_16ng2_113 {
       margin-left: -100px
    }
-   ._tiles_raxan_36 {
+   ._tiles_16ng2_36 {
       max-width: 100%;
    }
    
-   ._project_raxan_1 {
+   ._project_16ng2_1 {
       max-width: 100%;
       margin-top: -100px;
    }
 
-   ._descr_raxan_107 {
+   ._descr_16ng2_107 {
       max-width: 500px
    }
 

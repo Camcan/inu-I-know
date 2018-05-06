@@ -25,19 +25,19 @@ export default React.createClass({
                      <p>
                         Will code for grapes.
                      </p>
-                    
-                </div>
-                <div className={Styles.whoCol}>
-                  <p>
+                     <p>
                         Reductionist problem solving; pragmatism and flow.
                      </p>  
-                  <p>
-                     Most of my time is split between the Southern Alps and Wellington, New Zealand.
-                  </p>
-                    <Social className={Styles.socialButtons}/>
+                     <p>
+                        Most of my time is split between the Southern Alps and Wellington, New Zealand.
+                     </p>
+                     <Social className={Styles.socialButtons}/>    
                 </div>
+                <div className={Styles.whoCol}>
+                
     		      <div className={Styles.profileImg}></div>
         	</div>
+            </div>
         )
     }
 })
