@@ -16,7 +16,8 @@ export default React.createClass({
         	<div className={Styles.fadeIn}>
                 <h2>who?</h2>
                 <div className={Styles.whoCol}>
-                    <p>
+                     <div className={[Styles.profileImg, Styles.mobile].join(" ")}></div>
+		     <p>
                         Cam (Campbell Hawkes)
                      </p>
                      <p>
@@ -35,7 +36,7 @@ export default React.createClass({
                 </div>
                 <div className={Styles.whoCol}>
                 
-    		      <div className={Styles.profileImg}></div>
+    		      <div className={[Styles.profileImg, Styles.desktop].join(" ")}></div>
         	</div>
             </div>
         )
