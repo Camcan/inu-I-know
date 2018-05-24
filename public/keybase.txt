@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/camcan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://camcan.co
+  * I am camcan (https://keybase.io/camcan) on keybase.
+  * I have a public key ASBtBRh7pWflNSg1tFUBFG89knHY0sckGpb24IwLPQ5HIgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101da4c1881f0428283fcbe43135bf3b17a0eeb143e31c3128046d6a6959cbb2b2c0a",
+      "host": "keybase.io",
+      "kid": "01206d05187ba567e5352835b45501146f3d9271d8d2c7241a96f6e08c0b3d0e47220a",
+      "uid": "8472fa17af1875786486e3f2aa180419",
+      "username": "camcan"
+    },
+    "merkle_root": {
+      "ctime": 1527137833,
+      "hash": "e423459114a080582fce9b1d26929bb81525ebecbad18d21b87849b85aaa79659aedad0fab7cd9607a267a8fcd7cb47dae7c89191756caba1a484fd8e6bb775c",
+      "hash_meta": "40afa0534bb0f9514206e41b8e62c9c401f6082ef1c82902629b2ae7a62ebfbc",
+      "seqno": 2890963
+    },
+    "service": {
+      "entropy": "QSEpbqWfgMD1bbn0t23TtHm1",
+      "hostname": "camcan.co",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.49"
+  },
+  "ctime": 1527137853,
+  "expire_in": 504576000,
+  "prev": "6fc03258801f1ae55d74e7b3369461b12b79d221f4ef5bbb3fed3be8388db687",
+  "seqno": 25,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgbQUYe6Vn5TUoNbRVARRvPZJx2NLHJBqW9uCMCz0ORyIKp3BheWxvYWTESpcCGcQgb8AyWIAfGuVddOezNpRhsSt50iH071u7P+076DiNtofEILbj5YAKWL0xkCdENC6Yhumy2RdINI9BSr7T3fKMRIyaAgHCo3NpZ8RAkRaAEL0FZ2riCPa5Rem4DcXQqU+7WgUvUqviMdZ07XIARO8TsniQuU8gpvwnPKsBWSHiyoT7Uc6nDtqrCzeABKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIq8CtDTd+4BmvHwNUO/oSbI5b2oKcO5U9ANwKsnIohro3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/camcan
+
+==================================================================
