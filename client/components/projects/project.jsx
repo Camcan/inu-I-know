@@ -5,6 +5,7 @@ import Links from './projectLinks.jsx'
 import Back from '../assets/icons/back.js'
 import Web from '../assets/icons/earth.js'
 import Github from '../assets/icons/github.js'
+import NetworkContainer from '../network/index.js';
 import {Link} from 'react-router'
 export default React.createClass({
      propTypes: {
@@ -39,7 +40,10 @@ export default React.createClass({
                         { 
                            (project.imgs[2])? <img className={Styles.secondImage} src={"../../" + project.imgs[2]}/> : null
                         }
-                     </div>
+                        
+                    </div>
+                    {
+                        (project.title == 'Beer?') ? <NetworkContainer /> : null                    }
                   </div>
             </div>
         )

@@ -35,7 +35,7 @@
 }
 .tiles {
    padding: 30px 0px;
-	max-width: 90%;
+    max-width: 90%;
    display: flex;
 	flex-flow: column wrap;
 }
@@ -97,7 +97,7 @@
 .secondImage {
    max-width: 100%;
    height: auto;
-   max-height: 400px;
+   max-height: 200px;
    opacity: 0.8;
    transition: opacity 0.3s ease-in;
 }
@@ -200,11 +200,11 @@
 		margin-right: 0px;
 	}	
    .mainImageContainer {
-      max-height: 400px;
+      max-height: 200px;
    }
    .mainImage {
       opacity: 0.9;
-      filter: invert(0.7);
+      filter: invert(0.2);
 		margin-left: 0;
 		width: 100%;
       transition: opacity 0.2s ease-in-out;
@@ -230,7 +230,7 @@
       margin-right: 30px;
    }
    .secondImage {
-      max-height: 500px;
+      max-height: 300px;
    }
 }
 @media screen and (min-width:   1080px) {

@@ -1,4 +1,4 @@
-._logo_pwz8t_1{
+._client_components_css_app__logo{
 	left: 30%;
 	width: 15%;
 	top: 5px;
@@ -8,13 +8,13 @@
 	opacity: 1;
 	margin-bottom: 0px;
 }
-._app_pwz8t_11 {
+._client_components_css_app__app {
 	height: auto;
 }
-._headHuman_16nxm_1 {
+._client_components_css_human__headHuman {
 	text-align: left;
 }
-._logo_16nxm_4{
+._client_components_css_human__logo{
 	z-index: 7;
 	width: 15%;
 	top: 5px;
@@ -22,11 +22,11 @@
 	position: fixed;
 	opacity: 1;
 }
-._logo_16nxm_4{
+._client_components_css_human__logo{
 	left: 20px;
 	transition: 1s ease-in-out;
 }
-._head_16nxm_1 { 
+._client_components_css_human__head { 
 	position: fixed;
 	width: 100%;
    z-index:6; 
@@ -36,18 +36,18 @@
 	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
 	-webkit-animation-delay: 0s;
     animation-delay: 0s;
-	-webkit-animation-name: _fadeIn_16nxm_1;
+	-webkit-animation-name: _client_components_css_human__fadeIn;
     -webkit-animation-duration: 2s;
- 	animation-name: _fadeIn_16nxm_1;
+ 	animation-name: _client_components_css_human__fadeIn;
   	animation-duration: 2s;
   	opacity: 1;
 }
-._head_16nxm_1 h1 {
+._client_components_css_human__head h1 {
 	margin-left: 170px;
 	max-width: 300px;
 }
 
-._center_16nxm_37 {
+._client_components_css_human__center {
 	margin-bottom: 50px;
 	top: 250px;
    left: 10px;
@@ -55,9 +55,9 @@
 	height: auto;
 	padding: none;
 	position: absolute;
-	-webkit-animation-name: _fadeIn_16nxm_1;
+	-webkit-animation-name: _client_components_css_human__fadeIn;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_16nxm_1;
+ 	animation-name: _client_components_css_human__fadeIn;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
@@ -65,7 +65,7 @@
    justify-content: center;
 }
 
-@-webkit-keyframes _fadeIn_16nxm_1 { 
+@-webkit-keyframes _client_components_css_human__fadeIn { 
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -74,7 +74,7 @@
   100% { opacity: 1; }
 }
 
-@keyframes _fadeIn_16nxm_1 {
+@keyframes _client_components_css_human__fadeIn {
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -83,7 +83,7 @@
   100% { opacity: 1; }
 }
 
-._hide_16nxm_73 {
+._client_components_css_human__hide {
 	opacity: 0;
 	/*visibility: hidden;*/
 	transition: all 0.2s;
@@ -91,52 +91,57 @@
 
 
 @media screen and (min-width: 500px){
-	._center_16nxm_37 {
+	._client_components_css_human__center {
 		margin-bottom: 50px;
 	}
 }
-._hide_12ivy_1 {
+._client_components_css_who__hide {
   	visibility: hidden;
   	opacity: 0;
 }
 
-._fadeIn_12ivy_6 {
+
+._client_components_css_who__fadeIn {
    max-width: 900px;
    padding: 10px;
    display: flex;
    justify-content: flex-end;
    flex-flow: row wrap;
-	-webkit-animation-name: _fadeIn_12ivy_6;
+	-webkit-animation-name: _client_components_css_who__fadeIn;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_12ivy_6;
+ 	animation-name: _client_components_css_who__fadeIn;
   	animation-duration: 1s;
 }
-._fadeIn_12ivy_6 h2 {
+._client_components_css_who__fadeIn h2 {
    padding-right: 50px;
 }
-._whoCol_12ivy_20{
-	text-align: justify;
+._client_components_css_who__whoCol{
+	text-align: left;
 	width: 30%;
 	max-width: 230px;
 	padding: 0;
+	z-index: 1;
    margin-right: 40px;
 	min-width: 200px;
 }
-._profileImg_12ivy_28 {
-	height: 150px;
-	width: 150px;
+._client_components_css_who__profileImg {
+	height: 100px;
+	width: 100px;
 	opacity: 0.5;
-	margin-top: 20px;
-	right: 5%;
-	z-index: 0;
 	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
 	background-size: cover;
-	-webkit-animation-name: _fadeIn_12ivy_6;
+	-webkit-animation-name: _client_components_css_who__fadeIn;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_12ivy_6;
+ 	animation-name: _client_components_css_who__fadeIn;
   	animation-duration: 1s;
 }
-._socialButtons_12ivy_42 {
+._client_components_css_who__profileImg._client_components_css_who__mobile {
+	top: 0px;
+	position: absolute;
+	margin: -40px -50px -50px -20px;
+	z-index: 0;
+}
+._client_components_css_who__socialButtons {
 	vertical-align: bottom;
 	color: white;
 	text-align: left;
@@ -144,63 +149,77 @@
 	height: 100px;
 	text-align: center;
 }
-._socialButtons_12ivy_42 a {
+._client_components_css_who__socialButtons a {
 	display: inline-block;
 	opacity: 0.5;
 	margin: 10px 10px 0px;
 }
-._socialButtons_12ivy_42 a svg {
+._client_components_css_who__socialButtons a svg {
    height: 20px;
    width: 20px;
 }
-._socialButtons_12ivy_42 a:hover {
+._client_components_css_who__socialButtons a:hover {
 	opacity: 1;
 	-ms-transition: all 0.2s ease-out; 
 	transition: all 0.2s ease-out;
 }
 
-@media screen and (min-width: 550px){
-	._fadeIn_12ivy_6 {
-      justify-content: center
-   }
-   ._center_12ivy_69 {
-		margin-top: 300px;
-		margin-left: 30%;
-		margin-bottom: 50px;
-		width: 50%;
-		max-width: 700px;
+._client_components_css_who__desktop {
+	display: none;
+}
+
+@media screen and (min-width: 367px){
+	._client_components_css_who__profileImg._client_components_css_who__mobile {
+		margin: 70px -50px -50px -150px;
 	}
 }
-@media screen and (min-width: 1300px){
-	._profileImg_12ivy_28 {
-		right: 10%;
+@media screen and (min-width: 700px){
+	._client_components_css_who__fadeIn {
+      		justify-content: center
+   	}
+	._client_components_css_who__mobile{
+		display: none;
 	}
+	._client_components_css_who__desktop {
+		display: flex;
+	}
+	._client_components_css_who__profileImg._client_components_css_who__desktop {
+		height: 120px;
+		width: 120px;
+		position: relative;
+		margin-top: 20px;
+		top: 0;
+		right: 0;
+	}
+}
+@media screen and (min-width: 1000px){
+
 
 }
-._projectsContainer_16ng2_1{
+._client_components_css_work__projectsContainer{
    width: 90%;
    margin-top: 30px;
    max-width: 1000px;
    display: flex;
    flex-flow: row wrap;
 }
-._myWork_16ng2_8 {
+._client_components_css_work__myWork {
 	position: fixed;
 	margin: 0 0 0 0px;
    background: black;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 }
-._myWorkProject_16ng2_15 {
+._client_components_css_work__myWorkProject {
 	position: fixed;
 	-ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 	margin: -30px 0 0 0;
 }
-._bgTitle_16ng2_21 {
+._client_components_css_work__bgTitle {
 	opacity: 0;
 }
-._bgTitle_16ng2_21 {
+._client_components_css_work__bgTitle {
 	left: 10%;
 	top: 20%;
 	font-size: 300px;
@@ -212,19 +231,19 @@
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
 }
-._tiles_16ng2_36 {
+._client_components_css_work__tiles {
    padding: 30px 0px;
-	max-width: 90%;
+    max-width: 90%;
    display: flex;
 	flex-flow: column wrap;
 }
-._tileContainer_16ng2_42 {
+._client_components_css_work__tileContainer {
    position: relative;
 	width: 100%;
 	height: 90px;
    margin: 5px;
 }
-._tile_16ng2_36 {
+._client_components_css_work__tile {
 	position: absolute;
    right: 0px;
    opacity: 0.7;
@@ -234,90 +253,90 @@
    overflow: hidden;
    background: rgba(255,255,255,0.2);
 }
-._tile_16ng2_36 img {
+._client_components_css_work__tile img {
 	min-height: 50px;
    z-index: 1;
 }
-._tileInfo_16ng2_62 {
+._client_components_css_work__tileInfo {
    position: absolute;
    z-index: 2;
    right: 200px;
    top: 0px;
    left: 0px;
 }
-._tileInfo_16ng2_62 p {
+._client_components_css_work__tileInfo p {
    margin: 0px;
    padding: 0px 3px;
    width: auto
 }
-._project_16ng2_1 {
+._client_components_css_work__project {
    padding-top: 30px;
-	-webkit-animation-name: _fadeIn_16ng2_1;
+	-webkit-animation-name: _client_components_css_work__fadeIn;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_16ng2_1;
+ 	animation-name: _client_components_css_work__fadeIn;
   	animation-duration: 1s;
 	/*margin-top: -50px;*/
 	overflow: hidden;
 	text-align: right;
 }
-._projectTitle_16ng2_84 {
+._client_components_css_work__projectTitle {
    font-size: 20px
 }
 
-._mainImageContainer_16ng2_88 {
+._client_components_css_work__mainImageContainer {
    max-height: 150px;
    overflow: hidden;
 }
-._mainImage_16ng2_88 {
+._client_components_css_work__mainImage {
 	height: auto;
    margin-left: -10%;
 	width: 100%;
 }
-._secondImage_16ng2_97 {
+._client_components_css_work__secondImage {
    max-width: 100%;
    height: auto;
-   max-height: 400px;
+   max-height: 200px;
    opacity: 0.8;
    transition: opacity 0.3s ease-in;
 }
-._project_16ng2_1 img:active, ._project_16ng2_1 img:hover {
+._client_components_css_work__project img:active, ._client_components_css_work__project img:hover {
    opacity: 1;
 }
-._blerb_16ng2_107, ._descr_16ng2_107 {
+._client_components_css_work__blerb, ._client_components_css_work__descr {
     text-align: right;
 	max-width: 100%;
 }
 
 
-._backButton_16ng2_113 {
+._client_components_css_work__backButton {
 	position: fixed;
 	margin-left: 10px;
 	margin-top: 0px;
  -ms-transition: padding-left 0.3s ease-in-out; 
 	transition: padding-left 0.3s ease-in-out;
 }
-._backButton_16ng2_113 span {
+._client_components_css_work__backButton span {
 	opacity: 0;
 	-ms-transition: opacity 0.4s ease-in-out; 
 	transition: opacity 0.4s ease-in-out;
 }
 
 @media screen and (min-width:   500px) {
-	._center_16ng2_127 {
+	._client_components_css_work__center {
 		width: 70%;
 		margin-top: 20%;
 		margin-left: 30%;
 	}
-   ._projectsContainer_16ng2_1 {
+   ._client_components_css_work__projectsContainer {
       padding-left: 10%;
    }
-	._myWork_16ng2_8 {
+	._client_components_css_work__myWork {
 		margin-left:  70px;
 	}
-	._myWorkProject_16ng2_15 {
+	._client_components_css_work__myWorkProject {
 		margin-left: -50px;
 	}
-	._tiles_16ng2_36 {
+	._client_components_css_work__tiles {
       position: fixed;
       margin-top: 50px;
       padding-left: 0px;
@@ -325,7 +344,7 @@
       flex-flow: row wrap;
       justify-content: center;
    }
-   ._tileContainer_16ng2_42 {
+   ._client_components_css_work__tileContainer {
       margin: 10px;
 	  	position: relative;
       z-index: 5;
@@ -336,12 +355,12 @@
 	    -ms-transition: all 0.2s ease-in-out; 
 		transition: all 0.2s ease-in-out;
 	}
-	._tileContainer_16ng2_42:hover {
+	._client_components_css_work__tileContainer:hover {
       z-index: 6;
       opacity: 1;
 		transform: scale(1.01)
 	}
-   ._tileInfo_16ng2_62 {
+   ._client_components_css_work__tileInfo {
       top: 0px;
       bottom: 10px;
       right:20px;
@@ -349,107 +368,107 @@
       background: rgba(0,0,0,0.2);
       transition: opacity 0.3s 0.2s ease-out;
    }
-   ._tileContainer_16ng2_42:hover ._tileInfo_16ng2_62 {
+   ._client_components_css_work__tileContainer:hover ._client_components_css_work__tileInfo {
       opacity: 1
    }
-   ._tileInfo_16ng2_62 p {
+   ._client_components_css_work__tileInfo p {
       font-size: 20px;
    }
-	._tile_16ng2_36 img {
+	._client_components_css_work__tile img {
       top: 0px;
       position: relative;
 		min-height: 150px;
    }
-	._backButton_16ng2_113 {
+	._client_components_css_work__backButton {
 		padding-left: 50px;
 		margin-left: -50px;
 	}
-	._backButton_16ng2_113:hover {
+	._client_components_css_work__backButton:hover {
 		padding-left: 0px;
 	}
 
-	._backButton_16ng2_113:hover > span {
+	._client_components_css_work__backButton:hover > span {
 		opacity: 1;
 		visibility: visible;
 	}
-   ._project_16ng2_1 {
+   ._client_components_css_work__project {
       max-width: 90%;
    }
-	._projectTitle_16ng2_84 {
+	._client_components_css_work__projectTitle {
 		margin-right: 0px;
 	}	
-   ._mainImageContainer_16ng2_88 {
-      max-height: 400px;
+   ._client_components_css_work__mainImageContainer {
+      max-height: 200px;
    }
-   ._mainImage_16ng2_88 {
+   ._client_components_css_work__mainImage {
       opacity: 0.9;
-      filter: invert(0.7);
+      filter: invert(0.2);
 		margin-left: 0;
 		width: 100%;
       transition: opacity 0.2s ease-in-out;
       transition: filter 0.3s ease-out 0.1s;
 	}
-   ._mainImage_16ng2_88:hover {
+   ._client_components_css_work__mainImage:hover {
       opacity: 1;
       filter: none;
    }
 }
 @media screen and (min-width: 800px){
-   ._tiles_16ng2_36 {
+   ._client_components_css_work__tiles {
       justify-content: flex-start;
       padding-left: 0px;
    } 
-   ._content_16ng2_223 {
+   ._client_components_css_work__content {
       display: flex;
       margin-top: 30px;
       width: 100%;
    }
-   ._descr_16ng2_107 {
+   ._client_components_css_work__descr {
       min-width: 400px;
       margin-right: 30px;
    }
-   ._secondImage_16ng2_97 {
-      max-height: 500px;
+   ._client_components_css_work__secondImage {
+      max-height: 300px;
    }
 }
 @media screen and (min-width:   1080px) {
-	._myWorkProject_16ng2_15, ._backButton_16ng2_113 {
+	._client_components_css_work__myWorkProject, ._client_components_css_work__backButton {
       margin-left: -100px
    }
-   ._tiles_16ng2_36 {
+   ._client_components_css_work__tiles {
       max-width: 100%;
    }
    
-   ._project_16ng2_1 {
+   ._client_components_css_work__project {
       max-width: 100%;
       margin-top: -100px;
    }
 
-   ._descr_16ng2_107 {
+   ._client_components_css_work__descr {
       max-width: 500px
    }
 
 }
-._container_2dp45_1{
+._client_components_css_timeline__container{
    display: flex;
    justify-content: center;
    flex-direction: column;
    padding: 0px 20px;
 }
-._container_2dp45_1 ._pageTitle_2dp45_7 {
+._client_components_css_timeline__container ._client_components_css_timeline__pageTitle {
    position: fixed;
    width: 100%;
    top: 15%;
    text-align: center;
    height: 100px;
 }
-._timeline_2dp45_14 {
+._client_components_css_timeline__timeline {
    height: 90%;
    width: 90%;
    padding: 10px;
    max-width: 1200px;
 }
-._timeline_2dp45_14 ._sidebar_2dp45_20{
+._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar{
    position: absolute;
    top: 10px;
    bottom: 10px;
@@ -463,14 +482,14 @@
    justify-content: space-between;
 }
 
-._timeline_2dp45_14 ._sidebar_2dp45_20 ._node_start_2dp45_34{
+._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar ._client_components_css_timeline__node_start{
    position: relative;
    top: -60px;
    left: -7px;
    height: 80px;
    width: 100px;
 }
-._timeline_2dp45_14 ._sidebar_2dp45_20 ._year_2dp45_41 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar ._client_components_css_timeline__year {
    -moz-transform: rotate(270deg);
    -o-transform: rotate(270deg); 
    -webkit-transform: rotate(270deg); 
@@ -480,7 +499,7 @@
    position: relative;
    left: -20px
 }
-._timeline_2dp45_14 ._items_2dp45_51 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__items {
    height: 100%;
    padding-bottom: 0px;
    display: flex;
@@ -488,7 +507,7 @@
    justify-content: space-around
 }
 
-._timeline_2dp45_14 ._item_2dp45_51 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item {
    display: relative;
    color: white;
    display: flex;
@@ -496,38 +515,38 @@
    flex-wrap: wrap;
    justify-content: flex-start;
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch {
    position: relative;
    margin-left: 0;
    min-width: 250px;
    min-height: 50px;
    transition: margin-left 0.3s ease-out;
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67._selectedBranch_2dp45_74  {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch._client_components_css_timeline__selectedBranch  {
       margin-left: 20px;
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 ._title_2dp45_77 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__title {
    margin: 0px 0px 10px 60px;
    font-size: 20px;
    height: 30px;
    text-align: left;
 }
 
-._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 ._node_2dp45_34 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__node {
    position: relative;
    top: -10px;
    left: -7px;
    height: 0px;
    transition: left 0.3s;
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67._selectedBranch_2dp45_74 ._node_2dp45_34 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch._client_components_css_timeline__selectedBranch ._client_components_css_timeline__node {
    left: -27px
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 ._node_2dp45_34 svg {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__node svg {
    position: absolute;
    left: 0;
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 ._period_2dp45_98 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__period {
    margin: -7px 10px 10px 110px;
    z-index: 1;
    color: #eee;
@@ -536,7 +555,7 @@
    max-width: 200px;
    text-align: left;
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107{ 
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content{ 
    position: relative;
    min-height: 200px;
    top: -50px;
@@ -547,10 +566,10 @@
    flex-flow: row wrap;
    justify-content: center;
 }
-._timeline_2dp45_14 ._item_2dp45_51._reveal_2dp45_118 ._content_2dp45_107 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item._client_components_css_timeline__reveal ._client_components_css_timeline__content {
    opacity: 1
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._logo_2dp45_121 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__logo {
    position: relative;
    z-index: 0;
    width: 50%;
@@ -558,37 +577,37 @@
    display: flex;
    justify-content: flex-end
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._logo_2dp45_121 img {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__logo img {
    opacity: 0.3;
    height: 50px
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._brief_2dp45_133 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__brief {
    z-index: 1;
    margin: 10px 20px;
    max-width: 500px;
    text-align: left;
 }
-._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._brief_2dp45_133 ._title_2dp45_77 {
+._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__brief ._client_components_css_timeline__title {
    margin: 20px 20px 20px 20px;
    text-align: center;
    display: none;
 }
 
 @media screen and (min-width: 900px){
-   ._timeline_2dp45_14 {
+   ._client_components_css_timeline__timeline {
       padding-left: 50px;
       padding-bottom: 300px;
    }
-   ._timeline_2dp45_14 ._sidebar_2dp45_20 ._year_2dp45_41 {
+   ._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar ._client_components_css_timeline__year {
       left: -50px;
    }
-   ._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 {
+   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch {
       min-height: 200px;
    }
-   ._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 ._title_2dp45_77 {
+   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__title {
       margin-left: 70px;
    }
-   ._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107{ 
+   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content{ 
       position: fixed;
       top: 30%;
       min-height: 200px;
@@ -601,52 +620,52 @@
       justify-content: center;
    }
 
-   ._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107._reveal_2dp45_118 {
+   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content._client_components_css_timeline__reveal {
       opacity: 1
    }
-   ._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._logo_2dp45_121 {
+   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__logo {
       position: absolute;
       right: 10%;
    }
-   ._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._logo_2dp45_121 img {
+   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__logo img {
       position: fixed;
       opacity: 0.3;
       top: 30%;
       height: 250px
    }
-   ._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._brief_2dp45_133 ._title_2dp45_77 {
+   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__brief ._client_components_css_timeline__title {
       display: visible
    }
 }
 @media screen and (min-width: 1200px){
-   ._timeline_2dp45_14 ._items_2dp45_51 {
+   ._client_components_css_timeline__timeline ._client_components_css_timeline__items {
       padding-top: 100px;
    }
 }
-._hide_or4pj_1 {
+._client_components_css_nav__hide {
   position: absolute;
   opacity: 0;
   visibility: hidden;
 }
 
-._nav_or4pj_7 {
+._client_components_css_nav__nav {
 	width: 100%;
 	text-align: center;
-	-webkit-animation-name: _fadeIn_or4pj_1;
+	-webkit-animation-name: _client_components_css_nav__fadeIn;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_or4pj_1;
+ 	animation-name: _client_components_css_nav__fadeIn;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
 }
 
-._nav_or4pj_7 a {
+._client_components_css_nav__nav a {
 	min-width: 100px;
 	margin: 20px;
 	padding: 10px;
 }
 
-@-webkit-keyframes _fadeIn_or4pj_1 { 
+@-webkit-keyframes _client_components_css_nav__fadeIn { 
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -655,7 +674,7 @@
   100% { opacity: 1; }
 }
 
-@keyframes _fadeIn_or4pj_1 {
+@keyframes _client_components_css_nav__fadeIn {
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -665,20 +684,20 @@
 }
 
 @media screen and (min-width:   730px) {
-  ._nav_or4pj_7 {
+  ._client_components_css_nav__nav {
     width: 300px;
     position: absolute;
     right: 40px;
     top: 35px;
   }
 }
-._projectLinks_1q2k9_1 {
+._client_components_css_projectLinks__projectLinks {
 	text-align: right;
 	margin-bottom: 10px;
 	min-height: 30px;
 	color: white;
 }
-._projectLink_1q2k9_1 {
+._client_components_css_projectLinks__projectLink {
 	display: inline-block;
    opacity: 0.7;
 	text-shadow: 0px 0px 4px #FFF; 
@@ -688,13 +707,177 @@
  	margin: 0px;
 }
 @media screen and (min-width: 800px){
-   ._projectLink_1q2k9_1 {
+   ._client_components_css_projectLinks__projectLink {
 	   text-shadow: none;
       opacity: 0.5;
 	-ms-transition: opacity 0.2s ease-out; 
 	transition: opacity 0.2s ease-out;
 }
-   ._projectLink_1q2k9_1:hover {
+   ._client_components_css_projectLinks__projectLink:hover {
 	   opacity: 1;
    }
+}
+._client_components_network_styles__container {
+    position: relative;
+    min-height: 400px;
+    width: 99%;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+._client_components_network_styles__network {
+    height: 100%;
+    min-width: 70%;
+    max-width: 90%;
+    position: relative;
+    z-index: 1;
+}
+._client_components_network_styles__modeSelector {
+    width: 200px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+}
+._client_components_network_styles__companyProfile {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    padding: 20px 5px;
+    overflow: hidden;
+    width: 50%;
+    max-width: 0px;
+    opacity: 0;
+    transition: max-width 0.3s ease-in, opacity 0.35s ease-in;
+    height: 100%;
+    color: #000;
+}
+
+._client_components_network_styles__companyProfile._client_components_network_styles__active {
+    max-width: 30%;
+    opacity: 1;
+}
+
+._client_components_network_modeSelector__container {
+    height: 100%;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    padding: 0px 5px;
+}
+._client_components_network_modeSelector__container p {
+    margin: 2px 2px 2px 0px;
+    color: #000;
+}
+._client_components_network_modeSelector__container a {
+    height: 1.4em;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    background: #000;
+    transition: filter 0.2s ease-out;
+}
+._client_components_network_modeSelector__container a:hover {
+    filter: invert(100%)
+}
+._client_components_network_companyProfile__container {
+     background: linear-gradient(
+        to right, 
+        rgba(255,255,255,0.7), 
+        rgba(255,255,255,1)
+    ); 
+    width: 100%;
+    height: 100%;
+}
+._client_components_network_companyProfile__container h2, 
+._client_components_network_companyProfile__container h3, 
+._client_components_network_companyProfile__container a, 
+._client_components_network_companyProfile__container p {
+    color: #000;
+}
+._client_components_network_companyProfile__top {
+    height: 100px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+}
+
+._client_components_network_companyProfile__content {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    overflow-wrap: break-word;
+    max-width: 60%;
+    min-width: 100px;
+}
+
+._client_components_network_companyProfile__top ._client_components_network_companyProfile__logo {
+    align-self: center;
+    display: block;
+    max-width: 80px;
+    height: auto;
+    width: auto;
+    margin: 5px auto;
+}
+._client_components_network_companyProfile__top ._client_components_network_companyProfile__link {
+    font-size: 0.8em;
+    height: 30px;
+}
+._client_components_network_companyProfile__separator {
+    height: 1px;
+    background: #545454;
+    box-shadow: 0px 0px 2px #545454;
+    margin: 20px 0px;
+}
+._client_components_network_companyProfile__childrenContainer {
+    padding: 10px;
+}
+._client_components_network_companyProfile__childrenContainer h3 {
+    text-align: left;
+    margin: 0px 0px 10px;
+}
+._client_components_network_companyProfile__children {
+    margin: 0px;
+    max-width: 95%;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+._client_components_network_companyProfile__child {
+    margin: 2px 5px 2px 20px;
+    display: flex;
+    background: #000;
+    border-radius: 2px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    height: 40px;
+    transition: background 0.2s ease-in;
+    overflow: hidden;
+}
+._client_components_network_companyProfile__child p {
+    color: #FFF;
+    transition: color 0.2s ease-in;
+}
+._client_components_network_companyProfile__child:hover {
+    background: #eee;
+    color: #000;
+}
+._client_components_network_companyProfile__child:hover p {
+    color: #000;
+}
+
+._client_components_network_companyProfile__child ._client_components_network_companyProfile__logo {
+    background: #FFF;
+    margin: 2px 5px 2px;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._client_components_network_companyProfile__logo img {
+    height: 20px;
+    width: auto;
 }

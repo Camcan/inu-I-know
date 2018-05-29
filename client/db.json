@@ -1,6 +1,16 @@
 {
 	"projects": [
-	   {
+        {
+	      "title": "Beer?",
+	      "suffix": ".beer",
+	      "desc": [
+              "This is a personal project born out of my curiosity for who profits from what's behind bars here in New Zealand.",
+              "The stand-alone site is a work in progress, however you can interact with the example below:"],
+	       "tech": ["NodeJS", "React"],
+	       "link": {},
+	      "imgs": ["img/projects/beer/beer.jpg", "img/projects/beer/cartels.png", "img/projects/beer/cartels-admin.png"]
+	    },
+        {
 	      "title": "WalkiTalki",
 	      "suffix": ".walkitalki",
 	      "desc": ["In house app with Metamorphic Studios", "While working for Metamorphic Studios, I spent extended periods of time working on WalkiTalki, a mobile app built using React-Native."],
@@ -29,7 +39,7 @@
 	    		"github": "http://github.com/camcan/camcan.github.io"
 	    	},
 	    	"tech": ["Angular.js"],
-	    	"imgs": ["img/old-site-tile.png", "img/old-site-output.gif"]
+	    	"imgs": ["img/projects/old/old-site-tile.png", "img/projects/old/old-site-output.gif"]
 
 	    },
 	    {
@@ -41,7 +51,7 @@
 	       	"live": "http://apexart.github.io",
 	       	"github": "https://github.com/ApexArt/apexart.github.io"
 	       },
-	      "imgs": ["img/apex-screenshot.png", "img/apex-project.jpg", "img/apex-mobile-home.jpg", "img/apex-mobile-menu.jpg"]
+	      "imgs": ["img/projects/apex/apex-screenshot.png", "img/projects/apex/apex-project.jpg", "img/projects/apex/apex-mobile-home.jpg", "img/projects/apex/apex-mobile-menu.jpg"]
 	    },
 		{
 	      "title": "bookit",
@@ -53,7 +63,7 @@
 	       	"github":"https://github.com/ruru-2015/book-it-client-frontend"
 	       },
 	       "tech": ["Rails", "Angular.js"],
-	      "imgs": ["img/bookit.jpg", "img/screenshot-book-it.png"]
+	      "imgs": ["img/projects/bookit/bookit.jpg", "img/projects/bookit/screenshot-book-it.png"]
 	    }
 	]
 }
