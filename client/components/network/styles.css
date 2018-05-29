@@ -39,7 +39,7 @@
 }
 
 .companyProfile.active {
-    max-width: 30%;
+    max-width: 350px;
     opacity: 1;
 }
 
