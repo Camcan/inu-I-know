@@ -14,7 +14,6 @@ class CompanyProfile extends Component {
 	
     }
 	componentWillReceiveProps(newProps){
-        console.log("Company Profile receiving props"); 
         this.setState({
              ...newProps
          });

@@ -5,7 +5,6 @@ const API = {
             {mode: 'cors'}
       ).then((res)=>res.json())
       .then((data)=>{
-         console.log("ServerUrl:", serverUrl)
          cb(data)             
       })
       .catch((err)=>{
@@ -17,7 +16,6 @@ const API = {
            [serverUrl, "companies/relationships"].join(''),
            {mode: 'cors'}
       ).then((res)=>{
-         console.log(res.body)
          return res.json()
       })
       .then((data)=>{

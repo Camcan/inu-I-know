@@ -14,7 +14,6 @@ export default class Network extends Component {
          const nodes = data.map((co)=>{
             width += 20;
             const imageUrl =(co.logoUrl) ? this.props.api + co.logoUrl : 'http://placekitten.com/' + width + '/140';
-            console.log(imageUrl);
             return {
                id: co._id, 
                label: co.name,
@@ -75,9 +74,7 @@ export default class Network extends Component {
 	});
    } 
    componentWillReceiveProps(newProps){
-       console.log("NETWORK RECEIVING PROPS", newProps);
         if (newProps.data != this.props.data || newProps.rels != this.props.rels) { 
-           console.log("REDRAWING IT ALL")
             this.drawNetwork(
                 newProps.data || this.props.data,
                 newProps.rels || this.props.rels

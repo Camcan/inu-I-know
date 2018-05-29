@@ -24,9 +24,7 @@ class NetworkContainer extends Component {
         }
 	}
 	componentDidMount(){
-        console.log("mounting...")
       API.getRelationships(apiUrl, (data)=>{
-        console.log(data);
         this.setState({
             companyList: data.companyList,
             activeList: data.companyList,
@@ -36,7 +34,6 @@ class NetworkContainer extends Component {
       });
 	}
 	componentWillReceiveProps(newProps){
-        console.log("Container newProos;", newProps) 
         this.setState({
              ...newProps
          });
@@ -56,7 +53,7 @@ class NetworkContainer extends Component {
                 </div>
                 <Network 
                     background="linear-gradient(to right, #EEE, #FFF)"
-                    height="400px"
+                    height="100%"
                     data={this.state.activeList} 
                     rels={this.state.activeRels}
                     api={apiUrl}
@@ -67,7 +64,6 @@ class NetworkContainer extends Component {
                     handleSelection={
                         (id)=>{
                             this.setState({selectedCompany: id});
-                            console.log("SelectingCompany", id);
                         }
                     } 
                 />
