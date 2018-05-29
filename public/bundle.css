@@ -1,4 +1,4 @@
-._client_components_css_app__logo{
+._logo_pwz8t_1{
 	left: 30%;
 	width: 15%;
 	top: 5px;
@@ -8,13 +8,13 @@
 	opacity: 1;
 	margin-bottom: 0px;
 }
-._client_components_css_app__app {
+._app_pwz8t_11 {
 	height: auto;
 }
-._client_components_css_human__headHuman {
+._headHuman_16nxm_1 {
 	text-align: left;
 }
-._client_components_css_human__logo{
+._logo_16nxm_4{
 	z-index: 7;
 	width: 15%;
 	top: 5px;
@@ -22,11 +22,11 @@
 	position: fixed;
 	opacity: 1;
 }
-._client_components_css_human__logo{
+._logo_16nxm_4{
 	left: 20px;
 	transition: 1s ease-in-out;
 }
-._client_components_css_human__head { 
+._head_16nxm_1 { 
 	position: fixed;
 	width: 100%;
    z-index:6; 
@@ -36,18 +36,18 @@
 	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
 	-webkit-animation-delay: 0s;
     animation-delay: 0s;
-	-webkit-animation-name: _client_components_css_human__fadeIn;
+	-webkit-animation-name: _fadeIn_16nxm_1;
     -webkit-animation-duration: 2s;
- 	animation-name: _client_components_css_human__fadeIn;
+ 	animation-name: _fadeIn_16nxm_1;
   	animation-duration: 2s;
   	opacity: 1;
 }
-._client_components_css_human__head h1 {
+._head_16nxm_1 h1 {
 	margin-left: 170px;
 	max-width: 300px;
 }
 
-._client_components_css_human__center {
+._center_16nxm_37 {
 	margin-bottom: 50px;
 	top: 250px;
    left: 10px;
@@ -55,9 +55,9 @@
 	height: auto;
 	padding: none;
 	position: absolute;
-	-webkit-animation-name: _client_components_css_human__fadeIn;
+	-webkit-animation-name: _fadeIn_16nxm_1;
     -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_human__fadeIn;
+ 	animation-name: _fadeIn_16nxm_1;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
@@ -65,7 +65,7 @@
    justify-content: center;
 }
 
-@-webkit-keyframes _client_components_css_human__fadeIn { 
+@-webkit-keyframes _fadeIn_16nxm_1 { 
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -74,7 +74,7 @@
   100% { opacity: 1; }
 }
 
-@keyframes _client_components_css_human__fadeIn {
+@keyframes _fadeIn_16nxm_1 {
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -83,7 +83,7 @@
   100% { opacity: 1; }
 }
 
-._client_components_css_human__hide {
+._hide_16nxm_73 {
 	opacity: 0;
 	/*visibility: hidden;*/
 	transition: all 0.2s;
@@ -91,31 +91,31 @@
 
 
 @media screen and (min-width: 500px){
-	._client_components_css_human__center {
+	._center_16nxm_37 {
 		margin-bottom: 50px;
 	}
 }
-._client_components_css_who__hide {
+._hide_1j3n4_1 {
   	visibility: hidden;
   	opacity: 0;
 }
 
 
-._client_components_css_who__fadeIn {
+._fadeIn_1j3n4_7 {
    max-width: 900px;
    padding: 10px;
    display: flex;
    justify-content: flex-end;
    flex-flow: row wrap;
-	-webkit-animation-name: _client_components_css_who__fadeIn;
+	-webkit-animation-name: _fadeIn_1j3n4_7;
     -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_who__fadeIn;
+ 	animation-name: _fadeIn_1j3n4_7;
   	animation-duration: 1s;
 }
-._client_components_css_who__fadeIn h2 {
+._fadeIn_1j3n4_7 h2 {
    padding-right: 50px;
 }
-._client_components_css_who__whoCol{
+._whoCol_1j3n4_21{
 	text-align: left;
 	width: 30%;
 	max-width: 230px;
@@ -124,24 +124,24 @@
    margin-right: 40px;
 	min-width: 200px;
 }
-._client_components_css_who__profileImg {
+._profileImg_1j3n4_30 {
 	height: 100px;
 	width: 100px;
 	opacity: 0.5;
 	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
 	background-size: cover;
-	-webkit-animation-name: _client_components_css_who__fadeIn;
+	-webkit-animation-name: _fadeIn_1j3n4_7;
     -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_who__fadeIn;
+ 	animation-name: _fadeIn_1j3n4_7;
   	animation-duration: 1s;
 }
-._client_components_css_who__profileImg._client_components_css_who__mobile {
+._profileImg_1j3n4_30._mobile_1j3n4_41 {
 	top: 0px;
 	position: absolute;
 	margin: -40px -50px -50px -20px;
 	z-index: 0;
 }
-._client_components_css_who__socialButtons {
+._socialButtons_1j3n4_47 {
 	vertical-align: bottom;
 	color: white;
 	text-align: left;
@@ -149,41 +149,41 @@
 	height: 100px;
 	text-align: center;
 }
-._client_components_css_who__socialButtons a {
+._socialButtons_1j3n4_47 a {
 	display: inline-block;
 	opacity: 0.5;
 	margin: 10px 10px 0px;
 }
-._client_components_css_who__socialButtons a svg {
+._socialButtons_1j3n4_47 a svg {
    height: 20px;
    width: 20px;
 }
-._client_components_css_who__socialButtons a:hover {
+._socialButtons_1j3n4_47 a:hover {
 	opacity: 1;
 	-ms-transition: all 0.2s ease-out; 
 	transition: all 0.2s ease-out;
 }
 
-._client_components_css_who__desktop {
+._desktop_1j3n4_70 {
 	display: none;
 }
 
 @media screen and (min-width: 367px){
-	._client_components_css_who__profileImg._client_components_css_who__mobile {
+	._profileImg_1j3n4_30._mobile_1j3n4_41 {
 		margin: 70px -50px -50px -150px;
 	}
 }
 @media screen and (min-width: 700px){
-	._client_components_css_who__fadeIn {
+	._fadeIn_1j3n4_7 {
       		justify-content: center
    	}
-	._client_components_css_who__mobile{
+	._mobile_1j3n4_41{
 		display: none;
 	}
-	._client_components_css_who__desktop {
+	._desktop_1j3n4_70 {
 		display: flex;
 	}
-	._client_components_css_who__profileImg._client_components_css_who__desktop {
+	._profileImg_1j3n4_30._desktop_1j3n4_70 {
 		height: 120px;
 		width: 120px;
 		position: relative;
@@ -196,30 +196,30 @@
 
 
 }
-._client_components_css_work__projectsContainer{
+._projectsContainer_gfihd_1{
    width: 90%;
    margin-top: 30px;
    max-width: 1000px;
    display: flex;
    flex-flow: row wrap;
 }
-._client_components_css_work__myWork {
+._myWork_gfihd_8 {
 	position: fixed;
 	margin: 0 0 0 0px;
    background: black;
 	 -ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 }
-._client_components_css_work__myWorkProject {
+._myWorkProject_gfihd_15 {
 	position: fixed;
 	-ms-transition: margin-left 0.3s ease-in-out; 
 	transition: margin-left 0.3s ease-in-out;
 	margin: -30px 0 0 0;
 }
-._client_components_css_work__bgTitle {
+._bgTitle_gfihd_21 {
 	opacity: 0;
 }
-._client_components_css_work__bgTitle {
+._bgTitle_gfihd_21 {
 	left: 10%;
 	top: 20%;
 	font-size: 300px;
@@ -231,19 +231,19 @@
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
 }
-._client_components_css_work__tiles {
+._tiles_gfihd_36 {
    padding: 30px 0px;
     max-width: 90%;
    display: flex;
 	flex-flow: column wrap;
 }
-._client_components_css_work__tileContainer {
+._tileContainer_gfihd_42 {
    position: relative;
 	width: 100%;
 	height: 90px;
    margin: 5px;
 }
-._client_components_css_work__tile {
+._tile_gfihd_36 {
 	position: absolute;
    right: 0px;
    opacity: 0.7;
@@ -253,98 +253,97 @@
    overflow: hidden;
    background: rgba(255,255,255,0.2);
 }
-._client_components_css_work__tile img {
+._tile_gfihd_36 img {
 	min-height: 50px;
    z-index: 1;
 }
-._client_components_css_work__tileInfo {
+._tileInfo_gfihd_62 {
    position: absolute;
    z-index: 2;
    right: 200px;
    top: 0px;
    left: 0px;
 }
-._client_components_css_work__tileInfo p {
+._tileInfo_gfihd_62 p {
    margin: 0px;
    padding: 0px 3px;
    width: auto
 }
-._client_components_css_work__project {
+._project_gfihd_1 {
    padding-top: 30px;
-	-webkit-animation-name: _client_components_css_work__fadeIn;
+	-webkit-animation-name: _fadeIn_gfihd_1;
     -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_work__fadeIn;
+ 	animation-name: _fadeIn_gfihd_1;
   	animation-duration: 1s;
 	/*margin-top: -50px;*/
 	overflow: hidden;
 	text-align: right;
 }
-._client_components_css_work__projectTitle {
+._projectTitle_gfihd_84 {
    font-size: 20px
 }
 
-._client_components_css_work__mainImageContainer {
+._mainImageContainer_gfihd_88 {
    max-height: 150px;
    overflow: hidden;
 }
-._client_components_css_work__mainImage {
+._mainImage_gfihd_88 {
 	height: auto;
    margin-left: -10%;
 	width: 100%;
 }
-._client_components_css_work__secondImage {
+._secondImage_gfihd_97 {
    max-width: 100%;
    height: auto;
    max-height: 200px;
    opacity: 0.8;
    transition: opacity 0.3s ease-in;
 }
-._client_components_css_work__project img:active, ._client_components_css_work__project img:hover {
+._project_gfihd_1 img:active, ._project_gfihd_1 img:hover {
    opacity: 1;
 }
-._client_components_css_work__blerb, ._client_components_css_work__descr {
+._blerb_gfihd_107, ._descr_gfihd_107 {
     text-align: right;
 	max-width: 100%;
 }
 
 
-._client_components_css_work__backButton {
+._backButton_gfihd_113 {
 	position: fixed;
 	margin-left: 10px;
 	margin-top: 0px;
  -ms-transition: padding-left 0.3s ease-in-out; 
 	transition: padding-left 0.3s ease-in-out;
 }
-._client_components_css_work__backButton span {
+._backButton_gfihd_113 span {
 	opacity: 0;
 	-ms-transition: opacity 0.4s ease-in-out; 
 	transition: opacity 0.4s ease-in-out;
 }
 
 @media screen and (min-width:   500px) {
-	._client_components_css_work__center {
+	._center_gfihd_127 {
 		width: 70%;
 		margin-top: 20%;
 		margin-left: 30%;
 	}
-   ._client_components_css_work__projectsContainer {
+   ._projectsContainer_gfihd_1 {
       padding-left: 10%;
    }
-	._client_components_css_work__myWork {
+	._myWork_gfihd_8 {
 		margin-left:  70px;
 	}
-	._client_components_css_work__myWorkProject {
+	._myWorkProject_gfihd_15 {
 		margin-left: -50px;
 	}
-	._client_components_css_work__tiles {
-      position: fixed;
+	._tiles_gfihd_36 {
       margin-top: 50px;
       padding-left: 0px;
       max-height: 350px;
       flex-flow: row wrap;
       justify-content: center;
    }
-   ._client_components_css_work__tileContainer {
+   ._tileContainer_gfihd_42 {
       margin: 10px;
 	  	position: relative;
       z-index: 5;
@@ -355,12 +354,12 @@
 	    -ms-transition: all 0.2s ease-in-out; 
 		transition: all 0.2s ease-in-out;
 	}
-	._client_components_css_work__tileContainer:hover {
+	._tileContainer_gfihd_42:hover {
       z-index: 6;
       opacity: 1;
 		transform: scale(1.01)
 	}
-   ._client_components_css_work__tileInfo {
+   ._tileInfo_gfihd_62 {
       top: 0px;
       bottom: 10px;
       right:20px;
@@ -368,39 +367,39 @@
       background: rgba(0,0,0,0.2);
       transition: opacity 0.3s 0.2s ease-out;
    }
-   ._client_components_css_work__tileContainer:hover ._client_components_css_work__tileInfo {
+   ._tileContainer_gfihd_42:hover ._tileInfo_gfihd_62 {
       opacity: 1
    }
-   ._client_components_css_work__tileInfo p {
+   ._tileInfo_gfihd_62 p {
       font-size: 20px;
    }
-	._client_components_css_work__tile img {
+	._tile_gfihd_36 img {
       top: 0px;
       position: relative;
 		min-height: 150px;
    }
-	._client_components_css_work__backButton {
+	._backButton_gfihd_113 {
 		padding-left: 50px;
 		margin-left: -50px;
 	}
-	._client_components_css_work__backButton:hover {
+	._backButton_gfihd_113:hover {
 		padding-left: 0px;
 	}
 
-	._client_components_css_work__backButton:hover > span {
+	._backButton_gfihd_113:hover > span {
 		opacity: 1;
 		visibility: visible;
 	}
-   ._client_components_css_work__project {
+   ._project_gfihd_1 {
       max-width: 90%;
    }
-	._client_components_css_work__projectTitle {
+	._projectTitle_gfihd_84 {
 		margin-right: 0px;
 	}	
-   ._client_components_css_work__mainImageContainer {
+   ._mainImageContainer_gfihd_88 {
       max-height: 200px;
    }
-   ._client_components_css_work__mainImage {
+   ._mainImage_gfihd_88 {
       opacity: 0.9;
       filter: invert(0.2);
 		margin-left: 0;
@@ -408,67 +407,67 @@
       transition: opacity 0.2s ease-in-out;
       transition: filter 0.3s ease-out 0.1s;
 	}
-   ._client_components_css_work__mainImage:hover {
+   ._mainImage_gfihd_88:hover {
       opacity: 1;
       filter: none;
    }
 }
 @media screen and (min-width: 800px){
-   ._client_components_css_work__tiles {
+   ._tiles_gfihd_36 {
       justify-content: flex-start;
       padding-left: 0px;
    } 
-   ._client_components_css_work__content {
+   ._content_gfihd_222 {
       display: flex;
       margin-top: 30px;
       width: 100%;
    }
-   ._client_components_css_work__descr {
+   ._descr_gfihd_107 {
       min-width: 400px;
       margin-right: 30px;
    }
-   ._client_components_css_work__secondImage {
+   ._secondImage_gfihd_97 {
       max-height: 300px;
    }
 }
 @media screen and (min-width:   1080px) {
-	._client_components_css_work__myWorkProject, ._client_components_css_work__backButton {
+	._myWorkProject_gfihd_15, ._backButton_gfihd_113 {
       margin-left: -100px
    }
-   ._client_components_css_work__tiles {
+   ._tiles_gfihd_36 {
       max-width: 100%;
    }
    
-   ._client_components_css_work__project {
+   ._project_gfihd_1 {
       max-width: 100%;
       margin-top: -100px;
    }
 
-   ._client_components_css_work__descr {
+   ._descr_gfihd_107 {
       max-width: 500px
    }
 
 }
-._client_components_css_timeline__container{
+._container_2dp45_1{
    display: flex;
    justify-content: center;
    flex-direction: column;
    padding: 0px 20px;
 }
-._client_components_css_timeline__container ._client_components_css_timeline__pageTitle {
+._container_2dp45_1 ._pageTitle_2dp45_7 {
    position: fixed;
    width: 100%;
    top: 15%;
    text-align: center;
    height: 100px;
 }
-._client_components_css_timeline__timeline {
+._timeline_2dp45_14 {
    height: 90%;
    width: 90%;
    padding: 10px;
    max-width: 1200px;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar{
+._timeline_2dp45_14 ._sidebar_2dp45_20{
    position: absolute;
    top: 10px;
    bottom: 10px;
@@ -482,14 +481,14 @@
    justify-content: space-between;
 }
 
-._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar ._client_components_css_timeline__node_start{
+._timeline_2dp45_14 ._sidebar_2dp45_20 ._node_start_2dp45_34{
    position: relative;
    top: -60px;
    left: -7px;
    height: 80px;
    width: 100px;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar ._client_components_css_timeline__year {
+._timeline_2dp45_14 ._sidebar_2dp45_20 ._year_2dp45_41 {
    -moz-transform: rotate(270deg);
    -o-transform: rotate(270deg); 
    -webkit-transform: rotate(270deg); 
@@ -499,7 +498,7 @@
    position: relative;
    left: -20px
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__items {
+._timeline_2dp45_14 ._items_2dp45_51 {
    height: 100%;
    padding-bottom: 0px;
    display: flex;
@@ -507,7 +506,7 @@
    justify-content: space-around
 }
 
-._client_components_css_timeline__timeline ._client_components_css_timeline__item {
+._timeline_2dp45_14 ._item_2dp45_51 {
    display: relative;
    color: white;
    display: flex;
@@ -515,38 +514,38 @@
    flex-wrap: wrap;
    justify-content: flex-start;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch {
+._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 {
    position: relative;
    margin-left: 0;
    min-width: 250px;
    min-height: 50px;
    transition: margin-left 0.3s ease-out;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch._client_components_css_timeline__selectedBranch  {
+._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67._selectedBranch_2dp45_74  {
       margin-left: 20px;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__title {
+._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 ._title_2dp45_77 {
    margin: 0px 0px 10px 60px;
    font-size: 20px;
    height: 30px;
    text-align: left;
 }
 
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__node {
+._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 ._node_2dp45_34 {
    position: relative;
    top: -10px;
    left: -7px;
    height: 0px;
    transition: left 0.3s;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch._client_components_css_timeline__selectedBranch ._client_components_css_timeline__node {
+._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67._selectedBranch_2dp45_74 ._node_2dp45_34 {
    left: -27px
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__node svg {
+._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 ._node_2dp45_34 svg {
    position: absolute;
    left: 0;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__period {
+._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 ._period_2dp45_98 {
    margin: -7px 10px 10px 110px;
    z-index: 1;
    color: #eee;
@@ -555,7 +554,7 @@
    max-width: 200px;
    text-align: left;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content{ 
+._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107{ 
    position: relative;
    min-height: 200px;
    top: -50px;
@@ -566,10 +565,10 @@
    flex-flow: row wrap;
    justify-content: center;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item._client_components_css_timeline__reveal ._client_components_css_timeline__content {
+._timeline_2dp45_14 ._item_2dp45_51._reveal_2dp45_118 ._content_2dp45_107 {
    opacity: 1
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__logo {
+._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._logo_2dp45_121 {
    position: relative;
    z-index: 0;
    width: 50%;
@@ -577,37 +576,37 @@
    display: flex;
    justify-content: flex-end
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__logo img {
+._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._logo_2dp45_121 img {
    opacity: 0.3;
    height: 50px
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__brief {
+._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._brief_2dp45_133 {
    z-index: 1;
    margin: 10px 20px;
    max-width: 500px;
    text-align: left;
 }
-._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__brief ._client_components_css_timeline__title {
+._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._brief_2dp45_133 ._title_2dp45_77 {
    margin: 20px 20px 20px 20px;
    text-align: center;
    display: none;
 }
 
 @media screen and (min-width: 900px){
-   ._client_components_css_timeline__timeline {
+   ._timeline_2dp45_14 {
       padding-left: 50px;
       padding-bottom: 300px;
    }
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__sidebar ._client_components_css_timeline__year {
+   ._timeline_2dp45_14 ._sidebar_2dp45_20 ._year_2dp45_41 {
       left: -50px;
    }
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch {
+   ._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 {
       min-height: 200px;
    }
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__branch ._client_components_css_timeline__title {
+   ._timeline_2dp45_14 ._item_2dp45_51 ._branch_2dp45_67 ._title_2dp45_77 {
       margin-left: 70px;
    }
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content{ 
+   ._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107{ 
       position: fixed;
       top: 30%;
       min-height: 200px;
@@ -620,52 +619,52 @@
       justify-content: center;
    }
 
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content._client_components_css_timeline__reveal {
+   ._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107._reveal_2dp45_118 {
       opacity: 1
    }
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__logo {
+   ._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._logo_2dp45_121 {
       position: absolute;
       right: 10%;
    }
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__logo img {
+   ._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._logo_2dp45_121 img {
       position: fixed;
       opacity: 0.3;
       top: 30%;
       height: 250px
    }
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__item ._client_components_css_timeline__content ._client_components_css_timeline__brief ._client_components_css_timeline__title {
+   ._timeline_2dp45_14 ._item_2dp45_51 ._content_2dp45_107 ._brief_2dp45_133 ._title_2dp45_77 {
       display: visible
    }
 }
 @media screen and (min-width: 1200px){
-   ._client_components_css_timeline__timeline ._client_components_css_timeline__items {
+   ._timeline_2dp45_14 ._items_2dp45_51 {
       padding-top: 100px;
    }
 }
-._client_components_css_nav__hide {
+._hide_or4pj_1 {
   position: absolute;
   opacity: 0;
   visibility: hidden;
 }
 
-._client_components_css_nav__nav {
+._nav_or4pj_7 {
 	width: 100%;
 	text-align: center;
-	-webkit-animation-name: _client_components_css_nav__fadeIn;
+	-webkit-animation-name: _fadeIn_or4pj_1;
     -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_nav__fadeIn;
+ 	animation-name: _fadeIn_or4pj_1;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
 }
 
-._client_components_css_nav__nav a {
+._nav_or4pj_7 a {
 	min-width: 100px;
 	margin: 20px;
 	padding: 10px;
 }
 
-@-webkit-keyframes _client_components_css_nav__fadeIn { 
+@-webkit-keyframes _fadeIn_or4pj_1 { 
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -674,7 +673,7 @@
   100% { opacity: 1; }
 }
 
-@keyframes _client_components_css_nav__fadeIn {
+@keyframes _fadeIn_or4pj_1 {
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -684,20 +683,20 @@
 }
 
 @media screen and (min-width:   730px) {
-  ._client_components_css_nav__nav {
+  ._nav_or4pj_7 {
     width: 300px;
     position: absolute;
     right: 40px;
     top: 35px;
   }
 }
-._client_components_css_projectLinks__projectLinks {
+._projectLinks_1q2k9_1 {
 	text-align: right;
 	margin-bottom: 10px;
 	min-height: 30px;
 	color: white;
 }
-._client_components_css_projectLinks__projectLink {
+._projectLink_1q2k9_1 {
 	display: inline-block;
    opacity: 0.7;
 	text-shadow: 0px 0px 4px #FFF; 
@@ -707,39 +706,42 @@
  	margin: 0px;
 }
 @media screen and (min-width: 800px){
-   ._client_components_css_projectLinks__projectLink {
+   ._projectLink_1q2k9_1 {
 	   text-shadow: none;
       opacity: 0.5;
 	-ms-transition: opacity 0.2s ease-out; 
 	transition: opacity 0.2s ease-out;
 }
-   ._client_components_css_projectLinks__projectLink:hover {
+   ._projectLink_1q2k9_1:hover {
 	   opacity: 1;
    }
 }
-._client_components_network_styles__container {
-    position: relative;
-    min-height: 400px;
+._container_12uqj_1 {
+    position: absolute;
+    left: 5px;
+    min-height: 100%;
     width: 99%;
     margin: 20px auto;
     display: flex;
     flex-flow: row nowrap;
+    padding-bottom: 30px;
 }
-._client_components_network_styles__network {
+._network_12uqj_11 {
     height: 100%;
-    min-width: 70%;
-    max-width: 90%;
+    width: 80%;
+    margin: 0px auto;
+    max-width: 95%;
     position: relative;
     z-index: 1;
 }
-._client_components_network_styles__modeSelector {
+._modeSelector_12uqj_19 {
     width: 200px;
     position: absolute;
     z-index: 2;
     top: 0px;
     left: 0px;
 }
-._client_components_network_styles__companyProfile {
+._companyProfile_12uqj_26 {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -754,33 +756,33 @@
     color: #000;
 }
 
-._client_components_network_styles__companyProfile._client_components_network_styles__active {
-    max-width: 30%;
+._companyProfile_12uqj_26._active_12uqj_41 {
+    max-width: 350px;
     opacity: 1;
 }
 
-._client_components_network_modeSelector__container {
+._container_cq5ee_1 {
     height: 100%;
     width: 100%;
     height: 20px;
     display: flex;
     padding: 0px 5px;
 }
-._client_components_network_modeSelector__container p {
+._container_cq5ee_1 p {
     margin: 2px 2px 2px 0px;
     color: #000;
 }
-._client_components_network_modeSelector__container a {
+._container_cq5ee_1 a {
     height: 1.4em;
     padding: 0px 5px;
     margin: 0px 5px;
     background: #000;
     transition: filter 0.2s ease-out;
 }
-._client_components_network_modeSelector__container a:hover {
+._container_cq5ee_1 a:hover {
     filter: invert(100%)
 }
-._client_components_network_companyProfile__container {
+._container_61mtc_1 {
      background: linear-gradient(
         to right, 
         rgba(255,255,255,0.7), 
@@ -789,20 +791,20 @@
     width: 100%;
     height: 100%;
 }
-._client_components_network_companyProfile__container h2, 
-._client_components_network_companyProfile__container h3, 
-._client_components_network_companyProfile__container a, 
-._client_components_network_companyProfile__container p {
+._container_61mtc_1 h2, 
+._container_61mtc_1 h3, 
+._container_61mtc_1 a, 
+._container_61mtc_1 p {
     color: #000;
 }
-._client_components_network_companyProfile__top {
+._top_61mtc_16 {
     height: 100px;
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: space-between;
 }
 
-._client_components_network_companyProfile__content {
+._content_61mtc_23 {
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
@@ -811,7 +813,7 @@
     min-width: 100px;
 }
 
-._client_components_network_companyProfile__top ._client_components_network_companyProfile__logo {
+._top_61mtc_16 ._logo_61mtc_32 {
     align-self: center;
     display: block;
     max-width: 80px;
@@ -819,30 +821,30 @@
     width: auto;
     margin: 5px auto;
 }
-._client_components_network_companyProfile__top ._client_components_network_companyProfile__link {
+._top_61mtc_16 ._link_61mtc_40 {
     font-size: 0.8em;
     height: 30px;
 }
-._client_components_network_companyProfile__separator {
+._separator_61mtc_44 {
     height: 1px;
     background: #545454;
     box-shadow: 0px 0px 2px #545454;
     margin: 20px 0px;
 }
-._client_components_network_companyProfile__childrenContainer {
+._childrenContainer_61mtc_50 {
     padding: 10px;
 }
-._client_components_network_companyProfile__childrenContainer h3 {
+._childrenContainer_61mtc_50 h3 {
     text-align: left;
     margin: 0px 0px 10px;
 }
-._client_components_network_companyProfile__children {
+._children_61mtc_50 {
     margin: 0px;
     max-width: 95%;
     max-height: 300px;
     overflow-y: scroll;
 }
-._client_components_network_companyProfile__child {
+._child_61mtc_50 {
     margin: 2px 5px 2px 20px;
     display: flex;
     background: #000;
@@ -854,19 +856,19 @@
     transition: background 0.2s ease-in;
     overflow: hidden;
 }
-._client_components_network_companyProfile__child p {
+._child_61mtc_50 p {
     color: #FFF;
     transition: color 0.2s ease-in;
 }
-._client_components_network_companyProfile__child:hover {
+._child_61mtc_50:hover {
     background: #eee;
     color: #000;
 }
-._client_components_network_companyProfile__child:hover p {
+._child_61mtc_50:hover p {
     color: #000;
 }
 
-._client_components_network_companyProfile__child ._client_components_network_companyProfile__logo {
+._child_61mtc_50 ._logo_61mtc_32 {
     background: #FFF;
     margin: 2px 5px 2px;
     overflow: hidden;
@@ -877,7 +879,7 @@
     align-items: center;
     justify-content: center;
 }
-._client_components_network_companyProfile__logo img {
+._logo_61mtc_32 img {
     height: 20px;
     width: auto;
 }
