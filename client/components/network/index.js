@@ -6,9 +6,9 @@ import ModeSelector from './modeSelector.js';
 import CompanyProfile from './companyProfile.js';
 
 const apiUrl = [
-    'http://',
-    '149.28.167.13', 
-    ':3000/api/' 
+    'https://',
+    'alfordgeo.co.nz', 
+    ':8443/api/' 
 ].join('');
 
 class NetworkContainer extends Component { 
