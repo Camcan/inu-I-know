@@ -1,8 +1,13 @@
+const defaultOptions = {
+    header:{ 'Access-Control-Allow-Origin':'*'},
+    mode: 'cors'
+};
+
 const API = {
    getCompanyList: (serverUrl, cb)=>{
     fetch(
             [serverUrl, "companies"].join(''),
-            {mode: 'cors'}
+            defaultOptions
       ).then((res)=>res.json())
       .then((data)=>{
          cb(data)             
@@ -14,7 +19,7 @@ const API = {
    getRelationships:(serverUrl, cb)=>{
       fetch(
            [serverUrl, "companies/relationships"].join(''),
-           {mode: 'cors'}
+           defaultOptions
       ).then((res)=>{
          return res.json()
       })
