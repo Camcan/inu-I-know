@@ -11,10 +11,10 @@
 ._app_pwz8t_11 {
 	height: auto;
 }
-._headHuman_16nxm_1 {
+._headHuman_10gsa_1 {
 	text-align: left;
 }
-._logo_16nxm_4{
+._logo_10gsa_4{
 	z-index: 7;
 	width: 15%;
 	top: 5px;
@@ -22,32 +22,32 @@
 	position: fixed;
 	opacity: 1;
 }
-._logo_16nxm_4{
+._logo_10gsa_4{
 	left: 20px;
 	transition: 1s ease-in-out;
 }
-._head_16nxm_1 { 
+._head_10gsa_1 { 
 	position: fixed;
 	width: 100%;
    z-index:6; 
    height: 200px;
    padding-top: 20px;
 	top: 0px;
-	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
+	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.8), rgba(0,0,0,0.6), rgba(0,0,0,0.3), rgba(0,0,0,0));
 	-webkit-animation-delay: 0s;
     animation-delay: 0s;
-	-webkit-animation-name: _fadeIn_16nxm_1;
+	-webkit-animation-name: _fadeIn_10gsa_1;
     -webkit-animation-duration: 2s;
- 	animation-name: _fadeIn_16nxm_1;
+ 	animation-name: _fadeIn_10gsa_1;
   	animation-duration: 2s;
   	opacity: 1;
 }
-._head_16nxm_1 h1 {
+._head_10gsa_1 h1 {
 	margin-left: 170px;
 	max-width: 300px;
 }
 
-._center_16nxm_37 {
+._center_10gsa_37 {
 	margin-bottom: 50px;
 	top: 250px;
    left: 10px;
@@ -55,9 +55,9 @@
 	height: auto;
 	padding: none;
 	position: absolute;
-	-webkit-animation-name: _fadeIn_16nxm_1;
+	-webkit-animation-name: _fadeIn_10gsa_1;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_16nxm_1;
+ 	animation-name: _fadeIn_10gsa_1;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
@@ -65,7 +65,7 @@
    justify-content: center;
 }
 
-@-webkit-keyframes _fadeIn_16nxm_1 { 
+@-webkit-keyframes _fadeIn_10gsa_1 { 
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -74,7 +74,7 @@
   100% { opacity: 1; }
 }
 
-@keyframes _fadeIn_16nxm_1 {
+@keyframes _fadeIn_10gsa_1 {
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -83,7 +83,7 @@
   100% { opacity: 1; }
 }
 
-._hide_16nxm_73 {
+._hide_10gsa_73 {
 	opacity: 0;
 	/*visibility: hidden;*/
 	transition: all 0.2s;
@@ -91,7 +91,7 @@
 
 
 @media screen and (min-width: 500px){
-	._center_16nxm_37 {
+	._center_10gsa_37 {
 		margin-bottom: 50px;
 	}
 }
