@@ -337,7 +337,6 @@
 		margin-left: -50px;
 	}
 	._client_components_css_work__tiles {
-      position: fixed;
       margin-top: 50px;
       padding-left: 0px;
       max-height: 350px;
@@ -718,17 +717,20 @@
    }
 }
 ._client_components_network_styles__container {
-    position: relative;
-    min-height: 400px;
+    position: absolute;
+    left: 5px;
+    min-height: 100%;
     width: 99%;
     margin: 20px auto;
     display: flex;
     flex-flow: row nowrap;
+    padding-bottom: 30px;
 }
 ._client_components_network_styles__network {
     height: 100%;
-    min-width: 70%;
-    max-width: 90%;
+    width: 80%;
+    margin: 0px auto;
+    max-width: 95%;
     position: relative;
     z-index: 1;
 }
@@ -755,31 +757,10 @@
 }
 
 ._client_components_network_styles__companyProfile._client_components_network_styles__active {
-    max-width: 30%;
+    max-width: 350px;
     opacity: 1;
 }
 
-._client_components_network_modeSelector__container {
-    height: 100%;
-    width: 100%;
-    height: 20px;
-    display: flex;
-    padding: 0px 5px;
-}
-._client_components_network_modeSelector__container p {
-    margin: 2px 2px 2px 0px;
-    color: #000;
-}
-._client_components_network_modeSelector__container a {
-    height: 1.4em;
-    padding: 0px 5px;
-    margin: 0px 5px;
-    background: #000;
-    transition: filter 0.2s ease-out;
-}
-._client_components_network_modeSelector__container a:hover {
-    filter: invert(100%)
-}
 ._client_components_network_companyProfile__container {
      background: linear-gradient(
         to right, 
@@ -880,4 +861,25 @@
 ._client_components_network_companyProfile__logo img {
     height: 20px;
     width: auto;
+}
+._client_components_network_modeSelector__container {
+    height: 100%;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    padding: 0px 5px;
+}
+._client_components_network_modeSelector__container p {
+    margin: 2px 2px 2px 0px;
+    color: #000;
+}
+._client_components_network_modeSelector__container a {
+    height: 1.4em;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    background: #000;
+    transition: filter 0.2s ease-out;
+}
+._client_components_network_modeSelector__container a:hover {
+    filter: invert(100%)
 }
