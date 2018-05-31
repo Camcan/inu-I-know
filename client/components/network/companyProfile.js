@@ -22,7 +22,7 @@ class CompanyProfile extends Component {
              <div className={Styles.childrenContainer}>
                 <h3>Children:</h3>
                 <CompanyList list={children} 
-                    select={(id)=>this.props.selectNode(id)}
+                    select={(id)=>this.props.selectCompany(id)}
                     active={this.props.selectedCompany._id}
                     apiUrl={this.props.apiUrl}
                 />

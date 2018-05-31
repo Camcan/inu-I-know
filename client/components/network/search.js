@@ -11,7 +11,6 @@ class Search extends Component {
             filter: null,
             showResults: false
         };
-	    this.renderResults = this._renderResults.bind(this);
         this.clickListener = this.clickListener.bind(this);
     }
     componentWillMount(){
@@ -60,13 +59,13 @@ class Search extends Component {
         console.log("filteredList", filteredList);
         this.setState({results: filteredList})
     }
-    _renderResults(){
-       return (this.state.results) ?  <CompanyList 
+    _renderResults(results){
+       if (results) return  <CompanyList 
             list={this.state.results} 
             apiUrl={this.props.apiUrl}
             active={this.props.active}
-            select={(i)=>this.props.handleSelection(i)}
-        /> : null
+            select={(i)=>this.props.selectCompany(i)}
+        />
     
     } 
     render(){
@@ -76,9 +75,6 @@ class Search extends Component {
                     type="text" 
                     onFocus={
                         ()=> this.toggleResults(true)
-                    }
-                    onBlur={
-                        ()=> this.setState({showResults: false})
                     }
                     onChange={
                         this.handleChange.bind(this)
@@ -93,7 +89,7 @@ class Search extends Component {
                         (this.state.showResults) ? Styles.show : null
                     ].join(" ")
                 }>
-                    {this._renderResults()}
+                    {this._renderResults(this.state.results)}
                 </div>
             </div>
         );
