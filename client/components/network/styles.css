@@ -17,10 +17,11 @@
     z-index: 1;
 }
 .modeSelector {
+    height: auto;
     width: 200px;
     position: absolute;
     z-index: 2;
-    top: 0px;
+    top: 5px;
     left: 0px;
 }
 .companyProfile {
