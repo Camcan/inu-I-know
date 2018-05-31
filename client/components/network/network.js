@@ -84,7 +84,8 @@ export default class Network extends Component {
     render(){
       return (
                <div id="mynetwork" style={{
-                   height: this.props.height || "500px", 
+                   height: this.props.height || "500px",
+                   width: this.props.width || "inherit",
                    background: this.props.background || "#eee"}}></div>
       )
    }
