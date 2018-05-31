@@ -83,7 +83,6 @@ class Search extends Component {
                     onChange={
                         this.handleChange.bind(this)
                     }
-                    autofocus="false" 
                     name="search" 
                     placeholder={
                         this.props.placeHolder || "Search..."
