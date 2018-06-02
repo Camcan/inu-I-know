@@ -5,9 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "exenv": "^1.2.2",
-    "express": "^4.14.0",
+    "express": "^4.16.3",
     "history": "^2.0.0",
-    "nodemon": "^1.12.1",
+    "nodemon": "^1.17.5",
     "react": "^15.3.2",
     "react-binding": "^0.7.5",
     "react-css-modules": "^3.7.10",
@@ -26,7 +26,7 @@
     "tape": "^4.6.0",
     "uglify-js": "^3.2.0",
     "uglifyify": "^4.0.4",
-    "watchify": "^3.9.0"
+    "watchify": "^3.11.0"
   },
   "browserify": {
     "transform": [
