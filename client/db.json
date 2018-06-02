@@ -11,6 +11,19 @@
 	      "imgs": ["img/projects/beer/beer.jpg", "img/projects/beer/cartels.png", "img/projects/beer/cartels-admin.png"]
 	    },
         {
+	      "title": "rebeccahawkes.art",
+	      "suffix": ".rebeccahawkes.art",
+	      "desc": [
+              "Artist profile website for Rebecca Hawkes", 
+              "This is a simple artist profile site designed which exhibits both art & academic credentials of an artist. It is built using React & Redux, working with playful interaction on a minimal canvas."],
+	       "tech": ["React", "Redux"],
+	       "link": {
+	       	"live": "http://rebeccahawkes.art",
+            "github": "https://github.com/Camcan/artist-portfolio"
+	       },
+	      "imgs": ["img/projects/art/tile.png", "img/projects/art/rebeccahawkes-art.png", "img/projects/art/art-mobile.png"]
+	    },
+        {
 	      "title": "WalkiTalki",
 	      "suffix": ".walkitalki",
 	      "desc": ["In house app with Metamorphic Studios", "While working for Metamorphic Studios, I spent extended periods of time working on WalkiTalki, a mobile app built using React-Native."],
