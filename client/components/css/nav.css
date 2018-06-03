@@ -6,7 +6,8 @@
 
 .nav {
 	width: 100%;
-	text-align: center;
+	max-height: 50px;
+    text-align: center;
 	-webkit-animation-name: fadeIn;
     -webkit-animation-duration: 1s;
  	animation-name: fadeIn;
