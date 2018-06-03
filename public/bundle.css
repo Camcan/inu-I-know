@@ -95,27 +95,28 @@
 		margin-bottom: 50px;
 	}
 }
-._hide_1j3n4_1 {
+._hide_1th35_1 {
   	visibility: hidden;
   	opacity: 0;
 }
 
 
-._fadeIn_1j3n4_7 {
-   max-width: 900px;
+._fadeIn_1th35_7 {
+   position: fixed;
+    max-width: 900px;
    padding: 10px;
    display: flex;
    justify-content: flex-end;
    flex-flow: row wrap;
-	-webkit-animation-name: _fadeIn_1j3n4_7;
+	-webkit-animation-name: _fadeIn_1th35_7;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_1j3n4_7;
+ 	animation-name: _fadeIn_1th35_7;
   	animation-duration: 1s;
 }
-._fadeIn_1j3n4_7 h2 {
+._fadeIn_1th35_7 h2 {
    padding-right: 50px;
 }
-._whoCol_1j3n4_21{
+._whoCol_1th35_22{
 	text-align: left;
 	width: 30%;
 	max-width: 230px;
@@ -124,24 +125,24 @@
    margin-right: 40px;
 	min-width: 200px;
 }
-._profileImg_1j3n4_30 {
+._profileImg_1th35_31 {
 	height: 100px;
 	width: 100px;
 	opacity: 0.5;
 	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
 	background-size: cover;
-	-webkit-animation-name: _fadeIn_1j3n4_7;
+	-webkit-animation-name: _fadeIn_1th35_7;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_1j3n4_7;
+ 	animation-name: _fadeIn_1th35_7;
   	animation-duration: 1s;
 }
-._profileImg_1j3n4_30._mobile_1j3n4_41 {
+._profileImg_1th35_31._mobile_1th35_42 {
 	top: 0px;
 	position: absolute;
 	margin: -40px -50px -50px -20px;
 	z-index: 0;
 }
-._socialButtons_1j3n4_47 {
+._socialButtons_1th35_48 {
 	vertical-align: bottom;
 	color: white;
 	text-align: left;
@@ -149,41 +150,41 @@
 	height: 100px;
 	text-align: center;
 }
-._socialButtons_1j3n4_47 a {
+._socialButtons_1th35_48 a {
 	display: inline-block;
 	opacity: 0.5;
 	margin: 10px 10px 0px;
 }
-._socialButtons_1j3n4_47 a svg {
+._socialButtons_1th35_48 a svg {
    height: 20px;
    width: 20px;
 }
-._socialButtons_1j3n4_47 a:hover {
+._socialButtons_1th35_48 a:hover {
 	opacity: 1;
 	-ms-transition: all 0.2s ease-out; 
 	transition: all 0.2s ease-out;
 }
 
-._desktop_1j3n4_70 {
+._desktop_1th35_71 {
 	display: none;
 }
 
 @media screen and (min-width: 367px){
-	._profileImg_1j3n4_30._mobile_1j3n4_41 {
+	._profileImg_1th35_31._mobile_1th35_42 {
 		margin: 70px -50px -50px -150px;
 	}
 }
 @media screen and (min-width: 700px){
-	._fadeIn_1j3n4_7 {
+	._fadeIn_1th35_7 {
       		justify-content: center
    	}
-	._mobile_1j3n4_41{
+	._mobile_1th35_42{
 		display: none;
 	}
-	._desktop_1j3n4_70 {
+	._desktop_1th35_71 {
 		display: flex;
 	}
-	._profileImg_1j3n4_30._desktop_1j3n4_70 {
+	._profileImg_1th35_31._desktop_1th35_71 {
 		height: 120px;
 		width: 120px;
 		position: relative;

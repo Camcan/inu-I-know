@@ -7,10 +7,10 @@ export default React.createClass({
         return ( 
         	<div id="footer" className={"highlight"}>
                 <div className={"left"}>
-                    <a href="#">mr.campbell.hawkes@gmail.com</a>
+                    <a href="mailto:campbell.hawkes@gmail.com">mr.campbell.hawkes@gmail.com</a>
                 </div>
                 <div className={"right"}>
-                    <a href="#">camcan</a>
+                    <a href="https://github.com/camcan">camcan</a>
                 </div>
         	</div>
         )
