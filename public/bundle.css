@@ -99,109 +99,6 @@
         height: 200px;
     }
 }
-._hide_z67op_1 {
-  	visibility: hidden;
-  	opacity: 0;
-
-}
-
-
-._fadeIn_z67op_8 {
-   position: fixed;
-    max-width: 900px;
-   padding: 10px;
-   display: flex;
-   justify-content: flex-end;
-   flex-flow: row wrap;
-	-webkit-animation-name: _fadeIn_z67op_8;
-    -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_z67op_8;
-  	animation-duration: 1s;
-}
-._fadeIn_z67op_8 h2 {
-   padding-right: 50px;
-}
-._whoCol_z67op_23{
-	text-align: left;
-	width: 30%;
-	max-width: 230px;
-	padding: 0;
-	z-index: 1;
-   margin-right: 40px;
-	min-width: 200px;
-}
-._profileImg_z67op_32 {
-	height: 100px;
-	width: 100px;
-	opacity: 0.5;
-	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
-	background-size: cover;
-	-webkit-animation-name: _fadeIn_z67op_8;
-    -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_z67op_8;
-  	animation-duration: 1s;
-}
-._profileImg_z67op_32._mobile_z67op_43 {
-	top: 0px;
-	position: absolute;
-	margin: -40px -50px -50px -20px;
-	z-index: 0;
-}
-._socialButtons_z67op_49 {
-	vertical-align: bottom;
-	color: white;
-	text-align: left;
-	margin-top: 20px;
-	height: 100px;
-	text-align: center;
-}
-._socialButtons_z67op_49 a {
-	display: inline-block;
-	opacity: 0.5;
-	margin: 10px 10px 0px;
-}
-._socialButtons_z67op_49 a svg {
-   height: 20px;
-   width: 20px;
-}
-._socialButtons_z67op_49 a:hover {
-	opacity: 1;
-	-ms-transition: all 0.2s ease-out; 
-	transition: all 0.2s ease-out;
-}
-
-._desktop_z67op_72 {
-	display: none;
-}
-
-@media screen and (min-width: 367px){
-	._profileImg_z67op_32._mobile_z67op_43 {
-		margin: 70px -50px -50px -150px;
-	}
-}
-@media screen and (min-width: 700px){
-	._fadeIn_z67op_8 {
-      		justify-content: center
-   	}
-	._mobile_z67op_43{
-		display: none;
-	}
-	._desktop_z67op_72 {
-		display: flex;
-	}
-	._profileImg_z67op_32._desktop_z67op_72 {
-		height: 120px;
-		width: 120px;
-		position: relative;
-		margin-top: 20px;
-		top: 0;
-		right: 0;
-	}
-}
-@media screen and (min-width: 1000px){
-
-
-}
 ._projectsContainer_gfihd_1{
    width: 90%;
    margin-top: 30px;
@@ -646,6 +543,149 @@
    ._timeline_2dp45_14 ._items_2dp45_51 {
       padding-top: 100px;
    }
+}
+._footer_1nxdq_1 {
+    z-index: 3;
+    position: fixed;
+    padding-bottom: 2px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    max-height:70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: center;
+    overflow: visible;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0.3), rgba(0,0,0,0.5), rgba(0,0,0,0.9));
+}
+
+._footer_1nxdq_1 > div {
+	margin: 0px 10px;
+    max-height: 30px;
+    position: inline;
+    vertical-align: bottom;
+}
+
+
+@media screen and (min-width: 500px) {
+  ._footer_1nxdq_1 {
+     max-height:100px;
+  }
+	._footer_1nxdq_1 div {
+        max-width: 100px;
+		position: relative;
+	}
+	._footer_1nxdq_1 > ._left_1nxdq_34 {
+		left: 20px;
+	}
+	._footer_1nxdq_1 > ._right_1nxdq_37 {
+		right: 20px;
+	}
+}
+._hide_z67op_1 {
+  	visibility: hidden;
+  	opacity: 0;
+
+}
+
+
+._fadeIn_z67op_8 {
+   position: fixed;
+    max-width: 900px;
+   padding: 10px;
+   display: flex;
+   justify-content: flex-end;
+   flex-flow: row wrap;
+	-webkit-animation-name: _fadeIn_z67op_8;
+    -webkit-animation-duration: 1s;
+ 	animation-name: _fadeIn_z67op_8;
+  	animation-duration: 1s;
+}
+._fadeIn_z67op_8 h2 {
+   padding-right: 50px;
+}
+._whoCol_z67op_23{
+	text-align: left;
+	width: 30%;
+	max-width: 230px;
+	padding: 0;
+	z-index: 1;
+   margin-right: 40px;
+	min-width: 200px;
+}
+._profileImg_z67op_32 {
+	height: 100px;
+	width: 100px;
+	opacity: 0.5;
+	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
+	background-size: cover;
+	-webkit-animation-name: _fadeIn_z67op_8;
+    -webkit-animation-duration: 1s;
+ 	animation-name: _fadeIn_z67op_8;
+  	animation-duration: 1s;
+}
+._profileImg_z67op_32._mobile_z67op_43 {
+	top: 0px;
+	position: absolute;
+	margin: -40px -50px -50px -20px;
+	z-index: 0;
+}
+._socialButtons_z67op_49 {
+	vertical-align: bottom;
+	color: white;
+	text-align: left;
+	margin-top: 20px;
+	height: 100px;
+	text-align: center;
+}
+._socialButtons_z67op_49 a {
+	display: inline-block;
+	opacity: 0.5;
+	margin: 10px 10px 0px;
+}
+._socialButtons_z67op_49 a svg {
+   height: 20px;
+   width: 20px;
+}
+._socialButtons_z67op_49 a:hover {
+	opacity: 1;
+	-ms-transition: all 0.2s ease-out; 
+	transition: all 0.2s ease-out;
+}
+
+._desktop_z67op_72 {
+	display: none;
+}
+
+@media screen and (min-width: 367px){
+	._profileImg_z67op_32._mobile_z67op_43 {
+		margin: 70px -50px -50px -150px;
+	}
+}
+@media screen and (min-width: 700px){
+	._fadeIn_z67op_8 {
+      		justify-content: center
+   	}
+	._mobile_z67op_43{
+		display: none;
+	}
+	._desktop_z67op_72 {
+		display: flex;
+	}
+	._profileImg_z67op_32._desktop_z67op_72 {
+		height: 120px;
+		width: 120px;
+		position: relative;
+		margin-top: 20px;
+		top: 0;
+		right: 0;
+	}
+}
+@media screen and (min-width: 1000px){
+
+
 }
 ._hide_og24y_1 {
   position: absolute;

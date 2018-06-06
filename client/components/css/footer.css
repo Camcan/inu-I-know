@@ -1,0 +1,40 @@
+.footer {
+    z-index: 3;
+    position: fixed;
+    padding-bottom: 2px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    max-height:70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: center;
+    overflow: visible;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0.3), rgba(0,0,0,0.5), rgba(0,0,0,0.9));
+}
+
+.footer > div {
+	margin: 0px 10px;
+    max-height: 30px;
+    position: inline;
+    vertical-align: bottom;
+}
+
+
+@media screen and (min-width: 500px) {
+  .footer {
+     max-height:100px;
+  }
+	.footer div {
+        max-width: 100px;
+		position: relative;
+	}
+	.footer > .left {
+		left: 20px;
+	}
+	.footer > .right {
+		right: 20px;
+	}
+}
