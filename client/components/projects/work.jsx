@@ -28,12 +28,14 @@ export default React.createClass({
         console.log(this.state.project)
     },
     selectProject: function(project){
+        window.scroll(0,0);
         this.setState({project: project,
             menu: false
         })
     },
     showMenu: function(){
-        this.setState({menu: true})
+        window.scroll(0,0);
+        this.setState({menu: true});
     },
     render: function() {
         var titleStyle = ""
@@ -43,9 +45,15 @@ export default React.createClass({
                 titleStyle = Styles.myWork
                 this.state.pageContents = 
                     <div className={Styles.tiles}>
-                        {this.state.projects.map(project => (
-                            <Link to={`/work/${project.title}`}><Tile project={project} passTitle={this.mouseoverTile} select={this.selectProject}/></Link>
-                        ))}
+                        {
+                            this.state.projects.map(project => (
+                                <Link to={`/work/${project.title}`}>
+                                    <Tile project={project} 
+                                        passTitle={this.mouseoverTile} 
+                                        select={this.selectProject                                  }/>
+                                </Link>
+                            ))
+                        }
                     </div>
             } else {
                 titleStyle = Styles.myWorkProject

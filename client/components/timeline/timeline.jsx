@@ -8,16 +8,25 @@ import Circle from '../assets/shapes/circle.jsx'
 
 const timeline = [
     {
+      title: "Freelancing",
+      slug: "freelance-1",
+      period: "December 2017 - present",
+      logo: "../img/montagnes-white.svg",
+      brief: ["Since December 2017, I have been working on a number of personal and commercial projects. While some of my projects visible on this site, work for clients includes Full-Stack website builds using NodeJS & aid with documentation-heavy Wordpress integrations.",  
+          "Along with my ongoing projects, I am actively looking for opportunities to continue learning and growing. Get in touch."],
+      description: [],
+    },
+    {
       title: "Metamorphic Studios",
       slug: "meta",
-      period: "July 2017 - present",
+      period: "July - November 2017",
       logo: "../img/work/meta/meta.png",
       brief: ["Metamorphic Development: An agile environment with a young and rapidly evolving, tight-knit team talented in storytelling, design and programming. The Studio's primary role is in consultation and development bespoke web and native solutions."],
       description: [],
     },
     {
       title: "Freelance Work",
-      slug: "freelance",
+      slug: "freelance-2",
       period: "August 2016- July 2017",
       logo: "../img/montagnes-white.svg",
       brief: ["Throughout 2016 and early 2017 I was engaged in remote contract work in an Agile//SCRUM environment. The work was primarily around email campaigns and HTML templating for all email clients."]
@@ -80,14 +89,22 @@ export default class Timeline extends Component {
                   <p>Present</p>
                  <Circle radius="10" fill="white" />
                </div>
-               <p className={Styles.year}>
+               <p className={[
+                        Styles.year,
+                        Styles.y18
+                    ].join(" ")
+               }>
+                    2018
+                </p>
+                <p className={[
+                        Styles.year,
+                        Styles.y17
+                ].join(" ")
+                }>
                   2017
                </p>
                <p className={Styles.year}>
                   2016
-               </p>
-               <p className={Styles.year}>
-                  2015
                </p>
             </div>
             <div className={Styles.items}>

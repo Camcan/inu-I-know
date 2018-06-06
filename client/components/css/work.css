@@ -34,6 +34,7 @@
 	z-index: -1;
 }
 .tiles {
+    position: fixed;
    padding: 30px 0px;
     max-width: 90%;
    display: flex;
@@ -93,6 +94,9 @@
 	height: auto;
    margin-left: -10%;
 	width: 100%;
+}
+.content {
+    height: auto;
 }
 .secondImage {
    max-width: 100%;

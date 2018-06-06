@@ -24,7 +24,7 @@ export default React.createClass({
     render: function() {
       var project = this.props
       return ( 
-    		<div>
+    		<div style={{height: 'auto'}}>
                 <Link className={Styles.backButton}to="/work" onClick={this.props.back}><Back/><span>go back</span></Link>
                 <div className={Styles.project}>
                     <p className={Styles.projectTitle}>{project.title}</p>
