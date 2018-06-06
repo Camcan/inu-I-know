@@ -6,6 +6,7 @@ html {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     position: relative;
+
 }
 body {
   height: 100%;
@@ -23,10 +24,13 @@ a {
 	cursor: pointer;
 }
 body {
-	margin: 0px;
+	background:  linear-gradient(to bottom, #000, #000, rgba(0,0,0,0.9));
+    margin: 0px;
 	padding: 8px;
+    padding-bottom: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
 	height: 100%;
-	background: black;
 }
 div {
   height: 100%;
