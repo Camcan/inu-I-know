@@ -82,6 +82,7 @@ class NetworkContainer extends Component {
                 <CompanyProfile 
                     apiUrl={apiUrl}
                     companyList={this.state.companyList}
+                    companyRels={this.state.companyRels}
                     selectedCompany={this.state.selectedCompany}
                     selectCompany={
                         (id)=>this.setState({
