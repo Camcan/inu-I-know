@@ -11,10 +11,10 @@
 ._app_pwz8t_11 {
 	height: auto;
 }
-._headHuman_1bwmd_1 {
+._headHuman_1agxf_1 {
 	text-align: left;
 }
-._logo_1bwmd_4{
+._logo_1agxf_4{
 	z-index: 7;
 	width: 15%;
 	top: 5px;
@@ -22,11 +22,11 @@
 	position: fixed;
 	opacity: 1;
 }
-._logo_1bwmd_4{
+._logo_1agxf_4{
 	left: 20px;
 	transition: 1s ease-in-out;
 }
-._head_1bwmd_1 { 
+._head_1agxf_1 { 
 	position: fixed;
 	width: 100%;
    z-index:6; 
@@ -36,29 +36,29 @@
 	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.8), rgba(0,0,0,0.6), rgba(0,0,0,0.3), rgba(0,0,0,0));
 	-webkit-animation-delay: 0s;
     animation-delay: 0s;
-	-webkit-animation-name: _fadeIn_1bwmd_1;
+	-webkit-animation-name: _fadeIn_1agxf_1;
     -webkit-animation-duration: 2s;
- 	animation-name: _fadeIn_1bwmd_1;
+ 	animation-name: _fadeIn_1agxf_1;
   	animation-duration: 2s;
   	opacity: 1;
 }
-._head_1bwmd_1 h1 {
+._head_1agxf_1 h1 {
 	margin-left: 170px;
 	max-width: 300px;
 }
 
-._center_1bwmd_37 {
-	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+._center_1agxf_37 {
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,1));
     margin-bottom: 50px;
 	top: 200px;
-   left: 10px;
+   left: 0px;
    right: 10px;
 	height: 100%;
 	padding: none;
 	position: absolute;
-	-webkit-animation-name: _fadeIn_1bwmd_1;
+	-webkit-animation-name: _fadeIn_1agxf_1;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_1bwmd_1;
+ 	animation-name: _fadeIn_1agxf_1;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
@@ -66,7 +66,7 @@
    justify-content: center;
 }
 
-@-webkit-keyframes _fadeIn_1bwmd_1 { 
+@-webkit-keyframes _fadeIn_1agxf_1 { 
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -75,7 +75,7 @@
   100% { opacity: 1; }
 }
 
-@keyframes _fadeIn_1bwmd_1 {
+@keyframes _fadeIn_1agxf_1 {
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -84,7 +84,7 @@
   100% { opacity: 1; }
 }
 
-._hide_1bwmd_74 {
+._hide_1agxf_74 {
 	opacity: 0;
 	/*visibility: hidden;*/
 	transition: all 0.2s;
@@ -92,11 +92,11 @@
 
 
 @media screen and (min-width: 500px){
-	._center_1bwmd_37 {
+	._center_1agxf_37 {
 		top: 250px;
         margin-bottom: 50px;
 	}
-    ._head_1bwmd_1 {
+    ._head_1agxf_1 {
         height: 200px;
     }
 }
@@ -705,34 +705,34 @@
 		right: 20px;
 	}
 }
-._hide_og24y_1 {
+._hide_11ejn_1 {
   position: absolute;
   opacity: 0;
   visibility: hidden;
 }
 
-._nav_og24y_7 {
+._nav_11ejn_7 {
 	height: 70px;
     width: 100%;
 	max-height: 50px;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-	-webkit-animation-name: _fadeIn_og24y_1;
+	-webkit-animation-name: _fadeIn_11ejn_1;
     -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_og24y_1;
+ 	animation-name: _fadeIn_11ejn_1;
   	animation-duration: 1s;
   	visibility: visible;
   	opacity: 1;
 }
 
-._nav_og24y_7 a {
+._nav_11ejn_7 a {
 	width: 50px;
 	margin: 20px;
 	padding: 10px;
 }
 
-@-webkit-keyframes _fadeIn_og24y_1 { 
+@-webkit-keyframes _fadeIn_11ejn_1 { 
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -741,7 +741,7 @@
   100% { opacity: 1; }
 }
 
-@keyframes _fadeIn_og24y_1 {
+@keyframes _fadeIn_11ejn_1 {
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
@@ -751,12 +751,12 @@
 }
 
 @media screen and (min-width:   730px) {
-    ._nav_og24y_7 {
+    ._nav_11ejn_7 {
         width: 300px;
         position: absolute;
         right: 40px;
         top: 35px;
-        align-items: flex-end;
+        align-items: center;
     }
 }
 ._projectLinks_1qqen_1 {
