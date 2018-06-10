@@ -1,8 +1,8 @@
-import React from 'react';
+import {Component} from 'react';
 import Styles from '../css/footer.css';
 
-export default React.createClass({
-    render: function() {
+export default class Footer extends Component{
+    render() {
         return ( 
         	<div className={[
                     Styles.footer, 
@@ -17,4 +17,4 @@ export default React.createClass({
         	</div>
         )
     }
-})
+};

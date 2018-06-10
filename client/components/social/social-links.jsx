@@ -1,4 +1,4 @@
-import React from 'react'
+import {Component} from 'react'
 import {Link} from 'react-router'
 
 import GitHub from '../assets/icons/github.js'
@@ -7,11 +7,11 @@ import Twitter from '../assets/icons/twitter'
 import Mobile from '../assets/icons/mobile'
 import Envelope from '../assets/icons/envelope'
 
-export default React.createClass({
-	propTypes: {
-		className: React.PropTypes.string
-	},
-	render: function(){
+export default class SocialLinks extends Component{
+	constructor(props){
+        super(props);
+    }
+    render(){
 		return (
 			<div id="socialButtons" className={this.props.className}>
 					<a href="//github.com/camcan">
@@ -32,4 +32,4 @@ export default React.createClass({
 			</div>
 		)
 	}
-})
+};

@@ -5,6 +5,7 @@ import Network from './network.js';
 import ModeSelector from './modeSelector.js';
 import Search from './search.js';
 import CompanyProfile from './companyProfile.js';
+import Map from './map.js';
 
 const apiUrl = [
     'https://',
@@ -39,7 +40,31 @@ class NetworkContainer extends Component {
              ...newProps
          });
 	}
-	render(){
+	_renderContent(filter){
+        switch(filter){
+            case "All":
+                return <Network 
+                    background="linear-gradient(to right, #EEE, #FFF)"
+                    height="100%"
+                    data={this.state.activeList} 
+                    rels={this.state.activeRels}
+                    api={apiUrl}
+                    selected={
+                        (this.state.selectedCompany) ? [
+                            this.state.selectedCompany
+                        ] : null
+                    }
+                    handleSelection={(id)=>{
+                            this.setState({selectedCompany: id});
+                    }} 
+                />;
+            case "Map":
+                return <div style={{height: "100%", width: "100%"}}>
+                    <Map />
+                </div>;
+        }
+    }
+    render(){
          const profileClass = [
             Styles.companyProfile,
             (this.state.selectedCompany) ? Styles.active : ""
@@ -48,7 +73,7 @@ class NetworkContainer extends Component {
 		    <div className={Styles.network}>
                 <div className={Styles.modeSelector}>
                     <ModeSelector select={(filter)=>this.setState({filter: filter})}
-                        options={["All"]}
+                        options={["All", "Map"]}
                         active={this.state.filter}
                     />
                     <Search list={this.state.activeList}
@@ -61,22 +86,7 @@ class NetworkContainer extends Component {
                         }
                     />
                 </div>
-                <Network 
-                    background="linear-gradient(to right, #EEE, #FFF)"
-                    height="100%"
-                    data={this.state.activeList} 
-                    rels={this.state.activeRels}
-                    api={apiUrl}
-                    selected={
-                        (this.state.selectedCompany) ? [this.state.selectedCompany] 
-                        : null
-                    }
-                    handleSelection={
-                        (id)=>{
-                            this.setState({selectedCompany: id});
-                        }
-                    } 
-                />
+                { this._renderContent(this.state.filter)}
             </div>
 		    <div className={profileClass}>
                 <CompanyProfile 

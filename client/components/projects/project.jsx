@@ -1,5 +1,4 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import {Component} from 'react'
 import Styles from '../css/work.css'
 import Links from './projectLinks.jsx'
 import Back from '../assets/icons/back.js'
@@ -7,21 +6,15 @@ import Web from '../assets/icons/earth.js'
 import Github from '../assets/icons/github.js'
 import NetworkContainer from '../network/index.js';
 import {Link} from 'react-router'
-export default React.createClass({
-     propTypes: {
-            back: React.PropTypes.func,
-            title: React.PropTypes.string,
-            description: React.PropTypes.array,
-            imgs: React. PropTypes.array,
-            live: React.PropTypes.string,
-            github: React.PropTypes.string
-    },
-	clickTile: function(title){
-		this.setState({project: title})
-		console.log(this.state.project)
 
-	},
-    render: function() {
+export default class Project extends Component {
+	constructor(props){
+        super(props);
+    }
+    clickTile(title){
+		this.setState({project: title})
+	}
+    render(){
       var project = this.props
       return ( 
     		<div style={{height: 'auto'}}>
@@ -48,4 +41,4 @@ export default React.createClass({
             </div>
         )
     }
-})
+}

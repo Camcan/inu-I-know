@@ -1,26 +1,27 @@
-import React from 'react'
+import {Component} from 'react'
 import Styles from './css/human.css'
 import {router, Link, browserHistory} from 'react-router'
 import Nav from './page/nav.jsx'
 
 var navStyle = Styles.nav
 var hide = Styles.hide
-export default React.createClass({
-	propTypes: {
-        updateHistory: React.PropTypes.func
-    },
-	componentDidMount: function(){
+
+export default class Human extends Component{
+    constructor(props){
+        super(props)
+    }
+	componentDidMount(){
 		
-	},
-	navigate: function(){
-			console.log("CENTER")
-		function center(){ document.getElementsByClassName(Styles.center)[0] }
+	}
+	navigate(){
+		console.log("CENTER")
+		const center = ()=>document.getElementsByClassName(Styles.center)[0];
 		if (center()){
 				center().classList.toggle(Styles.hide)
 		} 
 
-	},
-    render: function() {
+	}
+    render(){
         return ( 
     	<div>
 				<script>
@@ -40,4 +41,4 @@ export default React.createClass({
 	        </div>
         )
     }
-})
+}

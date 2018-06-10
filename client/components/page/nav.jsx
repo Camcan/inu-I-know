@@ -1,22 +1,24 @@
-import React from 'react'
-import {Link} from 'react-router'
+import {Component} from 'react'
+import {Link} from 'react-router-dom'
 import Styles from '../css/nav.css'
 import Back from '../assets/icons/back.js'
 
 var navStyle = Styles.nav
 var hide = Styles.hide
-export default React.createClass({
-	propTypes: {
-        transition: React.PropTypes.func
-    },
-	componentDidMount: function(){
-		setTimeout(function(){document.getElementById("nav").className = navStyle + " highlight";},2000);
-	},
-    onClick: function(){
+export default class Nav extends Component{
+    constructor(props){
+        super(props);
+    }
+    componentDidMount(){
+		setTimeout(()=>{
+            document.getElementById("nav").className = navStyle + " highlight";
+        },2000);
+	}
+    onClick(){
         window.scroll(0,0);
         this.props.transition();
-    },
-    render: function() {
+    }
+    render(){
     	if (this.props.home == true) {
     		return  <div id="nav" className={hide}>
 		    			<Link to="/home">back home<Back/></Link>
@@ -30,4 +32,5 @@ export default React.createClass({
             </div>
          )
     	}
-}})
+    }
+}

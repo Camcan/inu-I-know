@@ -1,15 +1,15 @@
-import React from 'react'
+import {Component} from 'react'
 import ReactDOM from 'react-dom'
 import Styles from '../css/projectLinks.css'
 import Back from '../assets/icons/back.js'
 import Web from '../assets/icons/earth.js'
 import Github from '../assets/icons/github.js'
-export default React.createClass({
-     propTypes: {
-            live: React.PropTypes.string,
-            github: React.PropTypes.string
-    },
-    render: function() {
+
+export default class ProjectLinks extends Component { 
+    constructor(props){
+        super(props);
+    }
+    render() {
         var project = this.props
         var live
         var gh
@@ -30,4 +30,4 @@ export default React.createClass({
                     </div>
         )
     }
-})
+};

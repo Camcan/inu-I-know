@@ -1,17 +1,21 @@
-import React from 'react'
+import {Component} from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, browserHistory, IndexRedirect, Link} from 'react-router'
 import Social from '../social/social-links.jsx'
 import Styles from '../css/who.css'
 
 var show = true
-export default React.createClass({
-    componentDidMount: function() {
-    },
-    componentWillEnter: function() {
+export default class Who extends Component{
+    constructor(props){
+        super(props);
+    }
+    componentDidMount() {
+    
+    }
+    componentWillEnter() {
         console.log("Preload", this)
-    },
-    render: function() {
+    }
+    render() {
         return ( 
         	<div className={Styles.fadeIn}>
                 <h2>who?</h2>
@@ -41,4 +45,4 @@ export default React.createClass({
             </div>
         )
     }
-})
+}

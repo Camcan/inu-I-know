@@ -1,43 +1,40 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import {Component} from 'react'
 import {Link} from 'react-router'
 import Tile from './tile.jsx'
 import Project from './project.jsx'
 import Styles from '../css/work.css'
 import DB from '../../db.json'
 
-export default React.createClass({
-    propTypes: {
-        db: React.PropTypes.object
-    },
-    getInitialState: function(){
-            return{
+export default class Work extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
                 title: null,
                 project: null,
                 menu: true,
                 pageContents: this.getMenu
-            } 
-    },
-    componentDidMount: function() {
+        };
+    }
+    componentDidMount() {
         console.log(this.props.db)
         this.setState({projects: DB.projects })
         console.log(this.state.projects)
-    },
-    mouseoverTile: function(title){
+    }
+    mouseoverTile(title){
         this.setState({title: title})
         console.log(this.state.project)
-    },
-    selectProject: function(project){
+    }
+    selectProject(project){
         window.scroll(0,0);
         this.setState({project: project,
             menu: false
         })
-    },
-    showMenu: function(){
+    }
+    showMenu(){
         window.scroll(0,0);
         this.setState({menu: true});
-    },
-    render: function() {
+    }
+    render() {
         var titleStyle = ""
         if (this.state.projects) {
             // this.setState({projects: this.props.db.projects })
@@ -75,5 +72,5 @@ export default React.createClass({
             </div>
         )
     }
-})
+};
 

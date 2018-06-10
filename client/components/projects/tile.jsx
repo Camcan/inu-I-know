@@ -1,20 +1,18 @@
-import React from 'react'
+import {Component} from 'react'
 import ReactDOM from 'react-dom'
 import Styles from '../css/work.css'
-export default React.createClass({
-    propTypes: {
-            passTitle: React.PropTypes.func,
-            select: React.PropTypes.func,
-            project: React.PropTypes.object,
-    
-    },
-    handleMouseover: function() {
+
+export default class Tile extends Component { 
+    constructor(props){
+        super(props);
+    }
+    handleMouseover() {
         this.props.passTitle(this.props.project.title)
-    },
-    handleClick: function() {
+    }
+    handleClick() {
         this.props.select(this.props.project)
-    },
-    render: function() {
+    }
+    render() {
         return (  
             <div id={this.props.title} className={Styles.tileContainer} onMouseEnter={this.handleMouseover} onClick={this.handleClick}>
                   <div className={Styles.tile}>
@@ -26,4 +24,4 @@ export default React.createClass({
                </div>
         );
     }
-});
+};
