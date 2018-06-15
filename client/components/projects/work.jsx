@@ -1,9 +1,9 @@
-import {Component} from 'react'
-import {Link} from 'react-router'
-import Tile from './tile.jsx'
-import Project from './project.jsx'
-import Styles from '../css/work.css'
-import DB from '../../db.json'
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+import Tile from './tile.jsx';
+import Project from './project.jsx';
+import Styles from '../css/work.css';
+import DB from '../../db.json';
 
 export default class Work extends Component {
     constructor(props){
@@ -14,6 +14,9 @@ export default class Work extends Component {
                 menu: true,
                 pageContents: this.getMenu
         };
+        this.selectProject = this.selectProject.bind(this);
+        this.mouseoverTile = this.mouseoverTile.bind(this);
+        this.showMenu = this.showMenu.bind(this);
     }
     componentDidMount() {
         console.log(this.props.db)
@@ -40,14 +43,13 @@ export default class Work extends Component {
             // this.setState({projects: this.props.db.projects })
             if (this.state.menu) {
                 titleStyle = Styles.myWork
-                this.state.pageContents = 
-                    <div className={Styles.tiles}>
+                this.state.pageContents = <div className={Styles.tiles}>
                         {
                             this.state.projects.map(project => (
                                 <Link to={`/work/${project.title}`}>
                                     <Tile project={project} 
                                         passTitle={this.mouseoverTile} 
-                                        select={this.selectProject                                  }/>
+                                        select={this.selectProject                                                  }/>
                                 </Link>
                             ))
                         }

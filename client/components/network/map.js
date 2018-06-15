@@ -1,5 +1,5 @@
 import GoogleMap from 'google-map-react';
-import {Component} from 'react';
+import React, {Component} from 'react';
 
 
 export default class Map extends Component {

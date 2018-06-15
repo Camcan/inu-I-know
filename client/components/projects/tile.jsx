@@ -1,10 +1,12 @@
-import {Component} from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import Styles from '../css/work.css'
 
 export default class Tile extends Component { 
     constructor(props){
         super(props);
+        this.handleMouseover = this.handleMouseover.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
     handleMouseover() {
         this.props.passTitle(this.props.project.title)

@@ -1,4 +1,4 @@
-import {Component} from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import Styles from '../css/projectLinks.css'
 import Back from '../assets/icons/back.js'

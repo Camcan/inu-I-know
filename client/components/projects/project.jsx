@@ -1,13 +1,13 @@
-import {Component} from 'react'
+import React, {Component} from 'react'
 import Styles from '../css/work.css'
 import Links from './projectLinks.jsx'
 import Back from '../assets/icons/back.js'
 import Web from '../assets/icons/earth.js'
 import Github from '../assets/icons/github.js'
 import NetworkContainer from '../network/index.js';
-import {Link} from 'react-router'
+import {Link, withRouter} from 'react-router-dom'
 
-export default class Project extends Component {
+class Project extends Component {
 	constructor(props){
         super(props);
     }
@@ -18,7 +18,14 @@ export default class Project extends Component {
       var project = this.props
       return ( 
     		<div style={{height: 'auto'}}>
-                <Link className={Styles.backButton}to="/work" onClick={this.props.back}><Back/><span>go back</span></Link>
+                <Link className={Styles.backButton} 
+                    to="/work"
+                    onClick={()=>{
+                        this.props.back();
+                    }}
+                >   
+                    <Back/><span>go back</span>
+                </Link>
                 <div className={Styles.project}>
                     <p className={Styles.projectTitle}>{project.title}</p>
                     <Links github={project.github} live={project.live}/>
@@ -41,4 +48,5 @@ export default class Project extends Component {
             </div>
         )
     }
-}
+};
+export default withRouter(Project);

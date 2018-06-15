@@ -1,6 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { withRouter, BrowserRouter, Route, IndexRedirect, Link, useRouterHistory} from 'react-router-dom';
+import { 
+    withRouter, 
+    BrowserRouter, 
+    Route, 
+    Redirect, 
+    IndexRoute, 
+    Link, 
+    useRouterHistory,
+    Switch
+} from 'react-router-dom';
 import { createHistory } from 'history';
 import CSSModules from 'react-css-modules';
 import Human from './components/human.jsx';
@@ -16,21 +25,6 @@ import DB from './db.json';
 var Styles;
 class App extends React.Component{
     render(){
-		var route = this.props.routes[this.props.routes.length-1].path
-		console.log(route)
-		var checkLoad = setInterval(function() {
-	    	if (document.readyState === "complete") {
-	    		loader(0)
-	        	clearInterval(checkLoad)
-	    	}
-		}, 10)
-		const setProgress = (amt)=>{
-		  amt = (amt < 0) ? 0 : (amt > 1) ? 1 : amt;
-		  document.getElementById("stop1").setAttribute("offset", amt);
-		  document.getElementById("stop2").setAttribute("offset", amt);
-		}
-
-		loader(0)
 		const loader = (e)=>{
 		  setProgress(e)
 		  e += 0.01
@@ -39,13 +33,27 @@ class App extends React.Component{
 		  } else {
 				document.getElementById('loader-wrapper').className = "loaded"
 		  }
+		};
+        const checkLoad = setInterval(()=>{
+	    	if (document.readyState === "complete") {
+	    		loader(0)
+	        	clearInterval(checkLoad)
+	    	}
+		}, 10);
+		const setProgress = (amt)=>{
+		  amt = (amt < 0) ? 0 : (amt > 1) ? 1 : amt;
+		  document.getElementById("stop1").setAttribute("offset", amt);
+		  document.getElementById("stop2").setAttribute("offset", amt);
 		}
+		loader(0)
 		Styles = HumanStyles;
         return ( 
         	<div id="app" className={AppStyles.app}>
 				<Link to="/who"><img className={Styles.logo} src={"../img/montagnes-white.svg"}/></Link>
-	        	{this.props.children}
-	        	<Footer/>
+	        	<Human>
+                    {this.props.children}
+	        	</Human>
+                <Footer/>
         	</div>
         )
     }
@@ -54,17 +62,16 @@ class App extends React.Component{
 
 
 ReactDOM.render( 
-	<BrowserRouter>
-	    <Route path="/" component={withRouter(App)}>
-		    <IndexRedirect to="who"/>
-		    <Route name="human" path="/" component={Human}>
-		    	<Route name="who" path="/who" component={Who}/>
-		     	<Route name="work" path="/work" component={Work} db={DB}>
-		     		<Route name="project" path="/work/:title" handler={Work}/>
-		     	</Route>
-            <Route name="timeline" path="/history" component={Timeline}/>
-		    </Route>
-	    </Route>
+	<BrowserRouter basename="/de">
+        <App>
+                <Switch>
+                    <Redirect exact from="/" to="/who" />
+                    <Route name="who" path="/who" component={Who} />
+                    <Route name="work" path="/work" component={Work} db={DB}/>
+                    <Route name="project" path="/work/:title" component={Work} db={DB} />
+                    <Route name="timeline" path="/history" component={Timeline} />
+                </Switch>    
+	    </App>
  	</BrowserRouter>,
     document.getElementById('app')
 )

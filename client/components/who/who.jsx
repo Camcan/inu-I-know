@@ -1,4 +1,4 @@
-import {Component} from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, browserHistory, IndexRedirect, Link} from 'react-router'
 import Social from '../social/social-links.jsx'

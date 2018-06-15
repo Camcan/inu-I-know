@@ -12,13 +12,13 @@ app.get(['/de/resume'], function(req, res){
    res.sendFile(path.join(__dirname, 'public/resume/CV.html'));
 })
 
-app.get(['/'], function(req, res) {
+app.get(['/de'], function(req, res) {
    res.sendFile(path.join(__dirname, 'client/views/base.html'))
 })
 
-app.get(['/de/*'], function(req, res){
-               res.redirect('/')
-               })
+app.get(['/*'], function(req, res){
+    res.redirect('/de')
+})
 
 
 

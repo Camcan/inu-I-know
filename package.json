@@ -14,7 +14,7 @@
     "react-css-modules": "^3.7.10",
     "react-dom": "^16.0.0",
     "react-icons": "^2.2.7",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^4.3.0",
     "vis": "^4.21.0"
   },
   "devDependencies": {
