@@ -19,12 +19,12 @@ import DB from '../db.json';
 
 class Content extends Component {
     render(){
-        
+        const currentKey = this.props.location.pathname.split('/')[1] || '/';
         const timeout = { enter: 300, exit: 0 };
         
         return (
             <TransitionGroup>
-                <CSSTransition key={this.props.location.key} 
+                <CSSTransition key={currentKey} 
                     classNames="fadeTransition" 
                     timeout={700}
                     mountOnEnter={true}
@@ -33,7 +33,6 @@ class Content extends Component {
                         <Redirect exact from="/" to="/who" />
                         <Route name="who" path="/who" component={Who} />
                         <Route name="work" path="/work" component={Work} />
-                        <Route name="project" path="/work/:title" component={Work} db={DB} />
                         <Route name="timeline" path="/history" component={Timeline} />
                     </Switch> 
                 </CSSTransition>

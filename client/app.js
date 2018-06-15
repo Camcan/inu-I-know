@@ -11,12 +11,10 @@ import {
     Switch
 } from 'react-router-dom';
 import { createHistory } from 'history';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import CSSModules from 'react-css-modules';
 import Human from './components/human.jsx';
-import Who from './components/who/who.jsx';
-import Work from './components/projects/work.jsx';
-import Timeline from './components/timeline/index.jsx';
-import Project from './components/projects/project.jsx';
+import Content from './components/content.jsx';
 import AppStyles from './components/css/app.css';
 import HumanStyles from './components/css/human.css';
 import Footer from './components/page/footer.jsx';
@@ -25,6 +23,12 @@ import DB from './db.json';
 var Styles;
 class App extends React.Component{
     render(){
+        const checkLoad = setInterval(()=>{
+	    	if (document.readyState === "complete") {
+	    		loader(0)
+	        	clearInterval(checkLoad)
+	    	}
+		}, 10);
 		const loader = (e)=>{
 		  setProgress(e)
 		  e += 0.01
@@ -34,18 +38,13 @@ class App extends React.Component{
 				document.getElementById('loader-wrapper').className = "loaded"
 		  }
 		};
-        const checkLoad = setInterval(()=>{
-	    	if (document.readyState === "complete") {
-	    		loader(0)
-	        	clearInterval(checkLoad)
-	    	}
-		}, 10);
-		const setProgress = (amt)=>{
+
+        const setProgress = (amt)=>{
 		  amt = (amt < 0) ? 0 : (amt > 1) ? 1 : amt;
 		  document.getElementById("stop1").setAttribute("offset", amt);
 		  document.getElementById("stop2").setAttribute("offset", amt);
-		}
-		loader(0)
+		};
+		loader(0);
 		Styles = HumanStyles;
         return ( 
         	<div id="app" className={AppStyles.app}>
@@ -64,14 +63,8 @@ class App extends React.Component{
 ReactDOM.render( 
 	<BrowserRouter basename="/de">
         <App>
-                <Switch>
-                    <Redirect exact from="/" to="/who" />
-                    <Route name="who" path="/who" component={Who} />
-                    <Route name="work" path="/work" component={Work} db={DB}/>
-                    <Route name="project" path="/work/:title" component={Work} db={DB} />
-                    <Route name="timeline" path="/history" component={Timeline} />
-                </Switch>    
-	    </App>
+            <Content />
+        </App>
  	</BrowserRouter>,
     document.getElementById('app')
 )

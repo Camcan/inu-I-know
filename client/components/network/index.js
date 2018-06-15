@@ -73,7 +73,7 @@ class NetworkContainer extends Component {
 		    <div className={Styles.network}>
                 <div className={Styles.modeSelector}>
                     <ModeSelector select={(filter)=>this.setState({filter: filter})}
-                        options={["All", "Map"]}
+                        options={["All"]}
                         active={this.state.filter}
                     />
                     <Search list={this.state.activeList}
