@@ -7,8 +7,8 @@
 
 .fadeIn {
    position: fixed;
-    max-width: 900px;
-   padding: 10px;
+   width: 100%;
+   padding: 50px 10px;
    display: flex;
    justify-content: flex-end;
    flex-flow: row wrap;
@@ -22,13 +22,13 @@
 }
 .whoCol{
 	text-align: left;
-	width: 30%;
 	max-width: 230px;
 	padding: 0;
 	z-index: 1;
    margin-right: 40px;
 	min-width: 200px;
 }
+
 .profileImg {
 	height: 100px;
 	width: 100px;
@@ -41,10 +41,10 @@
   	animation-duration: 1s;
 }
 .profileImg.mobile {
-	top: 0px;
-	position: absolute;
-	margin: -40px -50px -50px -20px;
+    position: absolute;
 	z-index: 0;
+	top: 120px;
+    margin-left: -150px;
 }
 .socialButtons {
 	vertical-align: bottom;
@@ -73,11 +73,6 @@
 	display: none;
 }
 
-@media screen and (min-width: 367px){
-	.profileImg.mobile {
-		margin: 70px -50px -50px -150px;
-	}
-}
 @media screen and (min-width: 700px){
 	.fadeIn {
       		justify-content: center
@@ -88,6 +83,10 @@
 	.desktop {
 		display: flex;
 	}
+    .whoCol {
+        width: 30%;
+    }
+
 	.profileImg.desktop {
 		height: 120px;
 		width: 120px;

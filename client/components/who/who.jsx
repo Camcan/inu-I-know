@@ -13,7 +13,6 @@ export default class Who extends Component{
     
     }
     componentWillEnter() {
-        console.log("Preload", this)
     }
     render() {
         return ( 
@@ -38,10 +37,7 @@ export default class Who extends Component{
                      </p>
                      <Social className={Styles.socialButtons}/>    
                 </div>
-                <div className={Styles.whoCol}>
-                
-    		      <div className={[Styles.profileImg, Styles.desktop].join(" ")}></div>
-        	</div>
+    		    <div className={[Styles.profileImg, Styles.desktop].join(" ")}></div>
             </div>
         )
     }
