@@ -21,19 +21,15 @@ export default class Who extends Component{
                 <div className={Styles.whoCol}>
                      <div className={[Styles.profileImg, Styles.mobile].join(" ")}></div>
 		     <p>
-                        Cam (Campbell Hawkes)
+                        Cam [Campbell Hawkes]
                      </p>
                      <p>
-                        Developer; skier, skater, & avid tree climber
+                        Security minded developer; skier, skater, & avid tree climber
                      </p>
                      <p>
-                        Will code for grapes.
-                     </p>
-                     <p>
-                        Reductionist problem solving; pragmatism and flow.
-                     </p>  
-                     <p>
-                        Most of my time is split between the Southern Alps and Wellington, New Zealand.
+                        I enjoy finding elegant solutions to complex problems & exploring states of flow.
+                    </p>
+                    <p>I work  with a great crue of developers & designers in Sydney, Australia, & can otherwise be found in the Southern Alps of New Zealand.
                      </p>
                      <Social className={Styles.socialButtons}/>    
                 </div>
