@@ -84,7 +84,7 @@
    transition: margin-left 0.3s ease-out;
 }
 .timeline .item .branch.selectedBranch  {
-      margin-left: 20px;
+    margin-left: 20px;
 }
 .timeline .item .branch .title {
    margin: 0px 0px 10px 60px;
@@ -133,8 +133,10 @@
    z-index: 0;
    min-width: 250px;
     display: flex;
+    justify-content: center;
 }
 .timeline .item .content .logo img {
+   margin-top: 36px;
    opacity: 0.3;
    height: 50px
 }
@@ -159,7 +161,15 @@
    }
    .timeline .item .branch {
       min-height: 200px;
+    }
+    .timeline .item .branch .title, .timeline .item .branch .period {
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
    }
+   .timeline .item .branch.selectedBranch .title, .timeline .item .branch.selectedBranch .period {
+        opacity: 1;
+   }
+
    .timeline .item .branch .title {
       margin-left: 70px;
    }
@@ -167,12 +177,12 @@
       position: fixed;
       top: 30%;
       min-height: 200px;
-      padding-left: 50px;
+      padding-left: 316px;
       opacity: 0;
       z-index: 5;
       transition: opacity 1s ease-out;
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: row-reverse nowrap;
       justify-content: center;
    }
 
@@ -182,13 +192,14 @@
 
    .timeline .item .content .logo {
         height: 250px;
-        width: 250px;
+        width: 200px;
    }
 
    .timeline .item .content .logo img {
       opacity: 0.3;
       top: 30%;
-      min-height: 100%;
+      min-height: 150px;
+      max-width: 100%;
     }
    .timeline .item .content .brief .title {
       display: visible
