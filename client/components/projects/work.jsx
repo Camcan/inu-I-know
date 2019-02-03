@@ -19,13 +19,10 @@ export default class Work extends Component {
         this.showMenu = this.showMenu.bind(this);
     }
     componentDidMount() {
-        console.log(this.props.db)
         this.setState({projects: DB.projects })
-        console.log(this.state.projects)
     }
     mouseoverTile(title){
         this.setState({title: title})
-        console.log(this.state.project)
     }
     selectProject(project){
         window.scroll(0,0);
@@ -40,7 +37,6 @@ export default class Work extends Component {
     render() {
         var titleStyle = ""
         if (this.state.projects) {
-            // this.setState({projects: this.props.db.projects })
             if (this.state.menu) {
                 titleStyle = Styles.myWork
                 this.state.pageContents = <div className={Styles.tiles}>

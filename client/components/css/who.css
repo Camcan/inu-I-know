@@ -6,7 +6,7 @@
 
 
 .fadeIn {
-   position: fixed;
+   position: absolute;
    width: 100%;
    padding: 50px 10px;
    display: flex;
@@ -43,8 +43,7 @@
 .profileImg.mobile {
     position: absolute;
 	z-index: 0;
-	top: 120px;
-    margin-left: -150px;
+	top: -5px;
 }
 .socialButtons {
 	vertical-align: bottom;

@@ -1,5 +1,6 @@
 .projectsContainer{
    width: 90%;
+   position: absolute;
    margin-top: 30px;
    max-width: 1000px;
    display: flex;
@@ -7,17 +8,19 @@
 }
 .myWork {
 	position: fixed;
-	margin: 0 0 0 0px;
-   background: black;
-	 -ms-transition: margin-left 0.3s ease-in-out; 
-	transition: margin-left 0.3s ease-in-out;
-}
-.myWorkProject {
-	position: fixed;
-	-ms-transition: margin-left 0.3s ease-in-out; 
-	transition: margin-left 0.3s ease-in-out;
 	margin: -30px 0 0 0;
+    background: rgba(0,0,0,0.2);
+    transition: margin-left 0.3s ease-in-out;
 }
+
+.myWorkProject {
+    position: fixed;
+    margin: -30px 0 0 0;
+    z-index: 5;
+    background: rgba(0,0,0,0.2);
+    transition: margin-left 0.3s ease-in-out;
+}
+
 .bgTitle {
 	opacity: 0;
 }
@@ -117,12 +120,14 @@
 .backButton {
 	position: fixed;
 	margin-left: 10px;
+    z-index: 5;
 	margin-top: 0px;
  -ms-transition: padding-left 0.3s ease-in-out; 
 	transition: padding-left 0.3s ease-in-out;
+    background-color: rgba(0,0,0,0.2);
 }
 .backButton span {
-	opacity: 0;
+    opacity: 0;
 	-ms-transition: opacity 0.4s ease-in-out; 
 	transition: opacity 0.4s ease-in-out;
 }

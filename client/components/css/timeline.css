@@ -1,5 +1,7 @@
 .container{
-   display: flex;
+   position: absolute;
+   width: 100%;
+    display: flex;
    justify-content: center;
    flex-direction: column;
    padding: 0px 20px 20px;
@@ -24,8 +26,8 @@
    bottom: 10px;
    z-index: 1;
    width: 6px;
-   height: 70%;
-   padding-bottom: 800px;
+   height: 100%;
+   padding-bottom: 500px;
    background: white;
    display: flex;
    justify-content: space-between;
@@ -117,7 +119,6 @@
 .timeline .item .content{ 
    position: relative;
    min-height: 200px;
-   top: -230px;
    opacity: 0.9;
    z-index: 5;
    transition: opacity 1s ease-out;
@@ -129,12 +130,9 @@
    opacity: 1
 }
 .timeline .item .content .logo {
-   position: absolute;
    z-index: 0;
-   width: 50%;
    min-width: 250px;
-   display: flex;
-   justify-content: flex-end
+    display: flex;
 }
 .timeline .item .content .logo img {
    opacity: 0.3;
@@ -156,10 +154,6 @@
    .timeline {
       padding-left: 50px;
    }
-   .timeline .sidebar {
-      height: 80%;
-      padding-bottom: 900px;
-    }
    .timeline .sidebar .year {
       left: -50px;
    }
@@ -185,16 +179,17 @@
    .timeline .item .content.reveal {
       opacity: 1
    }
+
    .timeline .item .content .logo {
-      position: absolute;
-      right: 10%;
+        height: 250px;
+        width: 250px;
    }
+
    .timeline .item .content .logo img {
-      position: fixed;
       opacity: 0.3;
       top: 30%;
-      height: 250px
-   }
+      height: 100%;
+    }
    .timeline .item .content .brief .title {
       display: visible
    }

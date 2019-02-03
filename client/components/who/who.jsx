@@ -4,15 +4,9 @@ import { Router, Route, browserHistory, IndexRedirect, Link} from 'react-router'
 import Social from '../social/social-links.jsx'
 import Styles from '../css/who.css'
 
-var show = true
 export default class Who extends Component{
     constructor(props){
         super(props);
-    }
-    componentDidMount() {
-    
-    }
-    componentWillEnter() {
     }
     render() {
         return ( 
