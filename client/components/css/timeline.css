@@ -188,7 +188,7 @@
    .timeline .item .content .logo img {
       opacity: 0.3;
       top: 30%;
-      height: 100%;
+      min-height: 100%;
     }
    .timeline .item .content .brief .title {
       display: visible

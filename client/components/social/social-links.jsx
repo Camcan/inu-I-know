@@ -23,9 +23,6 @@ export default class SocialLinks extends Component{
 					<a href="https://twitter.com/letters_to_cam">
 						<Twitter/>
 					</a>
-					<a href="tel:+64278418623">
-					<Mobile/>
-					</a>
 					<a href="mailto:mr.campbell.hawkes@gmail.com">
 						<Envelope/>
 					</a>
