@@ -191,6 +191,107 @@
         align-items: center;
     }
 }
+._hide_dkybe_1 {
+  	visibility: hidden;
+  	opacity: 0;
+
+}
+
+
+._fadeIn_dkybe_8 {
+   position: absolute;
+   width: 100%;
+   padding: 50px 10px;
+   display: flex;
+   justify-content: flex-end;
+   flex-flow: row wrap;
+	-webkit-animation-name: _fadeIn_dkybe_8;
+    -webkit-animation-duration: 1s;
+ 	animation-name: _fadeIn_dkybe_8;
+  	animation-duration: 1s;
+}
+._fadeIn_dkybe_8 h2 {
+   padding-right: 50px;
+}
+._whoCol_dkybe_23{
+	text-align: left;
+	max-width: 230px;
+	padding: 0;
+	z-index: 1;
+   margin-right: 40px;
+	min-width: 200px;
+}
+
+._profileImg_dkybe_32 {
+	height: 100px;
+	width: 100px;
+	opacity: 0.5;
+	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
+	background-size: cover;
+	-webkit-animation-name: _fadeIn_dkybe_8;
+    -webkit-animation-duration: 1s;
+ 	animation-name: _fadeIn_dkybe_8;
+  	animation-duration: 1s;
+}
+._profileImg_dkybe_32._mobile_dkybe_43 {
+    position: absolute;
+	z-index: 0;
+	top: -5px;
+}
+._socialButtons_dkybe_48 {
+	vertical-align: bottom;
+	color: white;
+	text-align: left;
+	margin-top: 20px;
+	height: 100px;
+	text-align: center;
+}
+._socialButtons_dkybe_48 a {
+	display: inline-block;
+	opacity: 0.5;
+	margin: 10px 10px 0px;
+}
+._socialButtons_dkybe_48 a svg {
+   height: 20px;
+   width: 20px;
+}
+._socialButtons_dkybe_48 a:hover {
+	opacity: 1;
+	-ms-transition: all 0.2s ease-out; 
+	transition: all 0.2s ease-out;
+}
+
+._desktop_dkybe_71 {
+	display: none;
+}
+
+@media screen and (min-width: 700px){
+	._fadeIn_dkybe_8 {
+      		justify-content: center
+   	}
+	._mobile_dkybe_43{
+		display: none;
+	}
+	._desktop_dkybe_71 {
+		display: flex;
+	}
+    ._whoCol_dkybe_23 {
+        width: 30%;
+    }
+
+	._profileImg_dkybe_32._desktop_dkybe_71 {
+		height: 120px;
+		width: 120px;
+		position: relative;
+		margin-top: 20px;
+		top: 0;
+		right: 0;
+	}
+}
+@media screen and (min-width: 1000px){
+
+
+}
 ._projectsContainer_pmbym_1{
    width: 90%;
    position: absolute;
@@ -450,107 +551,6 @@
    ._descr_pmbym_114 {
       max-width: 500px
    }
-
-}
-._hide_dkybe_1 {
-  	visibility: hidden;
-  	opacity: 0;
-
-}
-
-
-._fadeIn_dkybe_8 {
-   position: absolute;
-   width: 100%;
-   padding: 50px 10px;
-   display: flex;
-   justify-content: flex-end;
-   flex-flow: row wrap;
-	-webkit-animation-name: _fadeIn_dkybe_8;
-    -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_dkybe_8;
-  	animation-duration: 1s;
-}
-._fadeIn_dkybe_8 h2 {
-   padding-right: 50px;
-}
-._whoCol_dkybe_23{
-	text-align: left;
-	max-width: 230px;
-	padding: 0;
-	z-index: 1;
-   margin-right: 40px;
-	min-width: 200px;
-}
-
-._profileImg_dkybe_32 {
-	height: 100px;
-	width: 100px;
-	opacity: 0.5;
-	background: #e0ffc7 url(./img/cam.jpg) no-repeat;
-	background-size: cover;
-	-webkit-animation-name: _fadeIn_dkybe_8;
-    -webkit-animation-duration: 1s;
- 	animation-name: _fadeIn_dkybe_8;
-  	animation-duration: 1s;
-}
-._profileImg_dkybe_32._mobile_dkybe_43 {
-    position: absolute;
-	z-index: 0;
-	top: -5px;
-}
-._socialButtons_dkybe_48 {
-	vertical-align: bottom;
-	color: white;
-	text-align: left;
-	margin-top: 20px;
-	height: 100px;
-	text-align: center;
-}
-._socialButtons_dkybe_48 a {
-	display: inline-block;
-	opacity: 0.5;
-	margin: 10px 10px 0px;
-}
-._socialButtons_dkybe_48 a svg {
-   height: 20px;
-   width: 20px;
-}
-._socialButtons_dkybe_48 a:hover {
-	opacity: 1;
-	-ms-transition: all 0.2s ease-out; 
-	transition: all 0.2s ease-out;
-}
-
-._desktop_dkybe_71 {
-	display: none;
-}
-
-@media screen and (min-width: 700px){
-	._fadeIn_dkybe_8 {
-      		justify-content: center
-   	}
-	._mobile_dkybe_43{
-		display: none;
-	}
-	._desktop_dkybe_71 {
-		display: flex;
-	}
-    ._whoCol_dkybe_23 {
-        width: 30%;
-    }
-
-	._profileImg_dkybe_32._desktop_dkybe_71 {
-		height: 120px;
-		width: 120px;
-		position: relative;
-		margin-top: 20px;
-		top: 0;
-		right: 0;
-	}
-}
-@media screen and (min-width: 1000px){
-
 
 }
 ._container_x5hnt_1{
