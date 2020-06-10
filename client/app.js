@@ -20,7 +20,6 @@ import HumanStyles from './components/css/human.css';
 import Footer from './components/page/footer.jsx';
 import DB from './db.json';
 
-var Styles;
 class App extends React.Component{
     render(){
         const checkLoad = setInterval(()=>{
@@ -45,10 +44,8 @@ class App extends React.Component{
 		  document.getElementById("stop2").setAttribute("offset", amt);
 		};
 		loader(0);
-		Styles = HumanStyles;
         return ( 
         	<div id="app" className={AppStyles.app}>
-				<Link to="/who"><img className={Styles.logo} src={"../img/montagnes-white.svg"}/></Link>
 	        	<Human>
                     {this.props.children}
 	        	</Human>

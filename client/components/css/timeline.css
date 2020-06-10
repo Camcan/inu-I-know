@@ -34,10 +34,10 @@
    flex-direction: column;
 }
 
-.timeline .sidebar .node_start{
+.node_start{
    position: relative;
-   top: -60px;
-   left: -7px;
+   margin-top: -65px;
+   margin-left: -7px;
    height: 80px;
    width: 100px;
 }
