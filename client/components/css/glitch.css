@@ -1,12 +1,11 @@
 .glitch, .glitchOnHover:hover {
 	position: relative;
 	color: white;
-	letter-spacing: .4em;
 	animation: glitch-skew 0.5s infinite linear alternate-reverse;
 }
 
-.glitchText:after,
-.glitchOnHover:hover::after,
+.glitchText:not(.glitchOnHover)::after,
+.glitchOnHover.glitchText:hover::after,
 .glitchShadow,
 .glitchOnHover:hover + .glitchShadow {
 	content: attr(data-text);

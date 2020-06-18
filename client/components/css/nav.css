@@ -6,7 +6,6 @@
 
 .nav {
 	height: 70px;
-    width: 100%;
 	max-height: 50px;
     display: flex;
     align-items: flex-end;
@@ -20,12 +19,17 @@
 }
 
 .nav a {
-	width: 50px;
-	margin: 20px;
-	padding: 10px;
-}
+	margin: 4px;
+	padding: 4px;
+	transition: letter-spacing 0.2s linear;
+	letter-spacing: .2em;
+};
 
-@-webkit-keyframes fadeIn { 
+.nav a:hover {
+	letter-spacing: .2em;
+};
+
+@-webkit-keyframes fadeIn {
   0% { opacity: 0; }
   20% { opacity: 0; }
   40% { opacity: 0.3; }
