@@ -1,7 +1,7 @@
 .headHuman {
 	text-align: left;
 }
-.logo{
+.logoContainer {
 	position: relative;
 	width: 15%;
 	top: 5px;
@@ -12,8 +12,15 @@
 	transition: 1s ease-in-out;
 }
 
+.logo {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
 .head {
 	display: flex;
+	flex-flow: row wrap;
 	position: fixed;
 	width: 100%;
 	z-index:6;
@@ -29,9 +36,10 @@
   	animation-duration: 2s;
   	opacity: 1;
 }
-.head h1 {
+.title {
+	letter-spacing: .4em;
 	margin-left: 40px;
-	max-width: 300px;
+	width: 200px;
 }
 
 .center {
