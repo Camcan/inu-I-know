@@ -1,14 +1,10 @@
-.headHuman {
-	text-align: left;
-}
 .logoContainer {
 	position: relative;
-	width: 15%;
 	top: 5px;
-	width: 150px;
-	height: 100px;
+	width: 80px;
+	height: 54px;
 	opacity: 1;
-	left: 20px;
+	flex-shrink: 0;
 	transition: 1s ease-in-out;
 }
 
@@ -20,60 +16,63 @@
 
 .head {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 	position: fixed;
-	width: 100%;
+	top: 0px;
+	left: 10px;
+	right: 10px;
 	z-index:6;
 	height: 150px;
-	padding-top: 20px;
-	top: 0px;
 	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.8), rgba(0,0,0,0.6), rgba(0,0,0,0.3), rgba(0,0,0,0));
 	-webkit-animation-delay: 0s;
-    animation-delay: 0s;
+	animation-delay: 0s;
 	-webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 2s;
- 	animation-name: fadeIn;
-  	animation-duration: 2s;
-  	opacity: 1;
+	-webkit-animation-duration: 2s;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	opacity: 1;
 }
 .title {
+	display: none;
 	letter-spacing: .4em;
 	margin-left: 40px;
 	width: 200px;
+	margin-bottom: 0;
 }
 
 .center {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 	top: 200px;
-   left: 0px;
-   right: 10px;
+	left: 0px;
+	right: 10px;
 	padding: none;
 	position: relative;
 	-webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
- 	animation-name: fadeIn;
-  	animation-duration: 1s;
-  	visibility: visible;
-  	opacity: 1;
-   display: flex;
+	-webkit-animation-duration: 1s;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	visibility: visible;
+	opacity: 1;
+	display: flex;
 }
 
 @-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  20% { opacity: 0; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
-  100% { opacity: 1; }
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	40% { opacity: 0.3; }
+	60% { opacity: 0.5; }
+	80% { opacity: 0.9; }
+	100% { opacity: 1; }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  20% { opacity: 0; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
-  100% { opacity: 1; }
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	40% { opacity: 0.3; }
+	60% { opacity: 0.5; }
+	80% { opacity: 0.9; }
+	100% { opacity: 1; }
 }
 
 .hide {
@@ -83,12 +82,24 @@
 }
 
 
+@media screen and (min-width: 660px){
+	.head {
+		justify-content: flex-start;
+	}
+
+	.title {
+		display: unset;
+	}
+	.logoContainer {
+		left: 20px;
+		width: 150px;
+		height: 100px;
+	}
+}
+
 @media screen and (min-width: 500px){
 	.center {
 		top: 250px;
-        margin-bottom: 50px;
+		margin-bottom: 50px;
 	}
-    .head {
-        height: 200px;
-    }
 }

@@ -11,17 +11,13 @@
 ._client_components_css_app__app {
 	height: auto;
 }
-._client_components_css_human__headHuman {
-	text-align: left;
-}
 ._client_components_css_human__logoContainer {
 	position: relative;
-	width: 15%;
 	top: 5px;
-	width: 150px;
-	height: 100px;
+	width: 80px;
+	height: 54px;
 	opacity: 1;
-	left: 20px;
+	flex-shrink: 0;
 	transition: 1s ease-in-out;
 }
 
@@ -33,60 +29,63 @@
 
 ._client_components_css_human__head {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 	position: fixed;
-	width: 100%;
+	top: 0px;
+	left: 10px;
+	right: 10px;
 	z-index:6;
 	height: 150px;
-	padding-top: 20px;
-	top: 0px;
 	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.8), rgba(0,0,0,0.6), rgba(0,0,0,0.3), rgba(0,0,0,0));
 	-webkit-animation-delay: 0s;
-    animation-delay: 0s;
+	animation-delay: 0s;
 	-webkit-animation-name: _client_components_css_human__fadeIn;
-    -webkit-animation-duration: 2s;
- 	animation-name: _client_components_css_human__fadeIn;
-  	animation-duration: 2s;
-  	opacity: 1;
+	-webkit-animation-duration: 2s;
+	animation-name: _client_components_css_human__fadeIn;
+	animation-duration: 2s;
+	opacity: 1;
 }
 ._client_components_css_human__title {
+	display: none;
 	letter-spacing: .4em;
 	margin-left: 40px;
 	width: 200px;
+	margin-bottom: 0;
 }
 
 ._client_components_css_human__center {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 	top: 200px;
-   left: 0px;
-   right: 10px;
+	left: 0px;
+	right: 10px;
 	padding: none;
 	position: relative;
 	-webkit-animation-name: _client_components_css_human__fadeIn;
-    -webkit-animation-duration: 1s;
- 	animation-name: _client_components_css_human__fadeIn;
-  	animation-duration: 1s;
-  	visibility: visible;
-  	opacity: 1;
-   display: flex;
+	-webkit-animation-duration: 1s;
+	animation-name: _client_components_css_human__fadeIn;
+	animation-duration: 1s;
+	visibility: visible;
+	opacity: 1;
+	display: flex;
 }
 
 @-webkit-keyframes _client_components_css_human__fadeIn {
-  0% { opacity: 0; }
-  20% { opacity: 0; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
-  100% { opacity: 1; }
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	40% { opacity: 0.3; }
+	60% { opacity: 0.5; }
+	80% { opacity: 0.9; }
+	100% { opacity: 1; }
 }
 
 @keyframes _client_components_css_human__fadeIn {
-  0% { opacity: 0; }
-  20% { opacity: 0; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
-  100% { opacity: 1; }
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	40% { opacity: 0.3; }
+	60% { opacity: 0.5; }
+	80% { opacity: 0.9; }
+	100% { opacity: 1; }
 }
 
 ._client_components_css_human__hide {
@@ -96,14 +95,26 @@
 }
 
 
+@media screen and (min-width: 660px){
+	._client_components_css_human__head {
+		justify-content: flex-start;
+	}
+
+	._client_components_css_human__title {
+		display: unset;
+	}
+	._client_components_css_human__logoContainer {
+		left: 20px;
+		width: 150px;
+		height: 100px;
+	}
+}
+
 @media screen and (min-width: 500px){
 	._client_components_css_human__center {
 		top: 250px;
-        margin-bottom: 50px;
+		margin-bottom: 50px;
 	}
-    ._client_components_css_human__head {
-        height: 200px;
-    }
 }
 ._client_components_css_footer__footer {
     z-index: 3;
@@ -726,6 +737,7 @@
 }
 
 ._client_components_css_nav__nav {
+    margin-left: 10px;
 	height: 70px;
 	max-height: 50px;
     display: flex;
@@ -770,10 +782,9 @@
 
 @media screen and (min-width:   730px) {
     ._client_components_css_nav__nav {
-        width: 300px;
         position: absolute;
-        right: 40px;
-        top: 35px;
+        right: 10px;
+        top: 10px;
         align-items: center;
     }
 }
