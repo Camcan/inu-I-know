@@ -1,32 +1,40 @@
-import React,{Component} from 'react'
-import {Link} from 'react-router'
+import React from "react";
+import GitHub from "../assets/icons/github.js";
+import LinkedIn from "../assets/icons/linkedin";
+import Twitter from "../assets/icons/twitter";
+import Envelope from "../assets/icons/envelope";
 
-import GitHub from '../assets/icons/github.js'
-import LinkedIn from '../assets/icons/linkedin'
-import Twitter from '../assets/icons/twitter'
-import Mobile from '../assets/icons/mobile'
-import Envelope from '../assets/icons/envelope'
+const socialLinks = [
+  {
+    title: "Github",
+    link: "https://github.com/camcan",
+    icon: GitHub
+  },
+  {
+    title: "Likedin",
+    link: "https://nz.linkedin.com/in/campbell-hawkes-1b557210b",
+    icon: LinkedIn
+  },
+  {
+    title: "Twitter",
+    link: "https://twitter.com/letters_to_cam",
+    icon: Twitter
+  },
+  {
+    title: "Email",
+    link: "mailto:mr.campbell.hawkes@gmail.com",
+    icon: Envelope
+  }
+];
 
-export default class SocialLinks extends Component{
-	constructor(props){
-        super(props);
-    }
-    render(){
-		return (
-			<div id="socialButtons" className={this.props.className}>
-					<a href="//github.com/camcan">
-						<GitHub/>
-					</a>
-					<a href="//nz.linkedin.com/in/campbell-hawkes-1b557210b">
-						<LinkedIn/>
-					</a>
-					<a href="https://twitter.com/letters_to_cam">
-						<Twitter/>
-					</a>
-					<a href="mailto:mr.campbell.hawkes@gmail.com">
-						<Envelope/>
-					</a>
-			</div>
-		)
-	}
-};
+export default function SocialLinks({ className }) {
+  return (
+    <div id="socialButtons" className={className}>
+      {socialLinks.map(({ title, link, icon: Icon }) => (
+        <a key={title} title={title} href={link}>
+          <Icon />
+        </a>
+      ))}
+    </div>
+  );
+}
