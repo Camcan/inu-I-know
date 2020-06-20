@@ -12,12 +12,12 @@ const socialLinks = [
   },
   {
     title: "Likedin",
-    link: "https://nz.linkedin.com/in/campbell-hawkes-1b557210b",
+    link: "https://linkedin.com/in/campbellhawkes/",
     icon: LinkedIn
   },
   {
     title: "Twitter",
-    link: "https://twitter.com/letters_to_cam",
+    link: "/404",
     icon: Twitter
   },
   {
