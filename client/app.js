@@ -65,5 +65,3 @@ ReactDOM.render(
  	</BrowserRouter>,
     document.getElementById('app')
 )
-console.log( typeof Code )
-console.log("Bundle Success\n==============")
