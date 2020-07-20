@@ -8,7 +8,7 @@
     "express": "^4.16.4",
     "google-map-react": "^1.1.2",
     "history": "^4.7.1",
-    "nodemon": "^1.18.9",
+    "nodemon": "^2.0.4",
     "react": "^16.7.0",
     "react-binding": "^0.7.5",
     "react-css-modules": "^3.7.10",
@@ -27,8 +27,8 @@
     "red-tape": "0.0.2",
     "tape": "^4.9.2",
     "uglify-js": "^3.4.9",
-    "uglifyify": "^4.0.5",
-    "watchify": "^3.11.0"
+    "uglifyify": "^5.0.2",
+    "watchify": "^3.11.1"
   },
   "browserify": {
     "transform": [
