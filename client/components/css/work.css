@@ -32,7 +32,7 @@
 	margin: 0px;
 	position: fixed;
 	opacity: 0.1;
-	-ms-transition: opacity 0.3s ease-in-out; 
+	-ms-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
 }
@@ -122,14 +122,11 @@
 	margin-left: 10px;
     z-index: 5;
 	margin-top: 0px;
- -ms-transition: padding-left 0.3s ease-in-out; 
-	transition: padding-left 0.3s ease-in-out;
     background-color: rgba(0,0,0,0.2);
+	display: flex;
 }
 .backButton span {
-    opacity: 0;
-	-ms-transition: opacity 0.4s ease-in-out; 
-	transition: opacity 0.4s ease-in-out;
+	opacity: 0;
 }
 
 @media screen and (min-width:   500px) {
@@ -162,7 +159,7 @@
       width: 200px;
 	    height: 150px;
        transform: scale(1);
-	    -ms-transition: all 0.2s ease-in-out; 
+	    -ms-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
 	.tileContainer:hover {
@@ -189,24 +186,35 @@
       position: relative;
 		min-height: 150px;
    }
-	.backButton {
-		padding-left: 50px;
+
+   .backButton {
+	   transition: padding 0.2s ease-in-out;
+		padding-left: 20px;
+		padding-right: 40px;
 		margin-left: -50px;
 	}
 	.backButton:hover {
-		padding-left: 0px;
+		padding-left: 0;
+		padding-right: 20px;
+	}
+
+	.backButton > span {
+		width: 20px;
+		transition: all 0.2s ease-in-out;
+		white-space: nowrap;
 	}
 
 	.backButton:hover > span {
 		opacity: 1;
-		visibility: visible;
+		width: auto;
+		width: 60px;
 	}
    .project {
       max-width: 90%;
    }
 	.projectTitle {
 		margin-right: 0px;
-	}	
+	}
    .mainImageContainer {
       max-height: 200px;
    }
@@ -227,7 +235,7 @@
    .tiles {
       justify-content: flex-start;
       padding-left: 0px;
-   } 
+   }
    .content {
       display: flex;
       margin-top: 30px;
@@ -248,7 +256,7 @@
    .tiles {
       max-width: 100%;
    }
-   
+
    .project {
       max-width: 100%;
       margin-top: -100px;
