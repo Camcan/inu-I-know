@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     title: "Twitter",
-    link: "/404",
+    link: "",
     icon: Twitter
   },
   {
@@ -30,11 +30,14 @@ const socialLinks = [
 export default function SocialLinks({ className }) {
   return (
     <div id="socialButtons" className={className}>
-      {socialLinks.map(({ title, link, icon: Icon }) => (
-        <a key={title} title={title} href={link}>
-          <Icon />
-        </a>
-      ))}
+      {socialLinks.map(({ title, link, icon: Icon }) => {
+        if (!link) return null;
+        return (
+          <a key={title} title={title} href={link}>
+            <Icon />
+          </a>
+        );
+      })}
     </div>
   );
 }
