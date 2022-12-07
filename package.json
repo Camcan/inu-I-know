@@ -5,7 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "exenv": "^1.2.2",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "google-map-react": "^1.1.2",
     "history": "^4.7.1",
     "nodemon": "^2.0.4",
