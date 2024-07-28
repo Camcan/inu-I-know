@@ -9,6 +9,7 @@ const ROUTES = [
   { path: "/", element: <Navigate to="/who" /> },
   { name: "who", path: "/who", element: <Who /> },
   { name: "work", path: "/work", element: <Work /> },
+  { name: "project", path: "/work/:projectName", element: <Work /> },
   { name: "timeline", path: "/history", element: <Timeline /> },
 ];
 
