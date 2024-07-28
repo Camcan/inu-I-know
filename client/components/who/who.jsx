@@ -9,14 +9,13 @@ export default function Who() {
       <div className={Styles.whoCol}>
         <div className={[Styles.profileImg, Styles.mobile].join(" ")}></div>
         <p>Cam [Campbell Hawkes]</p>
-        <p>Security minded developer; skier, skater, & avid tree climber.</p>
+        <p>Security minded developer</p>
         <p>
           I enjoy finding elegant solutions to complex problems & exploring
           states of flow.
         </p>
         <p>
-          I work with a great crue of developers & designers in Sydney,
-          Australia, & can otherwise be found in the Southern Alps of New
+          Normally based in Sydney & otherwise found in the Southern Alps of New
           Zealand.
         </p>
         <Social className={Styles.socialButtons} />
