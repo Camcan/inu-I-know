@@ -6,22 +6,21 @@
   "dependencies": {
     "exenv": "^1.2.2",
     "express": "^4.16.4",
-    "google-map-react": "^1.1.2",
+    "google-map-react": "^2.2.1",
     "history": "^4.7.1",
     "nodemon": "^2.0.4",
-    "react": "^16.7.0",
+    "react": "^18.3.1",
     "react-binding": "^0.7.5",
     "react-css-modules": "^3.7.10",
-    "react-dom": "^16.7.0",
-    "react-icons": "^2.2.7",
-    "react-router-dom": "^4.3.0",
-    "react-transition-group": "^2.5.3",
+    "react-dom": "^18.3.1",
+    "react-icon-base": "^2.1.2",
+    "react-router-dom": "^6.25.1",
+    "react-transition-group": "^4.4.5",
     "vis": "^4.21.0"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.14.0",
-    "babel-preset-react": "^6.11.1",
-    "babel-preset-stage-0": "^6.5.0",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
     "babelify": "^10.0.0",
     "css-modulesify": "^0.25.1",
     "red-tape": "0.0.2",
@@ -36,9 +35,8 @@
         "babelify",
         {
           "presets": [
-            "es2015",
-            "stage-0",
-            "react"
+            "@babel/preset-env",
+            "@babel/preset-react"
           ]
         }
       ]

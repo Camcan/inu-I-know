@@ -1,9 +1,10 @@
 import React from "react";
 import Styles from "../css/work.css";
 import Links from "./projectLinks.jsx";
-import Back from "../assets/icons/back.js";
-import NetworkContainer from "../network/index.js";
-import { Link, withRouter } from "react-router-dom";
+import Back from "../assets/icons/back";
+import withRouter from "../withRouter";
+import NetworkContainer from "../network/index";
+import { Link } from "react-router-dom";
 
 function Project({ github, live, title, imgs, description, back }) {
   return (

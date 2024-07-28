@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { withRouter, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Styles from "../css/nav.css";
 import Back from "../assets/icons/back.js";
 import GlitchText from "../assets/glitch-text.jsx";
+import withRouter from "../withRouter";
 
 var navStyle = Styles.nav;
 var hide = Styles.hide;
