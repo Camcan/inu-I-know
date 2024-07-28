@@ -25,8 +25,8 @@
     "css-modulesify": "^0.25.1",
     "red-tape": "0.0.2",
     "tape": "^4.9.2",
-    "uglify-js": "^3.4.9",
-    "uglifyify": "^5.0.0",
+    "uglify-js": "^3.19.0",
+    "uglifyify": "^5.0.2",
     "watchify": "^4.0.0"
   },
   "browserify": {
