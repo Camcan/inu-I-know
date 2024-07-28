@@ -1,82 +1,121 @@
 {
-	"projects": [
-        {
-	      "title": "Beer?",
-	      "suffix": ".beer",
-	      "desc": [
-              "This is a personal project born out of my curiosity for who profits from what's behind bars here in New Zealand.",
-              "The stand-alone site is a work in progress, however you can interact with the example below:"],
-	       "tech": ["NodeJS", "React"],
-	       "link": {},
-	      "imgs": ["img/projects/beer/beer.jpg", "img/projects/beer/cartels.png", "img/projects/beer/cartels-admin.png"]
-	    },
-        {
-	      "title": "rebeccahawkes.art",
-	      "suffix": ".rebeccahawkes.art",
-	      "desc": [
-              "Artist profile website for Rebecca Hawkes", 
-              "This is a simple artist profile site designed which exhibits both art & academic credentials of an artist. It is built using React & Redux, working with playful interaction on a minimal canvas."],
-	       "tech": ["React", "Redux"],
-	       "link": {
-	       	"live": "http://rebeccahawkes.art",
-            "github": "https://github.com/Camcan/artist-portfolio"
-	       },
-	      "imgs": ["img/projects/art/tile.png", "img/projects/art/rebeccahawkes-art.png", "img/projects/art/art-mobile.png"]
-	    },
-        {
-	      "title": "WalkiTalki",
-	      "suffix": ".walkitalki",
-	      "desc": ["In house app with Metamorphic Studios", "While working for Metamorphic Studios, I spent extended periods of time working on WalkiTalki, a mobile app built using React-Native."],
-	       "tech": ["React-Native"],
-	       "link": {
-	       	"live": "http://walkitalki.life"
-	       },
-	      "imgs": ["img/projects/walkitalki/logo.png", "img/projects/walkitalki/play-store.png", "img/projects/walkitalki/screenshots-android.png"]
-	    },
-      {
-	      "title": "This Site",
-	      "suffix": ".this",
-	      "desc": ["What I've used to create this site.", "I gained a lot of experience helping people work through problems while acting as a teacher-aide at Enspiral Dev Academy, where React/Redux are now core to the carriculum. In spite of my apparent fluency, I've found limited oppertunity to make use of the technologies myself. This has been a space for me to play further vanilla ReactJS and modular CSS while re-upping my web-presence."],
-	       "tech": ["React.js", "Express.js",  	"Modular CSS"],
-	       "link": {
-	       	"github": "http://github.com/camcan/inu-i-know",
-	       },
-	      "imgs": ["img/this-tile.png","img/this-project.png"]
-	    },
-	    {
-	    	"title": "Old Site",
-	    	"suffix": ".oldSite",
-	    	"desc": ["My previous website", "Here I emulated the most reliable and simple interface I know, the terminal, using AngularJS. As it turns out, this isn't the most appealing form of interface for a point-and-click website, however this was a fun little project and remains online as a landing page with my GitHub handle."],
-	    	"link": {
-	    		"live": "http://camcan.github.io",
-	    		"github": "http://github.com/camcan/camcan.github.io"
-	    	},
-	    	"tech": ["Angular.js"],
-	    	"imgs": ["img/projects/old/old-site-tile.png", "img/projects/old/old-site-output.gif"]
-
-	    },
-	    {
-	      "title": "ApexArt",
-	      "suffix": ".apexArt",
-	      "desc": ["Mobile-first portfolio site for designer Bella Cole. This is still in development.", "This is a portfolio for designer and friend, Bella Cole. Built using AngularJS, I opted for a very simple, static setup, so that this can be adopted and further expanded on by the artist. While I did the initial development, this is an ongoing, collaborative project."],
-	       "tech": ["Angular", "Browserify", "HTML5", "CSS3"],
-	       "link": {
-	       	"live": "http://apexart.github.io",
-	       	"github": "https://github.com/ApexArt/apexart.github.io"
-	       },
-	      "imgs": ["img/projects/apex/apex-screenshot.png", "img/projects/apex/apex-project.jpg", "img/projects/apex/apex-mobile-home.jpg", "img/projects/apex/apex-mobile-menu.jpg"]
-	    },
-		{
-	      "title": "bookit",
-	      "subtitle": "Because why talk to people?",
-	      "suffix": ".bookIt",
-	      "desc": ["Responsive web-app allowing resteraunts and prospective diners to automate their booking process.", "Driven by our own experiences of 'hell' while work in the hospitality industry, where in even the most pristegious of establishments, bookings are often handled by voice-call, pen, & paper. BookIt eliminates the limitless possibility for human error through a succulent web-app. The service allows resteraunteurs to allocate tables/seating to automated booking, and users to search through vacant tables as a location-based service. I worked together with Zachary Landes ( zacharylandes.github.io ) in creating the front-end of the service during our final project for Enspiral Dev Academy's bootcamp. Book It, because why talk to people."],
-	      "link": {
-	       	"live":"http://ruru-2015.github.io/book-it-client-frontend",
-	       	"github":"https://github.com/ruru-2015/book-it-client-frontend"
-	       },
-	       "tech": ["Rails", "Angular.js"],
-	      "imgs": ["img/projects/bookit/bookit.jpg", "img/projects/bookit/screenshot-book-it.png"]
-	    }
-	]
+  "projects": [
+    {
+      "title": "Beer?",
+      "suffix": ".beer",
+      "desc": [
+        "This is a personal project born out of my curiosity for who profits from what's behind bars here in New Zealand.",
+        "The stand-alone site is a work in progress, however you can interact with the example below:"
+      ],
+      "tech": ["NodeJS", "React"],
+      "link": {},
+      "imgs": [
+        "img/projects/beer/beer.jpg",
+        "img/projects/beer/cartels.png",
+        "img/projects/beer/cartels-admin.png"
+      ]
+    },
+    {
+      "title": "rebeccahawkes.art",
+      "suffix": ".rebeccahawkes.art",
+      "desc": [
+        "Artist profile website for Rebecca Hawkes",
+        "This is a simple artist profile site designed which exhibits both art & academic credentials of an artist. It is built using React & Redux, working with playful interaction on a minimal canvas."
+      ],
+      "tech": ["React", "Redux"],
+      "link": {
+        "live": "http://rebeccahawkes.art",
+        "github": "https://github.com/Camcan/artist-portfolio"
+      },
+      "imgs": [
+        "img/projects/art/tile.png",
+        "img/projects/art/rebeccahawkes-art.png",
+        "img/projects/art/art-mobile.png"
+      ]
+    },
+    {
+      "title": "WalkiTalki",
+      "suffix": ".walkitalki",
+      "desc": [
+        "In house app with Metamorphic Studios",
+        "While working for Metamorphic Studios, I spent extended periods of time working on WalkiTalki, a mobile app built using React-Native."
+      ],
+      "tech": ["React-Native"],
+      "link": {
+        "live": "http://walkitalki.life"
+      },
+      "imgs": [
+        "img/projects/walkitalki/logo.png",
+        "img/projects/walkitalki/play-store.png",
+        "img/projects/walkitalki/screenshots-android.png"
+      ]
+    },
+    {
+      "title": "This Site",
+      "suffix": ".this",
+      "desc": [
+        "What I've used to create this site.",
+        "I gained a lot of experience helping people work through problems while acting as a teacher-aide at Enspiral Dev Academy, where React/Redux are now core to the carriculum. In spite of my apparent fluency, I've found limited oppertunity to make use of the technologies myself. This has been a space for me to play further vanilla ReactJS and modular CSS while re-upping my web-presence."
+      ],
+      "tech": ["React.js", "Express.js", "Modular CSS"],
+      "link": {
+        "github": "http://github.com/camcan/inu-i-know"
+      },
+      "imgs": ["img/this-tile.png", "img/this-project.png"]
+    },
+    {
+      "title": "Old Site",
+      "suffix": ".oldSite",
+      "desc": [
+        "My previous website",
+        "Here I emulated the most reliable and simple interface I know, the terminal, using AngularJS. As it turns out, this isn't the most appealing form of interface for a point-and-click website, however this was a fun little project and remains online as a landing page with my GitHub handle."
+      ],
+      "link": {
+        "live": "http://camcan.github.io",
+        "github": "http://github.com/camcan/camcan.github.io"
+      },
+      "tech": ["Angular.js"],
+      "imgs": [
+        "img/projects/old/old-site-tile.png",
+        "img/projects/old/old-site-output.gif"
+      ]
+    },
+    {
+      "title": "ApexArt",
+      "suffix": ".apexArt",
+      "desc": [
+        "Mobile-first portfolio site for designer Bella Cole. This is still in development.",
+        "This is a portfolio for designer and friend, Bella Cole. Built using AngularJS, I opted for a very simple, static setup, so that this can be adopted and further expanded on by the artist. While I did the initial development, this is an ongoing, collaborative project."
+      ],
+      "tech": ["Angular", "Browserify", "HTML5", "CSS3"],
+      "link": {
+        "live": "http://apexart.github.io",
+        "github": "https://github.com/ApexArt/apexart.github.io"
+      },
+      "imgs": [
+        "img/projects/apex/apex-screenshot.png",
+        "img/projects/apex/apex-project.jpg",
+        "img/projects/apex/apex-mobile-home.jpg",
+        "img/projects/apex/apex-mobile-menu.jpg"
+      ]
+    },
+    {
+      "title": "bookit",
+      "subtitle": "Because why talk to people?",
+      "suffix": ".bookIt",
+      "desc": [
+        "Responsive web-app allowing resteraunts and prospective diners to automate their booking process.",
+        "Driven by our own experiences of 'hell' while work in the hospitality industry, where in even the most pristegious of establishments, bookings are often handled by voice-call, pen, & paper. BookIt eliminates the limitless possibility for human error through a succulent web-app. The service allows resteraunteurs to allocate tables/seating to automated booking, and users to search through vacant tables as a location-based service. I worked together with Zachary Landes ( zacharylandes.github.io ) in creating the front-end of the service during our final project for Enspiral Dev Academy's bootcamp. Book It, because why talk to people."
+      ],
+      "link": {
+        "live": "http://ruru-2015.github.io/book-it-client-frontend",
+        "github": "https://github.com/ruru-2015/book-it-client-frontend"
+      },
+      "tech": ["Rails", "Angular.js"],
+      "imgs": [
+        "img/projects/bookit/bookit.jpg",
+        "img/projects/bookit/screenshot-book-it.png"
+      ]
+    }
+  ]
 }
